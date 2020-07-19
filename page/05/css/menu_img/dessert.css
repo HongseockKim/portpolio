@@ -1,0 +1,7 @@
+@charset "utf-8";
+/*common*/
+    .menu_con>ul>li:nth-child(1)>h4{background: url(../../img/menu/dessert/cheesecake.png)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(2)>h4{background: url(../../img/menu/dessert/browniecake.png)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(3)>h4{background: url(../../img/menu/dessert/uglysundae.png)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(4)>h4{background: url(../../img/menu/dessert/magosundae.png)no-repeat center;background-size:contain;}
+

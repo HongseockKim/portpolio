@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*common*/
+    .menu_con>ul>li:nth-child(1)>h4{background: url(../../img/menu/menu_list/pizza&pasta/strawberry.jpg)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(2)>h4{background: url(../../img/menu/menu_list/pizza&pasta/beefpizza.jpg)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(3)>h4{background: url(../../img/menu/menu_list/pizza&pasta/basil_pizza.jpg)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(4)>h4{background: url(../../img/menu/menu_list/pizza&pasta/mozza_pizza.jpg)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(5)>h4{background: url(../../img/menu/menu_list/pizza&pasta/carbonara.jpg)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(6)>h4{background: url(../../img/menu/menu_list/pizza&pasta/vongole.png)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(7)>h4{background: url(../../img/menu/menu_list/pizza&pasta/chicken_pasta.png)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(8)>h4{background: url(../../img/menu/menu_list/pizza&pasta/seafood_pasta.png)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(9)>h4{background: url(../../img/menu/menu_list/pizza&pasta/aglio_pasta.png)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(10)>h4{background: url(../../img/menu/menu_list/pizza&pasta/crab_pasta.png)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(11)>h4{background: url(../../img/menu/menu_list/pizza&pasta/basil_pasta.png)no-repeat center;background-size:contain;}
+    .menu_con>ul>li:nth-child(12)>h4{background: url(../../img/menu/menu_list/pizza&pasta/ragu_pasta.png)no-repeat center;background-size:contain;}
+

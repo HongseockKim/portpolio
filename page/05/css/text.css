@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+@media all and (min-width:1280px){
+    .ricotta_wrap{width: 100%;height: 100%;}
+    .ricotta{width: 100%;height: 100%;text-align: center;}
+    .ricotta h3{font-size: 4rem;padding: 40px 0;text-transform: uppercase;color: rgb(217,50,50);}
+    .ricotta p{font-size:1.4rem;padding:7px 0;line-height: 14px;text-transform: capitalize;font-weight: 600;}
+    }
+
+
+@media all and (min-width:768px) and (max-width:1279px){
+   .ricotta_wrap{width: 100%;height: 100%;}
+    .ricotta{width: 100%;height: 100%;text-align: center;}
+    .ricotta h3{font-size: 4rem;padding: 40px 0;text-transform: uppercase;color: rgb(217,50,50);}
+    .ricotta p{font-size:1.4rem;padding:7px 0;line-height: 14px;text-transform: capitalize;font-weight: 600;} 
+}
+
+@media all and (min-width:320px) and (max-width:767px){
+    .ricotta_wrap{width: 100%;height: 100%;}
+    .ricotta{width: 100%;height: 100%;text-align: center;}
+    .ricotta h3{font-size: 3rem;padding: 30px 0;text-transform: uppercase;color: rgb(217,50,50);}
+    .ricotta p{font-size:1.2rem;padding:9px 0;line-height: 10px;text-transform: capitalize;font-weight: 600;}
+}

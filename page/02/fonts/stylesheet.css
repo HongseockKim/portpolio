@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'bareundotum1';
+    src: url('bareundotum1-webfont.woff2') format('woff2'),
+         url('bareundotum1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bareundotum2';
+    src: url('bareundotum2-webfont.woff2') format('woff2'),
+         url('bareundotum2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Malgun Gothic';
+    src: url('MalgunGothicRegular.woff2') format('woff2'),
+        url('MalgunGothicRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Malgun Gothic';
+    src: url('MalgunGothicBold.woff2') format('woff2'),
+        url('MalgunGothicBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}

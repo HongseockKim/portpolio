@@ -1,0 +1,15 @@
+@charset "utf-8";
+/*common*/
+.wrapper{position:relative;width:100%;height:auto;padding-top:120px;}
+.inner{width:1200px;margin:0 auto;}
+/*header*/
+.m_gnb .logo{width:auto;height:40px;margin:calc((80px - 40px) / 2) 0;}  
+.m_gnb .logo img{width:182px;height:auto;}
+.m_gnb nav{width:100%;height:100%;}
+.m_gnb nav>ul{width:calc(100% - 250px);height:100%;margin-left:250px;}
+.m_gnb nav>ul>li{float:left;width:calc((100% - 300px) / 6); height:100%;}
+.m_gnb nav>ul>li>a{font-size:1.6rem;}  
+.m_gnb .sub_menu>li{width:195px;}
+/*menu_list*/
+#site_map .menu_wrap{width:900px;float:right;}
+.menu_con .menu_list{float:right;width:620px;}

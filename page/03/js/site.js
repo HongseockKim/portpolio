@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
     var zoom = 1;
     $('#site_map .scale_con a').on('click', function(e) {
         e.preventDefault();

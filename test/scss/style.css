@@ -3,8 +3,24 @@
   .scss .center_box .test_box {
     width: 300px;
     height: 300px;
-    background: hotpink; }
+    background: hotpink;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 300px;
+    position: relative; }
+    .scss .center_box .test_box .childe_box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 150px;
+      height: 200px;
+      background: #979797;
+      border-radius: 20px; }
     .scss .center_box .test_box span {
-      color: coral; }
+      color: #4b4b4b;
+      font-weight: bold;
+      font-size: 24px; }
 
 /*# sourceMappingURL=style.css.map */

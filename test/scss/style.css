@@ -22,5 +22,26 @@
       color: #4b4b4b;
       font-weight: bold;
       font-size: 24px; }
+  .scss .center_box .wrap_list {
+    width: 500px;
+    height: 50px; }
+    .scss .center_box .wrap_list .test_lsit {
+      background: #fff;
+      width: 100%;
+      height: 100%; }
+      .scss .center_box .wrap_list .test_lsit:after {
+        content: '';
+        display: block;
+        clear: both; }
+      .scss .center_box .wrap_list .test_lsit .test_item {
+        float: left;
+        width: 100px;
+        height: 100%; }
+        .scss .center_box .wrap_list .test_lsit .test_item a {
+          display: block;
+          text-align: center;
+          line-height: 50px; }
+          .scss .center_box .wrap_list .test_lsit .test_item a:hover {
+            color: red; }
 
 /*# sourceMappingURL=style.css.map */

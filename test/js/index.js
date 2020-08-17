@@ -20,10 +20,10 @@ $(document).ready(function () {
     var noteNow = 0;
     var noteNext = 0;
     var notePrev = 0;
-    slideShow(2);
+    slideShow(4);
     $('.wrapper .con').each(function (i) {
         $(this).css({
-            'left': (i * 100) + '%'
+            'left': (i * 90) + '%'
         });
     });
 
@@ -36,7 +36,7 @@ $(document).ready(function () {
     function slideShow(n) {
         $('.moving').css({
             'transition': 'left 0.3s',
-            'left': -((n - 1) * 100) + '%'
+            'left': -((n - 1) * 90) + '%'
         });
         $('.tab li').removeClass('on');
         $('.tab li').eq(n - 1).addClass('on');

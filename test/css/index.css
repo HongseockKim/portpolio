@@ -81,9 +81,9 @@ span {
 .con {
         position: absolute;
         top: 50px;
-        left: 0;
+        left:0;
         padding: 30px;
-        width: 100%;
+        width: 90%;
         overflow: hidden;
         box-sizing: border-box;
 }
@@ -207,3 +207,4 @@ span {
         color: rgb(47, 216, 61);
         font-weight: bold;
 }
+

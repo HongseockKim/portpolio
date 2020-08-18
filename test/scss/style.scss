@@ -39,7 +39,7 @@
                 height: 50px;
 
                 &:after {
-                    content: '';
+                    content: "";
                     display: block;
                     clear: both;
                 }
@@ -63,7 +63,7 @@
 
             .wrap_con {
                 width: 100%;
-                height: 500px;
+                padding-top: 150%;
                 border: 1px solid #000;
                 box-sizing: border-box;
                 position: relative;
@@ -78,7 +78,133 @@
                     display: none;
 
                     &:nth-child(1) {
+                        display: none;
+
+                        ul {
+                            width: 100%;
+                            margin-bottom: 20px;
+                            background: coral;
+
+                            &:nth-child(1) {
+                                display: flex;
+                                flex-direction: row-reverse;
+                            }
+
+                            &:nth-child(2) {
+                                display: flex;
+                            }
+
+                            &:nth-child(3) {
+                                display: flex;
+                                flex-direction: column-reverse;
+                            }
+
+                            &:nth-child(4) {
+                                display: flex;
+                                justify-content: space-between;
+                            }
+
+                            &:nth-child(5) {
+                                display: flex;
+                                justify-content: space-around;
+                            }
+
+                            &:nth-child(6) {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                            }
+
+                            &:nth-child(7) {
+                                display: flex;
+                                height: 120px;
+                                flex-wrap: wrap;
+                                align-content: space-around;
+                            }
+
+                            li {
+                                display: inline-block;
+                                height: 50px;
+                                background: yellow;
+
+                                &:nth-child(2) {
+                                    background: darkcyan;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
                         display: block;
+
+                        ul {
+                            width: 100%;
+                            background: rgb(59, 175, 175);
+                            margin-bottom: 20px;
+
+                            &:nth-child(1) {
+                                display: flex;
+
+                                li {
+                                    flex-basis: 0;
+                                    flex-grow: 1;
+
+                                    &:nth-child(2) {
+                                        flex-grow: 2;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                display: flex;
+
+                                li {
+
+
+                                    &:nth-child(1) {
+                                        flex: 1;
+                                    }
+
+                                    &:nth-child(2) {
+                                        flex: 3;
+                                    }
+
+                                    &:nth-child(3) {
+                                        flex: 1;
+                                    }
+
+                                    &:nth-child(4) {
+                                        flex: 1;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(3) {
+                                display: flex;
+
+                                li {
+                                    &:nth-child(1) {
+                                        flex: 4;
+                                        order: 2;
+                                    }
+
+                                    &:nth-child(2) {
+                                        flex: 2;
+                                        order: 1;
+                                    }
+                                }
+                            }
+
+                            li {
+                                width: 100px;
+                                height: 100px;
+                                background: darkgray;
+
+                                &:nth-child(2n) {
+                                    background: darkslateblue;
+                                }
+                            }
+                        }
                     }
                 }
             }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0;}
+        li{list-style:none;}
+        a{text-decoration:none;color:inherit;}
+        .inner{width:1200px;margin:0 auto;background:pink;}
+        .list_wrap{padding:60px;}
+        .list_wrap:after{content:'';display:block;clear:both;}
+        .list_wrap .tit_type{font-size:28px;margin-bottom:20px;}
+        .list_wrap .list_type{width:100%;}
+        .list_wrap .left_list{float:left;width:50%;}
+        .list_wrap .right_list{float:right;width:50%;}
+        .list_wrap .list_type .list_item{margin-bottom:20px;padding-left:10px; position:relative; overflow: hidden;text-overflow:ellipsis;}
+        .list_wrap .list_type .list_item .text_wrap{white-space:nowrap;}
+        .list_wrap .list_type .list_item:after{content:''; position:absolute;top:50%;transform:translateY(-50%);left:0;width:5px;height:5px;border-radius:50%;background:red;}
+
+
+        .inner2{width:1200px;margin:0 auto;background:coral;}
+        .list_wrap_02{padding:60px 0px}
+        .list_wrap_02:after{content:'';display:block;clear:both;}
+        .list_wrap_02 .left_list{float:left;width:50%;box-sizing:border-box;background:yellow;padding-right:60px;}
+        .list_wrap_02 .right_list{float:right;width:50%;box-sizing:border-box;}
+        .list_wrap_02 .left_list .list_type2{ border-right:1px solid #000;background:rgba(82, 82, 82, 0.5);}
+    </style>
+</head>
+<body>
+    <div class="inner">
+        <div class="list_wrap">
+            <h2 class="tit_type">자주 묻는 질문</h2>
+            <div class="left_list">
+                <ul class="list_type">
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하dddddddddddddddddddddddddddddd</span></a></li>
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                </ul>
+            </div>
+            <div class="right_list">
+                <ul class="list_type">
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="inner2">
+        <div class="list_wrap_02">
+            <div class="left_list">
+                <h2 class="tit_type2">자주 묻는 질문</h2>
+                <ul class="list_type2">
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                </ul>
+            </div>
+            <div class="right_list">
+                <h2 class="tit_type2">자주 묻는 질문</h2>
+                <ul class="list_type2">
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                    <li class="list_item"><a href="#"><span class="text_wrap">가나다마바사아차카타파하바사아차카타파하</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -20,32 +20,22 @@
         </section>
         <section class="form_wrap">
             <div class="inner">
-                <table>
-                    <tr>
-                        <th>
-                            참여방법
-                        </th>
-                        <th>
-                            사전 접속 테스트 방법
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ol>
-                                <li>사전 등록하신 <span class="text_mark">휴대전화 번호</span>를 입력하신 후 입장합니다.</li>
-                                <li>심포지엄 당일에는 심포지엄 입장하기 버튼을 선택하시면 실시간 강연 시청이 가능합니다.</li>
-                                <li>스마트폰으로 접속하시는 방법도 위와 동일하며, 심포지엄 당일 스마트폰으로 접속하시면 실시간 강연 시청이 가능합니다.</li>
-                            </ol>
-                        </td>
-                        <td>
-                            <ol>
-                                <li>로그인 후 접속 테스트 버튼을 선택합니다.</li>
-                                <li>PC 나 모바일 중 시청하실 기기에서 테스트 영상의 시청이 원활한지 확인하시기 바랍니다.</li>
-                                <li>접속이 원활하시면, 접속 테스트를 종료하셔도 됩니다.</li>
-                            </ol>
-                        </td>
-                    </tr>
-                </table>
+                <div class="info_1 info">
+                    <button class="btn">참여방법<i class="icon icon_drop_arrow"></i></button>
+                    <ul>
+                        <li>사전 등록하신 <span class="text_mark">휴대전화 번호</span>를 입력하신 후 입장합니다.</li>
+                        <li>심포지엄 당일에는 심포지엄 입장하기 버튼을 선택하시면 실시간 강연 시청이 가능합니다.</li>
+                        <li>스마트폰으로 접속하시는 방법도 위와 공일하며, 심포지엄 당일 스마트폰으로 접속하시면 실시간 강연 시청이 가능합니다.</li>
+                    </ul>
+                </div>
+                <div class="info_2 info">
+                    <button class="btn">사전 접속 테스트 방법<i class="icon icon_drop_arrow"></i></button>
+                    <ul>
+                        <li>로그인 후 접속테스트 버튼을 선택합니다.</li>
+                        <li>PC 나 모바일 중 시청하실 기기에서 테스트 영상의 시청이 원활한지 확인 하시길 바랍니다.</li>
+                        <li>접속이 원활하시면, 접속 테스트를 종료하셔도 됩니다.</li>
+                    </ul>
+                </div>
                 <div class="form">
                     <div class="btn_wrap">
                         <div id="login">
@@ -77,4 +67,14 @@
         </footer>
     </div>
 </body>
+<script>
+    $('.form_wrap .info .btn').on('click', function(){
+        if($(this).parent('.info').hasClass('open')){
+            $(this).parent('.info').removeClass('open');
+        }else{
+            $('.info').removeClass('open');
+            $(this).parent('.info').addClass('open');
+        }
+    });
+</script>
 </html>

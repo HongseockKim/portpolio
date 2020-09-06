@@ -2,14 +2,20 @@
 body{background:url(../img/bg_04.png)no-repeat;position:relative;height:100vh;font-family: 'Noto Sans KR', sans-serif;}
 .wrap{position:absolute;left:50%;top:50%; transform:translate(-50%,-50%);}
 .inner{max-width:1200px;margin:0 auto;}
+.icon{display:inline-block;background:url(../img/spright.png)no-repeat;}
+.icon.icon_drop_arrow{width:13px;height:9px;background-position:-50px -50px;}
 
 .main_image .inner{text-align:center;}
 
+.info{height:185px;transition:height 0.3s;box-sizing:border-box;}
 
-table{margin-bottom:30px;}
-table th{padding:10px 0px;font-size:18px;color:#3b3b3b;}
-table td{padding-left:50px;box-sizing:border-box;}
-table li{margin-bottom:10px;list-style:decimal-leading-zero;font-size:14px;color:#777777;word-break:keep-all;line-height:20px;font-weight:500;}
+
+.info:nth-child(2){margin-bottom:30px;}
+.form_wrap .info .btn{margin-bottom:15px;width:100%;height:50px;font-size:20px;font-weight:600;line-height:50px;border-bottom:1px solid #7e7e7e; box-sizing:border-box;outline:none;}
+.form_wrap .info .btn .icon{display:none;}
+.form_wrap .info li{word-break:keep-all;}
+.form_wrap .info .btn:hover{background:#e2e2e2;color:#2d6ce0;}
+
 .text_mark{color:#2d6ce0;font-weight:bold;}
 /* table th:nth-child(1){background:url(../../대한정형외과/invition/img/bg_04.png)no-repeat;background-size:150px;} */
 /*form_dseign*/
@@ -27,7 +33,16 @@ input:focus:-ms-input-placeholder{color:transparent; }
 
 footer{padding:30px;}
 footer p{font-size:12px;color:#8a8a8a;}
+
 @media all and (max-width:900px){
+    .info_1{margin:5% 0 3%;}
+    .info{height:50px;overflow:hidden;}
+    .info:nth-child(2){margin-bottom:15%;}
+    .form_wrap .info .btn .icon{display:inline-block;margin-left:15px;}
+    .form_wrap .info .btn{background:#2d6ce0;color:#fff;border:none;border-radius:25px;transition:all 0.3s;}
+    .form_wrap .info.open{height:185px;}
+    .form_wrap .info.open .btn{border-radius:25px 25px 0px 0px;}
+    .form_wrap .info .btn:focus{background:#e2e2e2;color:#2d6ce0;}
     .main_image .inner img{width:100%;}
     .wrap{position:static;left:auto;top:auto; transform:translate(0,0);}
     .wrap{padding:10%;}

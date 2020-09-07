@@ -1,5 +1,5 @@
 @charset "utf-8";
-body{background:url(../img/bg_04.png)no-repeat;position:relative;height:100vh;font-family: 'Noto Sans KR', sans-serif;background-size:100%;}
+body{background:url(../img/bg_04.png)no-repeat;position:relative;height:100vh;font-family: 'Noto Sans KR', sans-serif;}
 .wrap{position:absolute;left:50%;top:50%; transform:translate(-50%,-50%);padding-top:200px;}
 .inner{max-width:1200px;margin:0 auto;}
 .icon{display:inline-block;background:url(../img/spright.png)no-repeat;}
@@ -35,7 +35,7 @@ footer{padding:30px;}
 footer p{font-size:12px;color:#8a8a8a;}
 
 @media all and (max-width:900px){
-    body{background-size:50%;}
+    body{background-size:70%;}
     .info_1{margin:5% 0 3%;}
     .info{height:50px;overflow:hidden;}
     .info:nth-child(2){margin-bottom:15%;}

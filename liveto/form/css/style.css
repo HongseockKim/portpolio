@@ -35,6 +35,7 @@ footer{padding:30px;}
 footer p{font-size:12px;color:#8a8a8a;}
 
 @media all and (max-width:900px){
+    body{background-size:50%;}
     .info_1{margin:5% 0 3%;}
     .info{height:50px;overflow:hidden;}
     .info:nth-child(2){margin-bottom:15%;}

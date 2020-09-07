@@ -1,8 +1,0 @@
-@charset "utf-8";
-/*common*/
-    .menu_con>ul>li:nth-child(1)>h4{background: url(../../img/menu/menu_list/ricotta/menu1-1_img2-3.png)no-repeat center;background-size:contain;}
-    .menu_con>ul>li:nth-child(2)>h4{background: url(../../img/menu/menu_list/ricotta/Caprese-2.jpg)no-repeat center;background-size:contain;}
-    .menu_con>ul>li:nth-child(3)>h4{background: url(../../img/menu/menu_list/ricotta/menu1-1_img2-5.png)no-repeat center;background-size:contain;}
-    .menu_con>ul>li:nth-child(4)>h4{background: url(../../img/menu/menu_list/ricotta/Avocado.jpg)no-repeat center;background-size:contain;}
-    .menu_con>ul>li:nth-child(5)>h4{background: url(../../img/menu/menu_list/ricotta/strawberry.jpg)no-repeat center;background-size:contain;}
-

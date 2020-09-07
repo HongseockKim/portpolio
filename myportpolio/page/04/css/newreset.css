@@ -1,0 +1,55 @@
+/* reset */
+html {-webkit-text-size-adjust:none}/* 뷰표트 변환시 폰트크기 자동확대 방지 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button,optgroup {vertical-align:middle; font-family: inherit;font-size: 100%;}
+button {border:0 none;cursor:pointer}
+
+/* scroll */
+/*html,body{width:100%;height:100%;-ms-overflow-style: none; }
+body::-webkit-scrollbar {display: none;}*/
+
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+/* https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_test */
+
+input[type='text'],input[type='password'],input[type='submit'],input[type='search'] {-webkit-appearance:none; border-radius:0}
+input:checked[type='checkbox'] {-webkit-appearance:checkbox}
+button,input[type='button'],input[type='submit'],input[type='reset'],input[type='file'] {-webkit-appearance:button; border-radius:0}
+input[type='search']::-webkit-search-cancel-button {-webkit-appearance:none}
+/* input crossbrowsing- border:none 셋팅 이후 스타일 */
+
+/*common*/
+th,td,input,select,textarea,button {font-size:12px;line-height:1.5em;font-family:'돋움',dotum,sans-serif;color:#333} 
+/* 디자인가이드에 맞게사용 */
+
+/* placeholder 지정할것 */
+/* ::-webkit-input-placeholder{font-size:12px;color:#333}
+::-moz-input-placeholder{ font-size:12px;color:#333 }
+::input-placeholder{font-size:12px;color:color:#333} */
+
+/* link */
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:underline;}
+
+/* Global Classname */
+.clearfix:after{content:" ";clear:both;display:block}
+.ir_pm{text-indent:-99em;white-space: nowrap;overflow: hidden;}
+/* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 이미지off시 안보임*/
+.ir_wa {display:block;overflow:hidden;position:relative;z-index:-10;width:100%;height:100%} 
+/* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.screen_out {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px} 
+/* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+.text_hide{font-size:0px;}
+.show {display:block}
+.hide {display:none}
+.modal{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.8);z-index: 9999;display:none;}
+
+
+html {font-size: 0.625em;}
+body {font-family: 'Nanum Gothic', sans-serif;line-height: 1em;}
+input{-webkit-appearance:none;border:none}
+button{-webkit-appearance:none;border:none;background-color:transparent;}
+a{color:#333}

@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+@media all and (min-width:1280px){
+  /*beverage*/
+    .menu_con,.coffee_wrapper{width: 1080px;height: 100%;margin: auto;padding-top: 50px;}
+    .beverage>h3,.coffee_wrapper>h3,.house_wine>h3,.beer>h3{font-size: 3rem;line-height: 26px;font-weight: normal;text-transform: uppercase;margin-bottom: 20px;}
+    
+    .img_wrap{width: 50%;height:100%;padding-bottom: 1025px; float: right;background:url(../img/sub_img/beverag_img.jpg)no-repeat center;background-size:cover;}
+    .beverage{width: 45%;margin-right: 5%;margin-bottom:50px; float: left;border-bottom: 2px solid red;}
+    .beverage>p,.house_wine div>p{text-align: right;font-size: 1.4rem;color: #7b7b7b;padding-bottom: 45px;}
+    
+    
+    .beverage>p>span:first-child{margin-right: 20px;}
+    .house_wine div>p>span:first-child{margin-right:40px;}
+    .house_wine div>p>span:last-child{margin-right:0;}
+    .beverage ul{width: 100%;}
+    
+    .beverage ul>li>strong,.coffee_wrap ul>li>strong,.house_wine ul>li>storong{font-size: 1.6rem;float: left;font-weight: 600;padding: 8px 0px;background: #fff;}
+    .beer ul>li>strong{font-size: 1.6rem;float: left;font-weight: 600;padding: 8px 0px;background: #fff;}
+    .house_wine ul>li>strong{font-size: 1.6rem;font-weight: 600;padding: 8px 0px;background: #fff;}
+    
+    .beverage ul>li>span,.coffee_wrap ul>li>span,.house_wine ul>li>span,.beer ul>li>span{display:inline-block;font-size:  1.4rem;float: right;width:60px;height: 100%; padding-right: 10px;text-align: center;line-height: 16px;background: #fff;}
+    .beverage ul>li>span:nth-child(2),.coffee_wrap ul>li>span:nth-child(2){padding-right: 0;padding-left: 10px;}
+    
+    .text>p{padding-top: 10px;padding-bottom: 40px;font-size: 1.2rem;color: #919191;text-transform: capitalize;}
+    .coffee_wrap{width: 100%;border-bottom: 2px solid red;margin-top: 50px;margin-bottom: 50px;}
+    .coffee_wrap:after{content: '';display: block;clear:both;}
+    .coffee_wrap>.coffee_left,.wine_left,.beer>.left{float: left;width: 45%;margin-right: 5%;}
+    .coffee_wrap>.coffee_right,.wine_right,.beer>.right{float: left;width: 50%;}
+    .house_wine{width: 100%; border-bottom:2px solid red;margin-bottom: 50px;}
+    .house_wine:after{content: '';display: block;clear: both;}
+    .beer{width: 100%;margin-bottom: 20px;}
+    
+    .wine_left li{padding: 8px 0px;}
+    .beer li:after{content: '';display: block;clear: both;}
+    .coffee_wrap li:after{content: '';display: block;clear: both;}
+    .beverage li:after{content: '';display: block;clear: both;}
+    .ricotta_wrap li:nth-last-child(2n){width: 100%;height: 100%;background: url(../img/sub_img/bg_dot.png) center;background-repeat: repeat-x;}
+}
+
+
+@media all and (min-width:768px) and (max-width:1279px){
+  /*beverage*/
+    .menu_con,.coffee_wrapper{width: 100%;height: 100%;padding-top: 50px;padding-left: 5%;padding-right: 5%;}
+    .beverage>h3,.coffee_wrapper>h3,.house_wine>h3,.beer>h3{font-size: 3rem;line-height: 26px;font-weight: normal;text-transform: uppercase;margin-bottom: 20px;}
+    
+    .img_wrap{width: 50%;height:100%;padding-bottom: 1025px; float: right;background:url(../img/sub_img/beverag_img.jpg)no-repeat center;background-size:cover;}
+    .beverage{width: 45%;margin-right: 5%;margin-bottom:50px; float: left;border-bottom: 2px solid red;}
+    .beverage>p,.house_wine div>p{text-align: right;font-size: 1.4rem;color: #7b7b7b;padding-bottom: 45px;}
+    
+    
+    .beverage>p>span:first-child{margin-right: 20px;}
+    .house_wine div>p>span:first-child{margin-right:40px;}
+    .house_wine div>p>span:last-child{margin-right:0;}
+    .beverage ul{width: 100%;}
+    
+    .beverage ul>li>strong,.coffee_wrap ul>li>strong,.house_wine ul>li>storong{font-size: 1.6rem;float: left;font-weight: 600;padding: 8px 0px;background: #fff;}
+    .beer ul>li>strong{font-size: 1.6rem;float: left;font-weight: 600;padding: 8px 0px;background: #fff;}
+    .house_wine ul>li>strong{font-size: 1.6rem;font-weight: 600;padding: 8px 0px;background: #fff;}
+    
+    .beverage ul>li>span,.coffee_wrap ul>li>span,.house_wine ul>li>span,.beer ul>li>span{display:inline-block;font-size:  1.4rem;float: right;width:60px;height: 100%; padding-right: 10px;text-align: center;line-height: 16px;background: #fff;}
+    .beverage ul>li>span:nth-child(2),.coffee_wrap ul>li>span:nth-child(2){padding-right: 0;padding-left: 10px;}
+    
+    .text>p{padding-top: 10px;padding-bottom: 40px;font-size: 1.2rem;color: #919191;text-transform: capitalize;}
+    .coffee_wrap{width: 100%;border-bottom: 2px solid red;margin-top: 50px;margin-bottom: 50px;}
+    .coffee_wrap:after{content: '';display: block;clear:both;}
+    .coffee_wrap>.coffee_left,.wine_left,.beer>.left{float: left;width: 45%;margin-right: 5%;}
+    .coffee_wrap>.coffee_right,.wine_right,.beer>.right{float: left;width: 50%;}
+    .house_wine{width: 100%; border-bottom:2px solid red;margin-bottom: 50px;}
+    .house_wine:after{content: '';display: block;clear: both;}
+    .beer{width: 100%;margin-bottom: 20px;}
+    
+    .wine_left li{padding: 8px 0px;}
+    .beer li:after{content: '';display: block;clear: both;}
+    .coffee_wrap li:after{content: '';display: block;clear: both;}
+    .beverage li:after{content: '';display: block;clear: both;}
+    .ricotta_wrap li:nth-last-child(2n){width: 100%;height: 100%;background: url(../img/sub_img/bg_dot.png) center;background-repeat: repeat-x;}
+}
+
+@media all and (min-width:320px) and (max-width:767px){
+/*beverage*/
+    .menu_con,.coffee_wrapper{width: 100%;height: 100%;padding-top: 50px;padding-left: 5%;padding-right: 5%;}
+    .beverage>h3,.coffee_wrapper>h3,.house_wine>h3,.beer>h3{font-size: 3rem;line-height: 26px;font-weight: normal;text-transform: uppercase;margin-bottom: 20px;}
+    
+    .img_wrap{width: 50%;height:100%;padding-bottom: 1025px; float: right;background:url(../img/sub_img/beverag_img.jpg)no-repeat center;background-size:cover;display: none}
+    .beverage{width:100%;margin-bottom:50px; float: left;border-bottom: 2px solid red;}
+    .beverage>p,.house_wine div>p{text-align: right;font-size: 1.4rem;color: #7b7b7b;padding-bottom: 45px;}
+    
+    
+    .beverage>p>span:first-child{margin-right: 20px;}
+    .house_wine div>p>span:first-child{margin-right:40px;}
+    .house_wine div>p>span:last-child{margin-right:0;}
+    .beverage ul{width: 100%;}
+    
+    .beverage ul>li>strong,.coffee_wrap ul>li>strong,.house_wine ul>li>storong{font-size: 1.6rem;float: left;font-weight: 600;padding: 8px 0px;background: #fff;}
+    .beer ul>li>strong{font-size: 1.6rem;float: left;font-weight: 600;padding: 8px 0px;background: #fff;}
+    .house_wine ul>li>strong{font-size: 1.6rem;font-weight: 600;padding: 8px 0px;background: #fff;}
+    
+    .beverage ul>li>span,.coffee_wrap ul>li>span,.house_wine ul>li>span,.beer ul>li>span{display:inline-block;font-size:  1.4rem;float: right;width:60px;height: 100%; padding-right: 10px;text-align: center;line-height: 16px;background: #fff;}
+    .beverage ul>li>span:nth-child(2),.coffee_wrap ul>li>span:nth-child(2){padding-right: 0;padding-left: 10px;}
+    
+    .text>p{padding-top: 10px;padding-bottom: 40px;font-size: 1.2rem;color: #919191;text-transform: capitalize;}
+    .coffee_wrap{width: 100%;border-bottom: 2px solid red;margin-top: 50px;margin-bottom: 50px;}
+    .coffee_wrap:after{content: '';display: block;clear:both;}
+    .coffee_wrap>.coffee_left,.wine_left,.beer>.left{width:100%;}
+    .coffee_wrap>.coffee_right,.wine_right,.beer>.right{width: 100%;}
+    .house_wine{width: 100%; border-bottom:2px solid red;margin-bottom: 50px;}
+    .house_wine:after{content: '';display: block;clear: both;}
+    .beer{width: 100%;margin-bottom: 20px;}
+    
+    .wine_left li{padding: 8px 0px;}
+    .beer li:after{content: '';display: block;clear: both;}
+    .coffee_wrap li:after{content: '';display: block;clear: both;}
+    .beverage li:after{content: '';display: block;clear: both;}
+    .ricotta_wrap li:nth-last-child(2n){width: 100%;height: 100%;background: url(../img/sub_img/bg_dot.png) center;background-repeat: repeat-x;}    
+}

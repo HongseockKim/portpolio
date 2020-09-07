@@ -1,0 +1,66 @@
+@charset "utf-8";
+html,body{font-size:0.625rem;line-height:1;}
+.inner{width:1230px;margin:0 auto;}
+/*top_con*/
+div.Refrigerator_con{background:url(../images/Refrigerator_img/refrigerator_main.jpg)center center no-repeat;height:660px;position:relative;text-align:center;margin-bottom:100px;}
+div.Refrigerator_con div.text_con{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);padding:20px; width:540px;height:320px;background:rgba(255, 255, 255,0.92);box-sizing:border-box;}
+div.Refrigerator_con div.text_con div.text_wrap{border:1px solid #111;height:100%;position:relative;}
+div.Refrigerator_con div.text_con div.text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+div.Refrigerator_con div.text_con div.text p:first-of-type{margin-bottom:30px;font-size:6rem;line-height:1.5em;font-family:'Romanesco', cursive;}
+div.Refrigerator_con div.text_con div.text h2{font-size:5.6rem;margin-bottom:30px;}
+div.Refrigerator_con div.text_con div.text p:last-of-type{font-size:1.3rem;line-height:1.6em;}
+/*main*/
+body.all #refrigerator_list .inner ul.list{margin-bottom:50px;width:100%;height:1200px;overflow: hidden;}
+body.all #refrigerator_list .inner .more{width:160px;height:50px;margin:0 auto;border:1px solid #000;}
+body.all #refrigerator_list .inner .more>a{position:relative;display:block;padding-left:50px;width:100%;height:100%;line-height:50px;font-size:1.6rem;}
+body.all #refrigerator_list .inner .more>a::after{content:'+';position:absolute;top:43%;right:30px;transform:translateY(-50%);font-size:3rem;}
+#main{display:block;}
+/*refrigerator*/
+#refrigerator_list{padding:60px 0 100px 0;}
+#refrigerator_list div.select_con{margin-bottom:10px;}
+#refrigerator_list div.select_con > select{width:300px;height:35px;font-size:1.5rem;border:1px solid rgba(204, 204, 204,0.5);}
+#refrigerator_list .inner ul.list > .big_box{width:615px;height:800px;border-left:1px solid #ccc;border-top:1px solid #ccc;}
+#refrigerator_list .inner ul.list > .big_box img{width:100%;height:573px;}
+#refrigerator_list .inner ul.list > .small_box{width:calc(615px / 2);height:400px;box-sizing:border-box;}
+#refrigerator_list .inner ul.list > .small_box  img{width:100%;height:266px;box-sizing:border-box;}
+#refrigerator_list .inner ul.list > li{float:left;text-align:center;border-bottom:1px solid #ccc;border-right:1px solid #ccc;}
+#refrigerator_list .inner ul.list > li:nth-child(2){border-top:1px solid #ccc;}
+#refrigerator_list .inner ul.list > li:nth-child(3){border-right:1px solid #ccc;border-top:1px solid #ccc;}
+#refrigerator_list .inner ul.list > li:nth-child(5){border-right:1px solid #ccc;}
+#refrigerator_list .inner ul.list > li:nth-child(4n+5){border-right:1px solid #ccc;}
+#refrigerator_list .inner ul.list > li:nth-child(4n+6){border-left:1px solid #ccc;}
+#refrigerator_list .inner ul.list > li>a{display:block;width:100%;height:100%;position:relative;}
+#refrigerator_list .inner ul.list > li>a .circle_line{position:absolute;top:30px;left:30px;width:60px;height:60px;border:3px solid #000;border-radius:50%;}
+#refrigerator_list .inner ul.list > li>a .circle_line i.circle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:1.5rem;line-height:50px;text-align:center;box-sizing:border-box;}
+#refrigerator_list .inner ul.list > li>a .sold_out{position:absolute;top:30px;left:30px;width:65px;height:65px;border:5px solid #ccc;border-radius:50%;box-sizing:border-box;background:#fff;}
+#refrigerator_list .inner ul.list > li>a .reserva{position:absolute;top:30px;left:30px;width:60px;height:60px;border-radius:50%;background:#444;}
+#refrigerator_list .inner ul.list > li>a .reserva>span{color:#fff;font-size:1.5rem;text-align:center;line-height:40px;font-weight:bold;}
+#refrigerator_list .inner ul.list > li>a.one .sold_out{left:100px;}
+#refrigerator_list .inner ul.list > li>a .sold_out .con{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:50px;height:50px;border-radius:50%;background:#ccc;}
+#refrigerator_list .inner ul.list > li>a .sold_out .con span{position:absolute;top:30%;left:48%;transform:translate(-50%,-50%);color:#fff;font-size:1.6rem;font-weight:bold;font-style:italic;letter-spacing:1.5px;}
+#refrigerator_list .inner ul.list > li>a span{display:block;color:#999;}
+#refrigerator_list .inner ul.list > li > a span{font-size:1.3rem;margin:10px 0 30px 0;} 
+#refrigerator_list .inner ul.list > li> a em{font-size:1.3rem;line-height:1.5em;}
+#refrigerator_list .inner ul.list > li.big_box > a strong{display:block;margin-top:20px;font-size:2.8rem;} 
+#refrigerator_list .inner ul.list > li.small_box > a strong{display:block;margin-top:20px;font-size:1.7rem;} 
+/*smeg_review*/
+#smeg_review{background:#f7f7f7;text-align:center;padding:100px 0;}
+#smeg_review .inner{position:relative;}
+#smeg_review .inner h2{font-size:2.8rem;line-height:1.5em;margin-bottom:50px;font-weight:500;}
+#smeg_review .inner .slider_wrap{width:1230px;height:210px;position:relative;overflow:hidden;}
+#smeg_review .inner .slider{height:210px;position:absolute;top:0;left:0;transition:all 0.5s;}
+#smeg_review .inner .slider li{float:left;width:1230px;height:210px;}
+#smeg_review .inner .slider li .wrap{float:left;width:calc(1230px / 2);height:100%;}
+#smeg_review .inner .slider li .wrap>a{display:inline-block;width:50%;height:100%;}
+#smeg_review .inner .slider li .wrap>a>img{width:100%;height:auto;}
+#smeg_review .inner .slider li .wrap>.text{width:50%;height:100%;float:left;background:#fff;padding:30px;overflow:hidden;}
+#smeg_review .inner .slider li .wrap>.text p{font-size:1.7rem;line-height:1.3em;color:#222;margin-bottom:20px;font-weight:  bold;letter-spacing:-1px;}
+#smeg_review .inner .slider li .wrap>.text span{display:block;font-size:1.3rem;line-height:1.5em;color:#aaa;position:relative;margin-bottom:40px;}
+#smeg_review .inner .slider li .wrap>.text span:after{content:'';display:block;width:20px;height:1px;background:#aaa;position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);}
+#smeg_review .inner .slider li .wrap>.text em{display:block;margin-top:30px;height:35px;font-size:1.3rem;line-height:1.4em;color:#777;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+#smeg_review .inner .btn_con{position:absolute;bottom:100px;left:0;width:100%;}
+#smeg_review .inner .btn_con a{position:absolute;top:50%;transform:translateY(-50%);width:26px;height:20px;}
+#smeg_review .inner .btn_con a:first-of-type{left:-100px;background:url(../images/Refrigerator_img/arrow-prev-ico.png)center center no-repeat;background-size:cover;}
+#smeg_review .inner .btn_con a:last-of-type{right:-100px;background:url(../images/Refrigerator_img/arrow-next-ico.png)center center no-repeat;background-size:cover;}
+#smeg_review .inner .btn_con a.prevent:first-of-type{background:url(../images/Refrigerator_img/arrow-prev-disabled.png)center center no-repeat;}
+#smeg_review .inner .btn_con a.prevent:last-of-type{background:url(../images/Refrigerator_img/arrow-next-disabled-ico.png)center center no-repeat;}

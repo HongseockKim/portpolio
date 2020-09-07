@@ -4,5 +4,8 @@
 [0908/002910.715:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0908/003737.766:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0908/010606.595:ERROR:crash_report_database_win.cc(469)] failed to stat report
+<<<<<<< HEAD
 [0908/010902.715:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0908/011151.411:ERROR:crash_report_database_win.cc(469)] failed to stat report
+=======
+>>>>>>> 75c37b036e052c47b9e0f581fd8630d93a249d3d

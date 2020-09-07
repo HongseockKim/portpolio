@@ -1,5 +1,5 @@
 @charset "utf-8";
-body{font-family: 'Noto Sans KR', sans-serif;font-size:16px;line-height:1;background:blue;}
+body{font-family: 'Noto Sans KR', sans-serif;font-size:16px;line-height:1;background:#000;}
 .wrap{position:relative;overflow-x: hidden;}
 .heder_top{position: absolute;top:0;left:0;padding:0px 50px;width:100%;height:50px;box-sizing:border-box;z-index:99;}
 .inner{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;height:100%; margin:0 auto;}

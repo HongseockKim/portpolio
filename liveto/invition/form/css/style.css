@@ -14,7 +14,7 @@ body{background:url(../img/bg_04.png)no-repeat;position:relative;height:100vh;fo
 .form_wrap .info .btn{margin-bottom:15px;width:100%;height:50px;font-size:20px;font-weight:600;line-height:50px;border-bottom:1px solid #7e7e7e; box-sizing:border-box;outline:none;cursor:default;}
 .form_wrap .info .btn .icon{display:none;}
 .form_wrap .info li{word-break:keep-all;}
-.form_wrap .info .btn:hover{background:#e2e2e2;color:#2d6ce0;}
+/* .form_wrap .info .btn:hover{background:#e2e2e2;color:#2d6ce0;} */
 
 .text_mark{color:#2d6ce0;font-weight:bold;}
 /* table th:nth-child(1){background:url(../../대한정형외과/invition/img/bg_04.png)no-repeat;background-size:150px;} */

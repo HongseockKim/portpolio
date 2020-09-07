@@ -17,25 +17,36 @@ body{font-family: 'Noto Sans KR', sans-serif;font-size:16px;line-height:1;}
 .content_wrap{padding-top:50px;position:relative;height:100vh;box-sizing:border-box;}
 .moving_wrap{position:absolute;top:50px;left:0;width:100vw;height:calc(100% - 50px);}
 .content_wrap section{position:absolute;left:0;top:0px;min-width:100vw;height:100vh;overflow-x:hidden;}
-.content_wrap section:nth-child(1){background:#000;}
-.content_wrap section:nth-child(1) h2{width:150px;height:30px;background:#fff; margin:50px auto; font-size:24px;line-height:30px;border-radius:25px; color:rgb(161, 4, 4);text-align:center;}
-.content_wrap section:nth-child(1) .box_1{position:relative; height:300px;background:radial-gradient( rgb(160, 160, 160) 20%,#000 70%);}
-.content_wrap section:nth-child(1) .box_1 iframe{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%); box-shadow:0px 10px 20px #000;}
+
+.content_wrap section{background:#000;}
+.content_wrap section:nth-child(1) .slider_wrap{position:relative;width:100%;height:350px;}
+.content_wrap section:nth-child(1) .slider_wrap .slider{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to left,#000000 30%,#292929 );}
+.content_wrap section:nth-child(1) .slider_wrap .slider li{position:absolute;top:0;;left:0;width:100%;height:100%;font-size:50px;text-align:center;line-height:350px;color:#fff;display:none;}
+.content_wrap section:nth-child(1) .slider_wrap .slider li:nth-child(1){display:block;}
+
+
 
 
 
 .content_wrap section:nth-child(2){background:#000;}
-.content_wrap section:nth-child(2) .list_wrap{position:relative; width:800px;box-sizing:border-box;margin:0 auto;}
-.content_wrap section:nth-child(2) .list_wrap:after{content:'';display:block;clear: both;}
-.content_wrap section:nth-child(2) .list_wrap:before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:2px;height:100%;background:#fff;}
-.content_wrap section:nth-child(2) .list_wrap li{float:left;margin-bottom:100px;padding:0 30px;width:50.2%;height:60px;border:3px solid #fff;border-radius:15px;line-height:57px;box-sizing:border-box;color:#fff;}
-.content_wrap section:nth-child(2) .list_wrap li:nth-child(2n){float:right;animation-name:slow ;animation-iteration-count: infinite;animation-direction: alternate-reverse;animation-duration:6s;}
-.content_wrap section:nth-child(2) .list_wrap li:nth-child(1){float:right;animation-name:slow_2 ;animation-iteration-count: infinite;animation-direction: alternate-reverse;animation-duration:6s;}
-.content_wrap section:nth-child(2) .list_wrap li:nth-child(3){float:right;animation-name:slow_2 ;animation-iteration-count: infinite;animation-direction: alternate-reverse;animation-duration:6s;}
+.content_wrap section:nth-child(2) h2{width:150px;height:30px;background:#fff; margin:50px auto; font-size:24px;line-height:30px;border-radius:25px; color:rgb(161, 4, 4);text-align:center;}
+.content_wrap section:nth-child(2) .box_1{position:relative; height:300px;background:radial-gradient( rgb(160, 160, 160) 20%,#000 70%);}
+.content_wrap section:nth-child(2) .box_1 iframe{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%); box-shadow:0px 10px 20px #000;}
 
 
 
-.content_wrap section:nth-child(3){background:yellow;}
+.content_wrap section:nth-child(3){background:#000;}
+.content_wrap section:nth-child(3) .list_wrap{position:relative; width:800px;box-sizing:border-box;margin:0 auto;}
+.content_wrap section:nth-child(3) .list_wrap:after{content:'';display:block;clear: both;}
+.content_wrap section:nth-child(3) .list_wrap:before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:2px;height:100%;background:#fff;}
+.content_wrap section:nth-child(3) .list_wrap li{float:left;margin-bottom:100px;padding:0 30px;width:50.2%;height:60px;border:3px solid #fff;border-radius:15px;line-height:57px;box-sizing:border-box;color:#fff;}
+.content_wrap section:nth-child(3) .list_wrap li:nth-child(2n){float:right;animation-name:slow ;animation-iteration-count: infinite;animation-direction: alternate-reverse;animation-duration:6s;}
+.content_wrap section:nth-child(3) .list_wrap li:nth-child(1){float:right;animation-name:slow_2 ;animation-iteration-count: infinite;animation-direction: alternate-reverse;animation-duration:6s;}
+.content_wrap section:nth-child(3) .list_wrap li:nth-child(3){float:right;animation-name:slow_2 ;animation-iteration-count: infinite;animation-direction: alternate-reverse;animation-duration:6s;}
+
+
+
+.content_wrap section:nth-child(4){background:yellow;}
 @keyframes motion{
     0%{top:40%;}
     100%{top:60%;}

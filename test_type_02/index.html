@@ -12,7 +12,7 @@
 <body>
     <div class="wrap">
         <header class="heder_top">
-            <h1 class="logo">LIVE<span class="text_mark">to</span>.com</h1>
+            <h1 class="logo"><a href="index.html">LIVE<span class="text_mark">to</span>.com</a></h1>
             <nav class="lnb">
                 <ul>
                     <li><a href="#">온에어</a><img src="img/on-air-icon-9.png" alt=""></li>
@@ -23,6 +23,17 @@
         </header>
         <div class="content_wrap">
             <div class="moving_wrap">
+                <section>
+                    <div class="inner">
+                        <div class="slider_wrap">
+                            <ul class="slider">
+                                <li><a href="#">방송 중계</a></li>
+                                <li><a href="#">홈페이지 제작</a></li>
+                                <li><a href="#">Live 생방송</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
                 <section>
                     <div class="inner">
                         <h2>ON AIR !</h2>
@@ -56,10 +67,25 @@
     });
     $('.lnb li a').on('click',function(e){
         e.preventDefault();
-        var idx = $('.lnb li').index($(this).parent());
+        var idx = $('.lnb li').index($(this).parent())+1;
         var offset = $('section').eq(idx).position().left;
         console.log(idx+'/'+offset);
         $('.moving_wrap').stop(true).animate({'left':idx * -100+'vw'},250);
     });
+    var slide = $('.slider_wrap li');
+    var slideCount = $('.slider_wrap li').length;
+    var slideNow = 0;
+    console.log(slideCount);
+    setInterval(function(n){
+        n = slideNow;
+        slideNow = slideNow +1;
+        $('.slider_wrap li').css({'display':'none'});
+        $('.slider li').eq(slideNow-1).css({'display':'block'});
+        if( slideNow > slideCount-1){
+            slideNow = 0;
+        }
+        console.log(slideNow);
+    },2200);
+    
 </script>
 </html>

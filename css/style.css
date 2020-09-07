@@ -1,2 +1,14 @@
 @charset "utf-8";
 body{font-family: 'Noto Serif KR', serif;}
+.clearfix::after{content:'';display:block;clear: both;}
+.wrap{position:relative;}
+.inner{width:1200px;margin:0 auto;}
+.header_top{position:relative;padding:150px 0px;width:100%;background:linear-gradient(to left,#0654e6,rgb(84, 158, 255))}
+.header_top .inner{position:absolute;top:0;left:50%;transform:translateX(-50%);}
+.logo{float:left;}
+nav{float:right;}
+nav .lnb{float:left;}
+nav .lnb li{float:left;margin-left:20px;}
+nav .lnb li a{font-size:18px;font-weight:bold;text-align:center;line-height:50px;color:#fff;text-transform:capitalize;}
+/*main*/
+.main{display:block;}

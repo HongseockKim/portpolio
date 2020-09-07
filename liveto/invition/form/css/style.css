@@ -39,7 +39,7 @@ footer p{font-size:12px;color:#8a8a8a;}
     .info{height:50px;overflow:hidden;}
     .info:nth-child(2){margin-bottom:15%;}
     .form_wrap .info .btn .icon{display:inline-block;margin-left:15px;}
-    .form_wrap .info .btn{background:#2d6ce0;color:#fff;border:none;border-radius:25px;transition:all 0.3s;}
+    .form_wrap .info .btn{background:#2d6ce0;color:#fff;border:none;border-radius:25px;transition:all 0.3s;cursor: pointer;}
     .form_wrap .info.open{height:185px;}
     .form_wrap .info.open .btn{border-radius:25px 25px 0px 0px;}
     .form_wrap .info.open .btn .icon.icon_drop_arrow{background-position-y:-100px;}

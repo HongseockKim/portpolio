@@ -1,0 +1,225 @@
+<html><head>
+<title>e-Symposium</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="wrap">
+        <div class="inner">
+            <!-- <header>
+				<img alt="메인배너" src="img/content_menu.png">
+		    </header>	 -->
+            <div class="menu">
+                <p class="notice">
+                    <input class="name" type="text" size="8" value="test"> 님 환영합니다.<br>데스크탑이나 모바일 중 접속한 기기의 환경을 선택해주세요. 
+                </p>
+                <a class="btn_desktop" onclick="pop_open3(); return false" href="#">
+                    <span class="selector">Chrome</span>
+                </a>
+                <a class="btn_android" onclick="pop_live(); return false;" href="#">
+                    <span class="selector">explore</span>				
+                </a>
+                <a class="btn_ios" onclick="pop_open5(); return false;" href="#">
+                    <span class="selector">Mobile</span>
+                </a>
+            </div>
+            <!-- <div id="foot">
+                <img src="img/footer_index.png">
+            </div> -->
+        </div>
+	</div>
+	<input name="PopupYN" id="PopupYN" type="hidden">
+	<input name="gubun" id="gubun" type="hidden">
+	<input name="mobile_gubun" id="mobile_gubun" type="hidden">
+</body>
+<script language="javascript">
+    function pop_open3(){
+        $("#gubun").val("L");
+        $("#mobile_gubun").val("PC");        
+        pop_open2();
+        go_log();
+        
+      }
+      
+       function pop_open4(){
+        $("#gubun").val("L");
+        $("#mobile_gubun").val("ios");        
+        go_log();
+        
+      }
+      
+      
+       function pop_open5(){
+        $("#gubun").val("L");
+        $("#mobile_gubun").val("Android");     
+        pop_open2();
+        go_log();
+        
+      }
+    
+        function pop_open() {
+            // 시간설정 이시간이후에 설문조사가 뜨게 원하는 시간 
+            // 아래 포맷을 정확하게 지켜주세요 2016-00-00 00:00:00
+            //var defaultTime = "2016-01-15 23:00:00";
+        var defaultTime = "2016-03-16 13:30:00";
+            var PopupOpenYN
+            getTime(defaultTime);
+            //alert($("#PopupYN").val());
+            PopupOpenYN = $("#PopupYN").val();
+            if (PopupOpenYN == "Y") {
+                alert(" 종료 하시겠습니까?\n 확인 버튼을 누르시면  심포지엄 관련 설문조사가 \n 있사오니, 선생님의 소중한 의견 부탁드립니다.");
+                uurl = "/NS/survey_001.asp?code=";
+                window.open(uurl, "survey", "width=824,height=762,scrollbars=yes");
+            } else {
+                alert(defaultTime + " 시간 이후에 설문조사를 하실수 있습니다.");
+                return;
+            }
+        }
+        
+     //추가 시작
+    
+    function pop_live (){
+      
+      $("#gubun").val("L");
+      $("#mobile_gubun").val("PC"); 
+      uurl="live.asp?bbs_key=254&mode=Real&gubun=&Lng=";
+      window.open(uurl, 'Realpage', 'width=980, height=630,scrollbars=yes');
+       go_log();
+      }
+        
+      function pop_open2(){	
+    
+        
+        uurl="/livem.asp?bbs_key=254&mode=Real&gubun=&Lng=";
+        
+        window.open(uurl, 'Realpage', 'width=980, height=630,scrollbars=yes');
+    }
+    function go_log_out() {
+        var mem_id = '01064047728';
+        var gubun = "O"
+        var mobile_gubun =$("#mobile_gubun").val();
+        var Lng ='';
+       
+        jQuery.ajax({
+            type: "post",
+            async: true,
+            url: "/log_ok.asp",
+            datatype: "html",
+            timeout: 30000,
+            cache: false,
+            async: false,
+            data: {
+                mem_id : mem_id,
+                gubun  : gubun,
+                mobile_gubun : mobile_gubun,
+                Lng : Lng
+            }, //$("#dat_form").serialize(),
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            error: function (r) {
+                alert("Something went wrong. Please try again. ");
+            },
+            success: function (r) {
+                //통신 성공시 처리 
+               // $("#gubun").val("");
+               // $("#mobile_gubun").val("");             
+               // go_Agenda2(gubun)
+            }
+    
+        })
+    }	
+    function go_m_logout(event_day) {
+            //alert(event_day);
+            var mem_id = '01064047728';
+            var gubun = 'M';
+            var mobile_gubun = $("#mobile_gubun").val();
+            jQuery.ajax({
+                type: "post",
+                async: true,
+                url: "/log_ok.asp",
+                datatype: "html",
+                timeout: 30000,
+                cache: false,
+                async: false,
+                data: {
+                    mem_id: mem_id,
+                    gubun: gubun,
+                    event_day:event_day,
+                    mobile_gubun : mobile_gubun
+                }, //$("#dat_form").serialize(),
+                //contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                //error: function (r) {
+                //    alert("문제가 발생하였습니다.  다시한번 시도 해 주세요 ");
+               // },
+                success: function (r) {
+                    //통신 성공시 처리               
+                    //go_Agenda2(gubun)
+                }
+    
+            })
+    
+        }
+    
+    //추가 끝
+    function getTime(valTime) {
+    
+        jQuery.ajax({
+            type: "post",
+            async: false,
+            url: "/getTime.asp",
+            datatype: "text",
+            timeout: 30000,
+            cache: false,
+            data: { dtTime: valTime }, //$("#dat_form").serialize(),
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            error: function (r) {
+                //통신 에러 발생시 처리
+                alert(r);
+            },
+            success: function (r) {
+                //통신 성공시 처리
+                $("#PopupYN").val(r);
+            }
+    
+        });
+    
+    }
+    function go_log() {
+       
+        var mem_id = '01064047728';
+        var gubun = $("#gubun").val();
+        var mobile_gubun =$("#mobile_gubun").val();
+        if(gubun==""){
+            gubun ="O";
+        }
+        jQuery.ajax({
+            type: "post",
+            async: true,
+            url: "/log_ok.asp",
+            datatype: "html",
+            timeout: 30000,
+            cache: false,
+            async: false,
+            data: {
+                mem_id : mem_id,
+                gubun  : gubun,
+                mobile_gubun : mobile_gubun
+            }, //$("#dat_form").serialize(),
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            error: function (r) {
+                alert("Something went wrong. Please try again. ");
+            },
+            success: function (r) {
+                //통신 성공시 처리 
+               
+            }
+    
+        })
+    
+    }
+    </script>
+</html>

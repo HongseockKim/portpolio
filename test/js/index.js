@@ -20,7 +20,8 @@ $(document).ready(function () {
     var noteNow = 0;
     var noteNext = 0;
     var notePrev = 0;
-    slideShow(4);
+    slideShow(5);
+    
     $('.wrapper .con').each(function (i) {
         $(this).css({
             'left': (i * 90) + '%'

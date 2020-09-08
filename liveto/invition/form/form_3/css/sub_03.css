@@ -1,0 +1,22 @@
+@charset "utf-8";
+body{font-family: 'Noto Sans KR', sans-serif;background:url(../img/bg_04.png)no-repeat;}
+.inner{max-width:900px;margin:0 auto;text-align:center;}
+.header_top img{width:100%;}
+.login_form{margin:50px 0px;}
+.btn_symposium{display:inline-block;margin-right:50px;width:180px;height:50px;font-size:18px;line-height:50px;color:#fff; background:#2d6ce0;border-radius:25px;}
+.btn_symposium:nth-child(2){margin-right:0px;}
+.btn_symposium:hover{background:#fff;color:#2d6ce0;}
+.emph{font-size:14px;text-align:left;color:#7c7c7c;}
+@media screen and (max-width:768px){
+    .btn_symposium{margin-right:5%;width:150px;font-size:16px;}
+    .emph{font-size:12px;}
+    .wrapper{padding:10% 5%;}
+}
+@media screen and (max-width:475px) {
+    body{background-size:70%;}
+    .btn_symposium{width:100%;}
+}
+@media screen and (max-width:300px) {
+    .btn_symposium{font-size:15px;}
+    .emph{font-size:10px;}
+}

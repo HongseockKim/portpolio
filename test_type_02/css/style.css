@@ -1,13 +1,28 @@
 @charset "utf-8";
-body{font-family: 'Noto Sans KR', sans-serif;font-size:16px;line-height:1;background:#000;}
+body{font-family: 'Noto Sans KR', sans-serif;font-size:16px;line-height:1;}
 .wrap{position:relative;}
 .clearfix:after{content:'';display:block;clear: both;}
-.inner{max-width:1200px;margin:0 auto;background:#fff;}
-.headr_top{height:50px;}
-.headr_top .logo{height:100%;line-height:50px;}
+.inner{max-width:1200px;margin:0 auto;}
+.headr_top{padding:10px 0px;height:50px;}
+.headr_top .inner{height:100%;}
+.headr_top .logo{float:left; height:100%;line-height:50px;}
+.headr_top .logo .text_mark{color:#fba00e ;}
+.headr_top nav{float: right;height:100%;}
+.headr_top nav ul{float: left;height:100%;}
+.headr_top nav ul li{float:left;height:100%;}
+.headr_top nav ul li a{display:block;padding:0px 30px;height:100%;line-height:50px;font-size:20px;font-weight:600;}
 
-.contetn_wrap{padding:20px;}
-.left_con{float:left;padding:30px;width:calc(100% /2);height:800px;border-top:5px solid #ccc;border-right:5px solid #ccc;box-sizing:border-box;}
+/* .contetn_wrap{padding:20px;} */
+.main_visual{margin:0px 0px 100px 0px;padding:150px 0px;background:linear-gradient(to right,#4b68ba ,#a181bd)}
+.main_visual .inner{position:relative;}
+.main_visual .emph{position:relative; margin-left:20px;font-size:70px;font-weight:700;text-transform:capitalize;}
+.main_visual .emph:after{content:'';position:absolute;left:3px;bottom:10px; width:94%;height:4px;background:#ffd92d;}
+.main_visual h2{margin-bottom:30px; font-size:26px;color:#fff;}
+.main_visual p{font-size:20px;color:#fff;}
+.left_con{float:left;padding:30px;width:calc(100% /2);height:800px;border-top:5px solid #ccc;border-right:5px solid #ccc;box-sizing:border-box;background:#fdc21d;}
+
+.left_con h2{margin-bottom:30px;text-transform:capitalize;}
+
 
 .con_2{float:left;padding:30px; width:calc(100% / 2);height:200px;border-bottom:2px solid #ccc;box-sizing:border-box;}
 .con_2 h2{font-size:20px;color:#fdc21d;}
@@ -17,3 +32,8 @@ body{font-family: 'Noto Sans KR', sans-serif;font-size:16px;line-height:1;backgr
 .con_3 p{line-height:20px;}
 .con4{float: left;padding:30px;width:calc(100%/4);height:300px;box-sizing:border-box;background:hotpink;}
 .con5{float: left;padding:30px;width:calc(100%/4);height:300px;box-sizing:border-box;background:darkcyan;}
+.con5 h2{margin-bottom:30px;padding-bottom:10px; border-bottom:2px solid #f3e631;}
+@keyframes move{
+    0%{right:200px;}
+    100%{right:0;}
+}

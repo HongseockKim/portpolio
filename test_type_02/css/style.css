@@ -20,23 +20,24 @@ body{font-family: 'Noto Sans KR', sans-serif;font-size:16px;line-height:1;}
 .main_visual .emph:after{content:'';position:absolute;left:3px;bottom:10px; width:94%;height:4px;background:#ffd92d;}
 .main_visual h2{margin-bottom:30px; font-size:26px;color:#fff;}
 .main_visual p{font-size:20px;color:#fff;}
-.left_con{float:left;padding:30px;width:calc(100% /2);height:800px;border-top:5px solid #ccc;border-right:5px solid #ccc;box-sizing:border-box;background:#fdc21d;}
-.left_con .image_slider{position:relative; width:400px;height:300px;}
+.left_con{float:left;padding:30px 30px 30px 0px;width:calc(100% /2);height:800px;border-top:5px solid #ccc;border-right:5px solid #ccc;box-sizing:border-box;}
+.left_con .image_slider{position:relative;margin-bottom:50px;  width:400px;height:300px;}
 .image_slider ul{position:absolute;top:0;left:0;width:100%;height:100%;}
 .image_slider ul li{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;}
 .image_slider ul li:nth-child(1){display:block;}
 .image_slider ul li img{width:100%;height:100%;}
-.left_con h2{margin-bottom:30px;text-transform:capitalize;}
+.left_con h2{margin-bottom:30px;text-transform:capitalize;font-size:35px;}
+.left_con p{font-size:18px;line-height:30px;}
 
 
-.con_2{float:left;padding:30px; width:calc(100% / 2);height:200px;border-bottom:2px solid #ccc;box-sizing:border-box;}
+.con_2{float:left;padding:30px; width:calc(100% / 2);height:200px; border-right:2px solid #ccc; box-sizing:border-box;}
 .con_2 h2{font-size:20px;color:#fdc21d;}
 .con_2 p{margin-top:20px;}
-.con_3{float:left;padding:30px;width:calc(100%/4);height:600px;box-sizing:border-box;background:pink;}
+.con_3{float:left;padding:30px;width:calc(100%/4);height:600px;border-top:3px solid #ccc;border-right:3px solid #ccc;  box-sizing:border-box;}
 .con_3 h2{margin-bottom:40px;font-size:40px; color:#dd3535;text-transform:capitalize;}
 .con_3 p{line-height:20px;}
-.con4{float: left;padding:30px;width:calc(100%/4);height:300px;box-sizing:border-box;background:hotpink;}
-.con5{float: left;padding:30px;width:calc(100%/4);height:300px;box-sizing:border-box;background:darkcyan;}
+.con4{float: left;padding:30px;width:calc(100%/4);height:300px;box-sizing:border-box;}
+.con5{float: left;padding:30px;width:calc(100%/4);height:300px;border-top:1px solid #ccc;border-right:1px solid #ccc;  box-sizing:border-box;}
 .con5 h2{margin-bottom:30px;padding-bottom:10px; border-bottom:2px solid #f3e631;}
 @keyframes move{
     0%{right:200px;}

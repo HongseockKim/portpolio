@@ -43,7 +43,16 @@
                 <div class="inner clearfix">
                     <div class="left_con">
                         <h2>live broadcasting</h2>
-                        <img src="img/live_1.png" alt="">
+                        <div class="image_slider">
+                            <ul>
+                                <li>
+                                    <img src="img/live_1.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/live_2.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
                         <p>오랜 경험을 통해 쌓은 노하우와 최적의 디지털 미디어 기술을 바탕으로 인터넷 생중계, 교육용 동영상 콘텐츠 제작 등 다양한 사업 분야에서 멀티미디어의 새 지평을 열어가고 있는 국내 최고의 인터넷 방송국입니다.</p>
                     </div>
                     <div class="con_2">
@@ -69,4 +78,27 @@
         </div>
     </div>
 </body>
+<script>
+    var slideCount =$('.image_slider li').length;
+    var slideNow = 0;
+    var slidePrev = 0;
+    var slideNext = 0;
+    var timerid = undefined;
+    fadeSlide(1);
+
+    timerid = setTimeout(function(){fadeSlide(slideNext);},3000);
+    function fadeSlide(n){
+        clearTimeout(timerid);
+        $('.image_slider li').css({'opacity':0,});
+        // $('.image_slider li').eq(slideNow - 1).stop(true).animate({'opacity':0},800,function(){
+        //     $(this).css({'display':'none'});
+        // })
+        $('.image_slider li').eq(slideNow - 1).stop(true).animate({'opacity':0},800);
+        $('.image_slider li').eq(n-1).stop(true).animate({'opacity':1},800);
+        slideNow = n;
+        slidePrev = (n <= 1) ? slideCount : n-1;
+        slideNext = (n >= slideCount) ? 1 : n+1;
+        timerid = setTimeout(function(){fadeSlide(slideNext);},3000);
+    }
+</script>
 </html>

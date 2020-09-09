@@ -11,89 +11,29 @@
 </head>
 <body>
     <div class="wrap">
-        <header class="heder_top">
-            <h1 class="logo"><a href="index.html">LIVE<span class="text_mark">to</span>.com</a></h1>
-            <nav class="lnb">
-                <ul>
-                    <li><a href="#">온에어</a><img src="img/on-air-icon-9.png" alt=""></li>
-                    <li><a href="#">방송일정</a></li>
-                    <li><a href="#">문의사항</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="content_wrap">
-            <div class="moving_wrap">
-                <section>
-                    <div class="inner">
-                        <div class="slider_wrap">
-                            <ul class="slider">
-                                <li><a href="#">방송 중계</a></li>
-                                <li><a href="#">홈페이지 제작</a></li>
-                                <li><a href="#">Live 생방송</a></li>
-                            </ul>
-                        </div>
-                        <div class="contet">
-                            <div class="bg_wrap">
-                                <ul class="service_list">
-                                    <li class="con_1"><a href="#">Info_Desk</a></li>
-                                    <li class="con_1"><a href="#">On_Air</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="inner">
-                        <h2>ON AIR !</h2>
-                        <div class="box_1">
-                            <iframe width="500px" height="300px" src="https://www.youtube.com/embed/S3vc0r8MRt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay></iframe>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="inner">
-                            <ul class="list_wrap">
-                                <li>19:00  서울 나들이</li>
-                                <li>22:00  서울 태풍 속보</li>
-                                <li>24:00  대한정형외과의사회</li>
-                                <li>02:00 아젠다 학술</li>
-                            </ul>
-                    </div>
-                </section>
-                <section>
-                    <div class="inner">
-                        <h2>문의사항</h2>
-                    </div>
-                </section>
+        <header class="headr_top">
+            <div class="inner">
+                <h1 class="logo"><a href="#">logo</a></h1>
             </div>
+        </header>
+        <div class="contetn_wrap">
+            <section>
+                <div class="inner clearfix">
+                    <div class="left_con">
+                        <h2>liveTo.com</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi adipisci, fugit in beatae autem dolorem eius laudantium quae velit sint error a inventore hic. Inventore cumque velit molestiae eveniet mollitia?</p>
+                    </div>
+                    <div class="con_2">
+                        <h2>ON AIR</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, quos!</p>
+                    </div>
+                    <div class="con_3">
+                        <h2>live</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum reiciendis nostrum deleniti non voluptatum repudiandae laboriosam commodi dolor saepe quibusdam?</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </body>
-<script>
-    $('section').each(function(i){
-        $(this).css({'left':i*100+'vw'})
-    });
-    $('.lnb li a').on('click',function(e){
-        e.preventDefault();
-        var idx = $('.lnb li').index($(this).parent())+1;
-        var offset = $('section').eq(idx).position().left;
-        console.log(idx+'/'+offset);
-        $('.moving_wrap').stop(true).animate({'left':idx * -100+'vw'},250);
-    });
-    var slide = $('.slider_wrap li');
-    var slideCount = $('.slider_wrap li').length;
-    var slideNow = 0;
-    console.log(slideCount);
-    setInterval(function(n){
-        n = slideNow;
-        slideNow = slideNow +1;
-        $('.slider_wrap li').css({'display':'none'});
-        $('.slider li').eq(slideNow-1).css({'display':'block'});
-        if( slideNow > slideCount-1){
-            slideNow = 0;
-        }
-        console.log(slideNow);
-    },2200);
-    
-</script>
 </html>

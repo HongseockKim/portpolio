@@ -30,7 +30,7 @@ body{font-family: 'Noto Sans KR', sans-serif;font-size:16px;line-height:1;}
 .left_con p{font-size:18px;line-height:30px;}
 
 
-.con_2{float:left;padding:30px; width:calc(100% / 2);height:200px; border-right:2px solid #ccc; box-sizing:border-box;}
+.con_2{float:left;padding:30px; width:calc(100% / 2);height:200px; box-sizing:border-box;}
 .con_2 h2{font-size:20px;color:#fdc21d;}
 .con_2 p{margin-top:20px;}
 .con_3{float:left;padding:30px;width:calc(100%/4);height:600px;border-top:3px solid #ccc;border-right:3px solid #ccc;  box-sizing:border-box;}
@@ -39,6 +39,8 @@ body{font-family: 'Noto Sans KR', sans-serif;font-size:16px;line-height:1;}
 .con4{float: left;padding:30px;width:calc(100%/4);height:300px;box-sizing:border-box;}
 .con5{float: left;padding:30px;width:calc(100%/4);height:300px;border-top:1px solid #ccc;border-right:1px solid #ccc;  box-sizing:border-box;}
 .con5 h2{margin-bottom:30px;padding-bottom:10px; border-bottom:2px solid #f3e631;}
+
+footer{padding:50px 0px;}
 @keyframes move{
     0%{right:200px;}
     100%{right:0;}

@@ -1,0 +1,19 @@
+body {
+    /* background:red; */
+}
+
+.menu_wrap {
+    background:#e2e2e2;
+    padding-top:30px;
+}
+
+.wrap {
+    margin: 0 auto;
+}
+    .wrap .menu_wrap {
+        text-align:center;
+    }
+    .wrap .menu_wrap .title {
+        font-size: 20px;
+        padding-top:20px;
+    }

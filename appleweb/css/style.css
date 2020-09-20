@@ -1,0 +1,47 @@
+@charset "utf-8";
+html,body{font-family: 'Noto Sans KR', sans-serif;font-size:14px;}
+body{overflow-x:hidden;color:#1d1d1f;letter-spacing:-0.05em;background:#fff;}
+p{line-height:1.6em;}
+header{position:absolute;top:0;left:0;width:100%;}
+.gnb{height:44px;padding:0 1rem;}
+.link_list,.local_link{display:flex; max-width:1000px;height:100%; margin:0 auto;align-items:center;}
+.link_list{justify-content:space-between;}
+.local_nav{padding:0 1rem; height:52px;border-bottom:1px solid #ddd;}
+.local_link li:not(.title_link) {margin-left:2em;}
+.local_link a{font-size:0.8rem;}
+.title_link{margin-right:auto;}
+.title_link a{font-size:1.4rem;font-weight:700;}
+/*                                             */
+.scroll_section{padding-top:50vh;}
+#scroll_1 h1{font-size:4rem;text-align:center;}
+.main_message{display:flex;align-items:center;justify-content:center;margin:5px 0;height:3em;font-size:2.5rem;}
+.main_message p{line-height:1.2em;font-weight:700;text-align:center;}
+/*                                                                */
+.description{padding:0 1rem;max-width:1000px;margin:0 auto;font-size:1.2rem;color: #888;}
+.description strong{float:left;margin-right:0.2em;line-height:1;font-size:3rem;color:#1d1d1f;}
+.main_message small{display:block;margin-bottom:0.5em;font-size:1.2rem;}
+#scroll_3 .main_message{font-size:3.5rem;}
+.desc_message{width:50%;font-weight:700;}
+.pin{width:1px;height:100px;background:#1d1d1f;}
+.mid_massage{padding:0 1rem;max-width:1000px;margin:0 auto;font-size:2rem;color:#888;}
+.mid_massage strong{color:#1d1d1f;}
+.canvers_caption{padding:0 1rem;max-width:1000px;marign:0 auto; color:#888;font-size:1.2rem;}
+/*                                               */
+.footer{display:flex;align-items:center;justify-content:center;height:7rem;background:darkorange;color:#fff}
+.sticky_element{position:fixed;top:0;left:0;display:none; width:100%;}
+#show_scen_1 #scroll_1 .sticky_element,
+#show_scen_2 #scroll_2 .sticky_element,
+#show_scen_3 #scroll_3 .sticky_element,
+#show_scen_4 #scroll_4 .sticky_element{display:block;}
+
+@media (min-width:1024px) {
+    #scroll_1 h1{font-size:9vw;}
+    .main_message{font-size:4vw;}
+    .description{font-size:2rem;}
+    .description strong{font-size:6rem;}
+    #scroll_3 .main_message{font-size:6vw;}
+    .main_message small{font-size:1.5vw;}
+    .desc_message{width:20%;}
+    .mid_massage{font-size:4vw;/*창크기의 4퍼센트*/}
+    .canvers_caption{font-size:2rem;/*상대단위이긴 하지만 고정값*/}
+}

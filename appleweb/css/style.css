@@ -2,6 +2,7 @@
 html,body{font-family: 'Noto Sans KR', sans-serif;font-size:14px;}
 body{overflow-x:hidden;color:#1d1d1f;letter-spacing:-0.05em;background:#fff;}
 p{line-height:1.6em;}
+.wrapper{padding-top:97px}
 header{position:absolute;top:0;left:0;width:100%;}
 .gnb{height:44px;padding:0 1rem;}
 .link_list,.local_link{display:flex; max-width:1000px;height:100%; margin:0 auto;align-items:center;}
@@ -19,20 +20,20 @@ header{position:absolute;top:0;left:0;width:100%;}
 /*                                                                */
 .description{padding:0 1rem;max-width:1000px;margin:0 auto;font-size:1.2rem;color: #888;}
 .description strong{float:left;margin-right:0.2em;line-height:1;font-size:3rem;color:#1d1d1f;}
-.main_message small{display:block;margin-bottom:0.5em;font-size:1.2rem;}
+.main_message small{display:block;top:35vh;margin-bottom:0.5em;font-size:1.2rem;}
 #scroll_3 .main_message{font-size:3.5rem;}
 .desc_message{width:50%;font-weight:700;}
 .pin{width:1px;height:100px;background:#1d1d1f;}
-.mid_massage{padding:0 1rem;max-width:1000px;margin:0 auto;font-size:2rem;color:#888;}
+.mid_massage{padding:0 1rem;max-width:1000px;margin:0 auto;font-size:2rem;color:#888;opacity:0;}
 .mid_massage strong{color:#1d1d1f;}
 .canvers_caption{padding:0 1rem;max-width:1000px;marign:0 auto; color:#888;font-size:1.2rem;}
 /*                                               */
 .footer{display:flex;align-items:center;justify-content:center;height:7rem;background:darkorange;color:#fff}
-.sticky_element{position:fixed;top:0;left:0;display:none; width:100%;}
-#show_scen_1 #scroll_1 .sticky_element,
-#show_scen_2 #scroll_2 .sticky_element,
-#show_scen_3 #scroll_3 .sticky_element,
-#show_scen_4 #scroll_4 .sticky_element{display:block;}
+.sticky_element{position:fixed;left:0;display:none; width:100%;}
+#show_scen_0 #scroll_1 .sticky_element,
+#show_scen_1 #scroll_2 .sticky_element,
+#show_scen_2 #scroll_3 .sticky_element,
+#show_scen_3 #scroll_4 .sticky_element {display:block;}
 
 @media (min-width:1024px) {
     #scroll_1 h1{font-size:9vw;}

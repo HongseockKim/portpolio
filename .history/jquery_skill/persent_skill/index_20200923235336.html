@@ -34,15 +34,13 @@
             var text = $('.progres_con .text');
             var progresBar = $('.progres_con .bar');
             function getPercent(){
-                var scrollHeight = $('.content_1').outerHeight();true
-                var scrollRealHeight = (scrollHeight - $(window).height());
-                // console.log(scrollHeight);
+                var scrollHeight = $('.content_1').Height();
+                var scrollRealHeight = (scrollHeight = $(window).height());
             var winscrollTop = $(window).scrollTop();
             var scrollPercent = (winscrollTop / scrollRealHeight) * 100;
             //백분율 퍼센트를 구할꺼라
             var textPercent = Math.floor(scrollPercent);
             //소수점 버림
-            console.log(textPercent);
             render(textPercent,scrollPercent);
         }
         function render(textPercent,scrollPercent){

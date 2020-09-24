@@ -1,0 +1,6 @@
+@charset "utf-8";
+body{font-size:16px;line-height:1em;}
+.wrap{position:relative; margin:0 auto; max-width:1200px;}
+.header_top{padding-top:15%;height:500px;overflow:hidden}
+.header_top .inner{position:relative;width:1200px;margin:0 auto; height:100%;background:url(../img/bg2.png)no-repeat center center;background-size:cover}
+.header_top .inner h1{position:absolute;top:0%;left:50%;transform:translateX(-50%);}

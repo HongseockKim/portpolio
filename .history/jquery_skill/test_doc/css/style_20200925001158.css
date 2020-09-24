@@ -1,0 +1,5 @@
+@charset "utf-8";
+body{font-size:16px;line-hegith:1;}
+.wrap{margin:0 auto; max-width:1200px;}
+.header_top{padding-top:15%;}
+.header_top img{display:block;width:100%}

@@ -1,0 +1,4 @@
+@charset "utf-8";
+body{font-size:16px;line-height:1em;}
+.wrap{position:relative; margin:0 auto; max-width:1200px;background:pink;}
+h2{margin-bottom:20px; text-align:center;}

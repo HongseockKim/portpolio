@@ -45,9 +45,8 @@
         $(document).ready(function(){
             var text = $('.progres_con .text');
             var progresBar = $('.progres_con .bar');
-
             function getPercent(){
-                var scrollHeight = $(document).outerHeight();
+                var scrollHeight = $('.content_1').outerHeight();
                 var scrollRealHeight = (scrollHeight - $(window).height());
                 console.log(scrollHeight);
             var winscrollTop = $(window).scrollTop();
@@ -56,8 +55,7 @@
             var textPercent = Math.floor(scrollPercent);
             //소수점 버림
             console.log(textPercent);
-            
-            render(textPercent,scrollPercent)
+            render(textPercent,scrollPercent);
         }
         function render(textPercent,scrollPercent){
             text.text(textPercent + '%');

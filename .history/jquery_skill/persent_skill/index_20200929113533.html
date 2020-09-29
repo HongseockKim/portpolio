@@ -45,19 +45,17 @@
         $(document).ready(function(){
             var text = $('.progres_con .text');
             var progresBar = $('.progres_con .bar');
-
             function getPercent(){
-                var scrollHeight = $(document).outerHeight();
+                var scrollHeight = $('.content_1').outerHeight();
                 var scrollRealHeight = (scrollHeight - $(window).height());
-                console.log(scrollHeight);
+                console.log(scrollRealHeight);
             var winscrollTop = $(window).scrollTop();
             var scrollPercent = (winscrollTop / scrollRealHeight) * 100;
             //백분율 퍼센트를 구할꺼라
             var textPercent = Math.floor(scrollPercent);
             //소수점 버림
             console.log(textPercent);
-            
-            render(textPercent,scrollPercent)
+            render(textPercent,scrollPercent);
         }
         function render(textPercent,scrollPercent){
             text.text(textPercent + '%');
@@ -72,6 +70,7 @@
                     //getPercent 를 실행할 함수;
                 }
                 $(window).scroll(function(){
+                    if($(window).scrollTop() > scrollHeight) return false
                     getPercent();
                 })
         init();//초기화

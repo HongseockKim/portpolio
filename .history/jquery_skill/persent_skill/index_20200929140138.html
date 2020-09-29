@@ -90,6 +90,7 @@
             function scrollEvent(){
                 var text = $('.progres_con .text');
             var progresBar = $('.progres_con .bar');
+
             function getPercent(){
                 var scrollHeight = $(document).outerHeight();
                 var scrollRealHeight = (scrollHeight - $(window).height());
@@ -128,10 +129,12 @@
                 var $last = undefined;
                 var slideCount = $('.rolling .rolling_slide').length;
                 var num = 0;
-                $('.rolling li').each(function(i){
+                console.log(slideCount);
+                $('.rolling rolling_slide').each(function(i){
                     $(this).css('left',i * 100+'%');
                     $(this).attr('id',"banner" + (++num));
                 });
+                console.log($('.rolling .rolling_slide'));
                 if(slideCount > 5){
                     last = slideCount;
                     setInterval(function(){
@@ -149,9 +152,6 @@
                         }
                     },20);
                 }
-            };
-            function roofslide(){
-                
             }
             
     });

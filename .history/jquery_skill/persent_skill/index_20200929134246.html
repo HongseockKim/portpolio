@@ -30,47 +30,13 @@
         </section>
         <section class="content_2">
             <div class="rol_slider_wrap">
-                <ul class="slider rolling">
-                    <li class="slide rolling_slide"><a href="javascript:void(0)">안</a></li>
-                    <li class="slide rolling_slide"><a href="javascript:void(0)">녕</a></li>
-                    <li class="slide rolling_slide"><a href="javascript:void(0)">하</a></li>
-                    <li class="slide rolling_slide"><a href="javascript:void(0)">세</a></li>
-                    <li class="slide rolling_slide"><a href="javascript:void(0)">요</a></li>
-                    <li class="slide rolling_slide"><a href="javascript:void(0)">!</a></li>
-                </ul>
-            </div>
-            <div class="rol_slider_wrap">
                 <ul class="slider">
-                    <li class="slide">
-                        <a href="javascript:void(0)">
-                            <img src="/img/Adobe.png" alt="">
-                        </a>
-                    </li>
-                    <li class="slide">
-                        <a href="javascript:void(0)">
-                            <img src="/img/Adobe.png" alt="">
-                        </a>
-                    </li>
-                    <li class="slide">
-                        <a href="javascript:void(0)">
-                            <img src="/img/Adobe.png" alt="">
-                        </a>
-                    </li>
-                    <li class="slide">
-                        <a href="javascript:void(0)">
-                            <img src="/img/Adobe.png" alt="">
-                        </a>
-                    </li>
-                    <li class="slide">
-                        <a href="javascript:void(0)">
-                            <img src="/img/Adobe.png" alt="">
-                        </a>
-                    </li>
-                    <li class="slide">
-                        <a href="javascript:void(0)">
-                            <img src="/img/Adobe.png" alt="">
-                        </a>
-                    </li>
+                    <li class="slide"><a href="">1</a></li>
+                    <li class="slide"><a href="">2</a></li>
+                    <li class="slide"><a href="">3</a></li>
+                    <li class="slide"><a href="">4</a></li>
+                    <li class="slide"><a href="">5</a></li>
+                    <li class="slide"><a href="">6</a></li>
                 </ul>
             </div>
         </section>
@@ -90,6 +56,7 @@
             function scrollEvent(){
                 var text = $('.progres_con .text');
             var progresBar = $('.progres_con .bar');
+
             function getPercent(){
                 var scrollHeight = $(document).outerHeight();
                 var scrollRealHeight = (scrollHeight - $(window).height());
@@ -126,32 +93,35 @@
                 var last = undefined;
                 var $first = undefined;
                 var $last = undefined;
-                var slideCount = $('.rolling .rolling_slide').length;
-                var num = 0;
-                $('.rolling li').each(function(i){
-                    $(this).css('left',i * 100+'%');
-                    $(this).attr('id',"banner" + (++num));
+                var slideCount = 0;
+                var bannerleft = 0;
+
+                $('.slider li').each(function(){
+                    $(this).css('left',bannerleft);
+                    bannerleft += $(this).width() + 800;
+                    $(this).attr('id',"banner" + (++slideCount));
                 });
-                if(slideCount > 5){
+
+                if( slideCount > 5){//배너 5개 이상이면 이동
+
                     last = slideCount;
+                    
                     setInterval(function(){
-                        $('.rolling .rolling_slide').each(function(){
-                            $(this).css('left',$(this).position().left - 3);
+                        $('.slider li').each(function(){
+                            $(this).css('left',$(this).position().left = -1);//1px씩 왼쪽으로 이동
                         });
                         $first = $('#banner' + first);
                         $last = $('#banner' + last);
-                        if($first.position().left < -800){
-                            $first.css('left',$last.position().left + $last.width() + 10);
+
+                        if($first.position().left > -200) {//제일 앞 배너 제일 뒤로 옴김
+                            $first.css('left',$last.position().left + $last.width()+5);
                             first++;
                             last++;
-                            if(last > slideCount) { last = 1;}
-                            if(first > slideCount) { first = 1;}
+                            if(last > slideCount) {last=1;}
+                            if(first > slideCount) {first=1;}
                         }
-                    },20);
+                    },50);
                 }
-            };
-            function roofslide(){
-                
             }
             
     });

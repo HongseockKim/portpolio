@@ -11,5 +11,4 @@
 .content_2 .rol_slider_wrap:nth-child(2){margin-top:100px;}
 .content_2 .rol_slider_wrap .slider{position:absolute;top:0;left:0; width:100%;height:100%;background:pink;}
 .content_2 .rol_slider_wrap .slider>.slide{position:absolute;top:0;left:0;width:100%;height:100%;}
-.content_2 .rol_slider_wrap .slider>.slide img {width:200px;}
 .content_2 .rol_slider_wrap .slider>.slide>a{display:block;width:100%;height:100%;text-align:center;line-height:300px;font-size:60px;}

@@ -15,7 +15,11 @@ $(document).ready(function () {
         }
     });
 
+slideShows();
+    
+});
 
+function slideShows(){
     var noteCount = $('.con').length;
     var noteNow = 0;
     var noteNext = 0;
@@ -45,4 +49,4 @@ $(document).ready(function () {
         noteNext = (n >= noteCount) ? 1 : n + 1;
         notePrev = (n <= 1) ? noteCount : n - 1;
     }
-});
+}

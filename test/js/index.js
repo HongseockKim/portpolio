@@ -42,7 +42,7 @@ $('.tab li>a').on('click',function(n){
     
     $('.wrapper .con').each(function (i) {
         $(this).css({
-            'left': (i * 90) + '%'
+            'left': (i * 100) + '%'
         });
     });
 

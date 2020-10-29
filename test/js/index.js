@@ -47,7 +47,7 @@ $('.tab li>a').on('click',function(n){
     function slideShow(n) {
         $('.moving').css({
             'transition': 'left 0.3s',
-            'left': -((n - 1) * 90) + '%'
+            'left': -((n - 1) * 100) + '%'
         });
         $('.tab li').removeClass('on');
         $('.tab li').eq(n - 1).addClass('on');

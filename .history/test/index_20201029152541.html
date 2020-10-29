@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <title>정리노트</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+
+  <body>
+    <div class="cssnote">
+      <div class="note">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="image_con ir_pm">
+                테스트
+              </div>
+              <p>테스트1</p>
+              <em>테스트1</em>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="image_con ir_pm">
+                테스트
+              </div>
+              <p>테스트2</p>
+              <em>테스트2</em>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="image_con ir_pm test3">
+                테스트
+              </div>
+              <p>테스트3</p>
+              <em>테스트3</em>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="tab">
+      <li><a href="#">javascript</a></li>
+      <li><a href="#">css</a></li>
+      <li><a href="#">html</a></li>
+      <li><a href="#">scss</a></li>
+      <li><a href="#">PhP</a></li>
+      <li><a href="#">SVG</a></li>
+    </ul>
+    <div class="wrapper">
+      <div class="moving">
+        <div class="con java">
+          <section class="js_con">
+            <div id="var"></div>
+            <div id="let"></div>
+            <div id="const">
+              <h2>const 특징</h2>
+              <h3>
+                const 는 한번 할당 하면 값이 절대 바뀌지 않는다<br />
+                값을 선언함과 동시에 값을 절대 변경 할수 없다
+              </h3>
+              <ul>
+                <li>
+                  값을 계속 변경할수 있는것을 mutable 데이타 타입이라고 한다<br />값을
+                  변경할수 없는 걸 Immutable 데이터 타입
+                </li>
+                <li>
+                  const 가 좋은 이유 보안상 이유(해커방지)<br />thread safety
+                  스레드를 세이프티<br />개발자실수방지
+                </li>
+              </ul>
+            </div>
+            <div id="var_data-type">
+              <h2>data types for number</h2>
+              <ul>
+                <li id="texts" class="text">javarscript - let a = 12;</li>
+                <li>Typejavarscript - let a : number = 12;</li>
+              </ul>
+            </div>
+            <div class="array_con">
+              <h2>array 종류</h2>
+              <ul>
+                <li>
+                  <h2>배열을 문자열로 <span>.join</span></h2>
+                  <p>const result = fruits.join();<br />console.log(result);</p>
+                  <p>값 : apple/banana/orange</p>
+                </li>
+                <li>
+                  <h2>문자열을 배열로 <span>.split</span></h2>
+                  <p>
+                    const fruits = '🍎, 🥝, 🍌, 🍒';<br />const result =
+                    fruits.split();<br />console.log(result);
+                  </p>
+                  <p>
+                    const result = fruits.split(',', 2);이렇게 가지고 오고싶은
+                    배열만 가져올수 있음
+                  </p>
+                  <p>값 :  ["🍎", " 🥝"]</p>
+                </li>
+                <li>
+                  <h2>배열을 거꾸로 <span>.reverse</span></h2>
+                  <p>
+                    const array = [1, 2, 3, 4, 5];<br />const result =
+                    array.reverse();<br />console.log(result);
+                  </p>
+                  <p>그치만 배열 자체 를 거꾸로 바꿔어 버림</p>
+                  <p>값 : [5, 4, 3, 2, 1]</p>
+                </li>
+                <li>
+                  <h2>배열 삭제 <span>.splice</span></h2>
+                  <p>
+                    const array = [1, 2, 3, 4, 5];<br />const result =
+                    array.splice(0, 2);<br />console.log(result);<br />console.log(array);
+                  </p>
+                  <p>
+                    값 : 내가 삭제한 배열 [1, 2]<br />삭제되어진 배열[3, 4, 5]
+                  </p>
+                </li>
+                <li>
+                  <h2>배열 삭제 <span>.slice</span></h2>
+                  <p>
+                    const array = [1, 2, 3, 4, 5];<br />const result =
+                    array.slice(0,2);<br />console.log(result);<br />console.log(array);
+                  </p>
+                  <p>slice 는 기존 배열에서 내가 선택한 인덱스만 slice 한다</p>
+                  <p>
+                    값 : 내가 삭제한 배열 [1, 2]<br />기존 배열[1, 2, 3, 4, 5]
+                  </p>
+                </li>
+                <li>
+                  <h2>90점 이상인 학생 찾기 <span>콜백 함수</span></h2>
+                  <img src="img/score.png" alt="" />
+                </li>
+                <li>
+                  <h2>true 인 애만 찾기<span>filter</span></h2>
+                  <p>
+                    const result = students.filter((students) =>
+                    students.enrolled);<br />console.log(result);
+                  </p>
+                </li>
+                <li>
+                  <h2>점수 만 가져오기<span>.map</span></h2>
+                  <p>
+                    const result = students.map((students) => students.score *
+                    2);<br />console.log(result);
+                  </p>
+                  <p>.map(value * 2) 하면 점수에다 곱하기 2한 값이 들어간다</p>
+                </li>
+                <li>
+                  <h2>50점 이하인 애가 있으면<span>.some</span></h2>
+                  <p>모든 배열중 하나라도 조건이 충족되면</p>
+                  <p>배열에서 50점 이하인 애가 있으면 true 없으면 false</p>
+                  <p>
+                    const result = students.some((students) => students.score <
+                    50);<br />console.log(result);
+                  </p>
+                  <p>값 : true</p>
+                </li>
+                <li>
+                  <h2>50점 이하인 애가 한명이라도 있는지<span>.every</span></h2>
+                  <p>모든 배열의 조건이 충족</p>
+                  <p>배열에서 50점 이하인 애가 한명이라도 있으면 fale</p>
+                  <p>
+                    const result = students.every((students) => students.score <
+                    50);<br />console.log(result);
+                  </p>
+                  <p>값 : false</p>
+                </li>
+                <li>
+                  <h2>
+                    50점 이하인 애가 한명이라도 있는지<span>.reduce</span>
+                  </h2>
+                  <img src="img/reduce.png" alt="" width="400" />
+                  <img src="img/reduce2.png" alt="" width="600" />
+                  <p>배열의 score 를 reuce 합산되서 나오는 어렵다...</p>
+                </li>
+                <li>
+                  <h2>차례대로 정렬<span>.sort</span></h2>
+                  <img src="img/sort.png" alt="" width="400" />
+                  <img src="img/sort2.png" alt="" width="600" />
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="con css">
+          <ul>
+            <li>
+              <h3>css 프리픽스 종류</h3>
+            </li>
+            <li>
+              <ul class="freefix">
+                <li>
+                  <img src="img/icon-ie.png" alt="" />
+                  <p>-ms-</p>
+                </li>
+                <li>
+                  <img src="img/icon-chrome.png" alt="" />
+                  <p>-webkit-</p>
+                </li>
+                <li>
+                  <img src="img/icon-firefox.png" alt="" />
+                  <p>-moz-</p>
+                </li>
+                <li>
+                  <img src="img/icon-opera.png" alt="" />
+                  <p>-o-</p>
+                </li>
+                <li>
+                  <img src="img/icon-safari.png" alt="" />
+                  <p>-webkit-</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="text-area">
+            <textarea class="freefix_text">
+            background: red;          <!-- gradient 속성을 지원하지 않는 모든 브라우저를 위한 코드 -->
+
+        background: -webkit-linear-gradient(red, yellow); <!-- 크롬과 사파리 4.0 이상을 위한 코드 -->
+
+        background: -moz-linear-gradient(red, yellow);    <!-- 파이어폭스 3.6 이상을 위한 코드 -->
+
+        background: -ms-linear-gradient(red, yellow);     <!-- 익스플로러 10.0 이상을 위한 코드 -->
+
+        background: -o-linear-gradient(red, yellow);      <!-- 오페라 10.0 이상을 위한 코드 -->
+
+        background: linear-gradient(red, yellow);         <!-- CSS 표준 문법 코드 -->
+          </textarea
+            >
+          </div>
+        </div>
+        <div class="con html"></div>
+        <div class="con scss">
+          <div class="center_box">
+            <div class="test_box">
+              <span>테스트박스</span>
+              <div class="childe_box">
+                <strong>Scss 연습 </strong>
+              </div>
+            </div>
+            <div class="wrap_list">
+              <ul class="test_lsit">
+                <li class="test_item"><a href="#">부모 flex</a></li>
+                <li class="test_item"><a href="#">자식 flex</a></li>
+                <li class="test_item"><a href="#">테스트3</a></li>
+                <li class="test_item"><a href="#">테스트4</a></li>
+                <li class="test_item"><a href="#">테스트5</a></li>
+                <li class="test_item">
+                  <a href="#"> <? echo title;?>테스트6</a>
+                </li>
+              </ul>
+              <div class="wrap_con">
+                <div class="test_01">
+                  <ul>
+                    <li>박스1</li>
+                    <li>박스2</li>
+                  </ul>
+                  <ul>
+                    <li>박스3</li>
+                    <li>박스4</li>
+                  </ul>
+                  <ul>
+                    <li>박스5</li>
+                    <li>박스6</li>
+                    <li>박스7</li>
+                  </ul>
+                  <ul>
+                    <li>박스8</li>
+                    <li>박스9</li>
+                    <li>박스10</li>
+                    <li>박스11</li>
+                  </ul>
+                  <ul>
+                    <li>박스12</li>
+                    <li>박스13</li>
+                    <li>박스14</li>
+                    <li>박스15</li>
+                  </ul>
+                  <ul>
+                    <li>박스16</li>
+                    <li>박스17</li>
+                    <li>박스18</li>
+                    <li>박스19</li>
+                  </ul>
+                  <ul>
+                    <li>박스20</li>
+                    <li>박스21</li>
+                    <li>박스22</li>
+                    <li>박스23</li>
+                  </ul>
+                </div>
+                <div class="test_02">
+                  <ul>
+                    <li>박스12</li>
+                    <li>박스13</li>
+                    <li>박스14</li>
+                    <li>박스15</li>
+                  </ul>
+                  <ul>
+                    <li>flex-shrink</li>
+                    <li>flex-shrink</li>
+                    <li>flex-shrink</li>
+                    <li>flex-shrink</li>
+                  </ul>
+                  <ul>
+                    <li>box</li>
+                    <li>box</li>
+                  </ul>
+                </div>
+                <div class="test_03"></div>
+                <div class="test_04"></div>
+                <div class="test_05"></div>
+                <div class="test_06"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="con svg"></div>
+        <div class="con php">
+          <?php echo "My first PHP script!";?>
+          <?php
+echo "My first PHP script!";
+?> 
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    "use strict";
+    //2.varible 변수(변경 될수있는 값)
+    //let (ES6 에서 추가 된 변수 ) es6 이전 은 잘 쓰고 있지 않다고 한다 익스플로어 에서는 크로스브라우징 문제가 있음
+
+    //var 특징
+    age =
+      "var  = 값을 먼저 선언해도 var 는 나온다 그리고 block scope이 먹지 않는다{} 밖에서 선언해도 먹음";
+    var age;
+    $("#var").html("<h3>" + age + "</h3>");
+    //let 특징
+    let lettext;
+    lettext =
+      "let =  은 값을 먼저 선언하면 나오지 않는다 이걸 hoisting 이라고 한다 '어디에선언했는지 상관 없이 제일 위로 끌어올려주는것'";
+    $("#let").text(lettext);
+    $("#let")
+      .append()
+      .html('<h3 id="text">' + lettext + "</h3>");
+    const symbol1 = Symbol("id");
+
+    // Q1. make a string out of an array
+    {
+      const fruits = ["apple", "banana", "orange"];
+      const result = fruits.join("/");
+      console.log(result);
+    }
+
+    // Q2. make an array out of a string
+    {
+      const fruits = "🍎, 🥝, 🍌, 🍒";
+      const result = fruits.split(",", 2);
+      console.log(result);
+    }
+
+    // Q3. make this array look like this: [5, 4, 3, 2, 1]
+    {
+      const array = [1, 2, 3, 4, 5];
+      const result = array.reverse();
+      console.log(result);
+    }
+
+    // Q4. make new array without the first two elements
+    {
+      const array = [1, 2, 3, 4, 5];
+      const result = array.splice(0, 2);
+      console.log(result);
+      console.log(array);
+    }
+    {
+      const array = [1, 2, 3, 4, 5];
+      const result = array.slice(0, 2);
+      console.log(result);
+      console.log(array);
+    }
+    //
+    {
+      class student {
+        constructor(name, age, enrolled, score) {
+          this.name = name;
+          this.age = age;
+          this.enrolled = enrolled;
+          this.score = score;
+        }
+      }
+      const students = [
+        new student("A", 29, true, 45),
+        new student("B", 28, false, 80),
+        new student("C", 30, true, 66),
+        new student("D", 40, false, 66),
+        new student("E", 18, true, 90),
+      ];
+      // const resuult = students.find(function (student, index) {
+      //   return student.score === 90;
+      // });
+      // console.log(resuult);
+
+      // const result = students.filter((students) => students.enrolled);
+      // console.log(result);
+
+      // const result = students.map((students) => students);
+
+      // const result = students.map((students) => students.score * 2);
+      // console.log(result);
+
+      // const result = students.some((students) => students.score < 50);
+      // console.log(result);
+
+      // const result = !students.every((students) => students.score >= 50);
+      // console.log(result);
+
+      // const result = students.reduce((prev, curr) => {
+      //   console.log('----------');
+      //   console.log(prev);
+      //   console.log(curr);
+      //   return prev + curr.score;
+      // }, 0);
+      // console.log("평균" + result);
+
+      const result = students
+        .map((students) => students.score)
+        .sort((a, b) => a - b)
+        .join();
+      console.log(result);
+    }
+  </script>
+</html>

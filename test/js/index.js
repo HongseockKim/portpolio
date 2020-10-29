@@ -43,7 +43,7 @@ function slideShows(){
     $('.tab>li>a').on('click', function (e) {
         e.preventDefault();
         var idx = $('.tab>li').index($(this).parent());
-        slideShow(noteNow + 1);
+        slideShow(n + 1);
     });
 
     function slideShow(n) {

@@ -24,6 +24,11 @@ function slideShows(){
     var noteNow = 0;
     var noteNext = 0;
     var notePrev = 0;
+
+$('.tab li>a').on('click',function(){
+    alert($(this).index());
+});
+
     slideShow(noteNow);
     
     $('.wrapper .con').each(function (i) {

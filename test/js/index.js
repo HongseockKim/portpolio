@@ -20,7 +20,7 @@ $(document).ready(function () {
     var noteNow = 0;
     var noteNext = 0;
     var notePrev = 0;
-    slideShow(5);
+    slideShow(noteNow);
     
     $('.wrapper .con').each(function (i) {
         $(this).css({

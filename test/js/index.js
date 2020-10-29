@@ -52,7 +52,7 @@ $('.tab li>a').on('click',function(n){
         slideShow(noteNow + 1);
     });
 
-    function slideShow(n) {
+    function slideShow(noteNow) {
         $('.moving').css({
             'transition': 'left 0.3s',
             'left': -((n - 1) * 100) + '%'

@@ -24,8 +24,9 @@ function slideShows(){
     var noteNext = 0;
     var notePrev = 0;
 
-$('.tab li>a').on('click',function(){
-    alert($(this).parent('li').index());
+$('.tab li>a').on('click',function(n){
+    n = $(this).parent('li').index();
+    console.log(n);
 });
 
     slideShow(noteNow);

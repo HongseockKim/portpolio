@@ -26,9 +26,10 @@ function slideShows(){
 
 $('.tab li>a').on('click',function(n){
     n = $(this).parent('li').index();
-    console.log(n);
+    // console.log(n);
+    noteNow = n;
 });
-
+    console.log(noteNow);
     slideShow(noteNow);
     
     $('.wrapper .con').each(function (i) {

@@ -13,10 +13,18 @@ $(document).ready(function () {
                 'top': 50 + 'px'
             });
         }
+        docLayout();
     });
 
 slideShows();
 });
+function docLayout(){
+    var winWidth = $(window).innerWidth();
+    var winHeight = $(window).innerHeight();
+    $('html,body').css({'width':winWidth,'height':winHeight});
+}
+
+
 
 function slideShows(){
     var noteCount = $('.con').length;

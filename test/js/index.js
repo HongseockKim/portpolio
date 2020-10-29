@@ -49,7 +49,7 @@ $('.tab li>a').on('click',function(n){
     $('.tab>li>a').on('click', function (e) {
         e.preventDefault();
         var idx = $('.tab>li').index($(this).parent());
-        slideShow(noteNow);
+        slideShow(noteNow + 1);
     });
 
     function slideShow(noteNow) {

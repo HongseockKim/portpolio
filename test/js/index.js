@@ -13,18 +13,10 @@ $(document).ready(function () {
                 'top': 50 + 'px'
             });
         }
-        docLayout();
     });
 
 slideShows();
 });
-function docLayout(){
-    var winWidth = $(window).innerWidth();
-    var winHeight = $(window).innerHeight();
-    $('html,body').css({'width':winWidth,'height':winHeight});
-}
-
-
 
 function slideShows(){
     var noteCount = $('.con').length;
@@ -32,24 +24,30 @@ function slideShows(){
     var noteNext = 0;
     var notePrev = 0;
 
-    slideShow(0);
+$('.tab li>a').on('click',function(n){
+    n = $(this).parent('li').index();
+    // console.log(n);
+    noteNow = n;
+});
+    console.log(noteNow);
+    slideShow(noteNow);
     
     $('.wrapper .con').each(function (i) {
         $(this).css({
-            'left': (i * 100) + '%'
+            'left': (i * 90) + '%'
         });
     });
 
     $('.tab>li>a').on('click', function (e) {
         e.preventDefault();
         var idx = $('.tab>li').index($(this).parent());
-        slideShow(n + 1);
+        slideShow(idx + 1);
     });
 
     function slideShow(n) {
         $('.moving').css({
             'transition': 'left 0.3s',
-            'left': -((n - 1) * 100) + '%'
+            'left': -((n - 1) * 90) + '%'
         });
         $('.tab li').removeClass('on');
         $('.tab li').eq(n - 1).addClass('on');

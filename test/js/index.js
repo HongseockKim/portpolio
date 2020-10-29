@@ -16,7 +16,6 @@ $(document).ready(function () {
     });
 
 slideShows();
-    alert('www');
 });
 
 function slideShows(){
@@ -26,7 +25,7 @@ function slideShows(){
     var notePrev = 0;
 
 $('.tab li>a').on('click',function(){
-    alert($(this).index());
+    alert($(this).index(parent()));
 });
 
     slideShow(noteNow);

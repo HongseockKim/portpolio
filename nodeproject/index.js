@@ -16,6 +16,7 @@ app.use('/reset',express.static(__dirname + '/scss/reset.css'));
 app.use('/scss',express.static(__dirname + '/scss/css/index.css'));
 app.use('/jquery',express.static(__dirname + '/node_modules/jquery/dist/jquery.min.js'));
 app.use('/login',express.static(__dirname + '/js/login.js'));
+app.use('/login',express.static(__dirname + '/js/common.js'));
 app.use('/img',express.static(__dirname + '/img/'));
 
 app.use(bodyParser.urlencoded({extends:false}));//바디파서
@@ -37,6 +38,7 @@ app.get("/",function(req,res){
         ifReady : false,
         isLoggedIn:true,
         users :['one','two','three'],
+        layout:'common.hbs'
     });
 });
 
@@ -50,10 +52,12 @@ app.post('/loginssss',(req,res)=>{
 
 app.get("/register",function(req,res){
     res.status(200).render('register',{
+        layout:'common.hbs'
     });
 });
 app.get("/main",function(req,res){
     res.status(200).render('main',{
+        layout:'common.hbs'
     });
 });
 

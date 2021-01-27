@@ -70,6 +70,10 @@ $color_2 : #2D2427;
 #main{
     .inner{
         max-width:1600px;margin:0 auto;
-        padding:50px 0;display:flex;
+        padding:50px 0;
+        .lnb{
+            display:flex;
+            
+        }
     }
 }

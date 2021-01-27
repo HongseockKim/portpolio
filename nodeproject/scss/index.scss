@@ -73,7 +73,9 @@ $color_2 : #2D2427;
         padding:50px 0;
         .lnb{
             display:flex;
-            
+            .lnb_item{
+                background:coral;
+            }
         }
     }
 }

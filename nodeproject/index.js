@@ -50,7 +50,10 @@ app.post('/loginssss',(req,res)=>{
 
 app.get("/register",function(req,res){
     res.status(200).render('register',{
-        words : words,
+    });
+});
+app.get("/main",function(req,res){
+    res.status(200).render('main',{
     });
 });
 

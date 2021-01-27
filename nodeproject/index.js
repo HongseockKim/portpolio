@@ -38,7 +38,8 @@ app.get("/",function(req,res){
         ifReady : false,
         isLoggedIn:true,
         users :['one','two','three'],
-        layout:'common.hbs'
+        layout:'common.hbs',
+        logins  : true
     });
 });
 
@@ -52,12 +53,15 @@ app.post('/loginssss',(req,res)=>{
 
 app.get("/register",function(req,res){
     res.status(200).render('register',{
-        layout:'common.hbs'
+        layout:'common.hbs',
+        common : true,
+
     });
 });
 app.get("/main",function(req,res){
     res.status(200).render('main',{
-        layout:'common.hbs'
+        layout:'common.hbs',
+        common : true,
     });
 });
 

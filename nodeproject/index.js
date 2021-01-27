@@ -15,6 +15,7 @@ const port = 4000//포트를 설정함
 app.use('/reset',express.static(__dirname + '/scss/reset.css'));
 app.use('/scss',express.static(__dirname + '/scss/css/index.css'));
 app.use('/jquery',express.static(__dirname + '/node_modules/jquery/dist/jquery.min.js'));
+app.use('/video',express.static(__dirname + '/node_modules/video.js/dist/video.min.js'));
 app.use('/login',express.static(__dirname + '/js/login.js'));
 app.use('/common',express.static(__dirname + '/js/common.js'));
 app.use('/img',express.static(__dirname + '/img/'));
@@ -68,6 +69,7 @@ app.get("/live",function(req,res){
     res.status(200).render('live',{
         layout:'common.hbs',
         common : true,
+        live : true,
     });
 });
 

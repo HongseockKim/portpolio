@@ -64,6 +64,12 @@ app.get("/main",function(req,res){
         common : true,
     });
 });
+app.get("/live",function(req,res){
+    res.status(200).render('live',{
+        layout:'common.hbs',
+        common : true,
+    });
+});
 
 
 

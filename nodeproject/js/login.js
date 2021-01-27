@@ -9,8 +9,7 @@ function logins() {
     logInbtn.addEventListener('click',() => {
         const idValue = document.getElementById('login').value;
         const passwordValue = document.getElementById('passwrord').value;
-        console.log(idValue);
-        console.log(passwordValue);
+       location.href="/main";
     });
 }
 function registerEvent(){

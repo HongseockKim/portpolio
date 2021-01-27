@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            헤더
+        </header>
+        <section id="sect">
+            임서규 병신
+        </section>
+        <footer>
+            푸터
+        </footer>
+    </div>
+    <script>
+        $(document).ready(function(){
+            mumeys();
+        });
+        const mumeys = (first,last) =>{
+            first = "첫번째";
+            last = "두번째";
+            $('#sect').html('<p>'+first+'</p>');
+            $('#sect').html('<p>'+last+'</p>');
+        }
+    </script>
+</body>
+</html>

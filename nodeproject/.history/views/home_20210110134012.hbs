@@ -1,0 +1,29 @@
+{{< header title="ddd" }}
+<section>
+    {{#if isLoggedIn}}
+        <h1 class="logo">{{logout}}</h1>
+    {{else}}
+        <h1 class="logo">{{logoin}}</h1>
+    {{/if}}
+    <div>
+        {{#if ifReady}}
+        {{else}}
+            <button type="button">버튼</button>
+        {{/if}}
+    </div>
+    {{#each users}}
+        <span>{{this}}</span>
+    {{/each}}
+    <div>
+        {{#each users as |value key|}}
+            <span>{{value}}</span>
+            <span>{{key}}</span>
+        {{/each}}
+    </div>
+    <div>
+        {{#with users as |u|}}
+            <span>{{u.name}}</span>
+        {{/with}}
+    </div>
+</section>
+{{< footer}}

@@ -1,0 +1,18 @@
+@charset "utf-8";
+.header_top{
+    padding:100px 0;
+    background:linear-gradient(to right,#1E9CEF,#750CF2);
+    h1.log{
+        text-align:center;
+        font-size:40px;
+        color:#2D2427;
+
+    }
+}
+.footer{
+    padding:50px 0;
+    background:#d8d8d8;
+    .inner{
+        max-width:1200px; margin:0 auto;
+    }
+}

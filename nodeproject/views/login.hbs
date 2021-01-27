@@ -1,0 +1,19 @@
+{{> header title="헤더" }}
+<section class="login_seciton">
+    <div class="inner">
+        <div class="login_wrap">
+            <form action="/loginssss" method="POST">
+                <label for="login">아이디{{text}}</label>
+                <input id="login" type="text" name="user_id">
+                <label for="passwrord">비밀번호</label>
+                <input id="passwrord" type="text" name="user_pw">
+                <input type="submit" value="보내기">
+            </form>
+        </div>
+        <div class="btn_wrap clearfix">
+            <button type="submit" id="login_btn">로그인</button>
+            <button type="button" id="register_btn">회원가입</button>
+        </div>
+    </div>
+</section>
+{{> footer}}

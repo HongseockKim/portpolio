@@ -15,9 +15,11 @@ const port = 4000//포트를 설정함
 app.use('/reset',express.static(__dirname + '/scss/reset.css'));
 app.use('/scss',express.static(__dirname + '/scss/css/index.css'));
 app.use('/jquery',express.static(__dirname + '/node_modules/jquery/dist/jquery.min.js'));
+app.use('/video_css',express.static(__dirname + '/node_modules/video.js/dist/video-js.min.css'));
 app.use('/video',express.static(__dirname + '/node_modules/video.js/dist/video.min.js'));
 app.use('/login',express.static(__dirname + '/js/login.js'));
 app.use('/common',express.static(__dirname + '/js/common.js'));
+app.use('/video_js',express.static(__dirname + '/js/video_js.js'));
 app.use('/img',express.static(__dirname + '/img/'));
 
 app.use(bodyParser.urlencoded({extends:false}));//바디파서
@@ -40,7 +42,7 @@ app.get("/",function(req,res){
         isLoggedIn:true,
         users :['one','two','three'],
         layout:'common.hbs',
-        logins  : true
+        logins  : true,
     });
 });
 
@@ -63,11 +65,15 @@ app.get("/main",function(req,res){
     res.status(200).render('main',{
         layout:'common.hbs',
         common : true,
+        title : "메인페이지",
+        ifnum : true,
     });
 });
+
 app.get("/live",function(req,res){
     res.status(200).render('live',{
         layout:'common.hbs',
+        title : "라이브",
         common : true,
         live : true,
     });

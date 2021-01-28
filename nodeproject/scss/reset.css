@@ -335,7 +335,7 @@ input[type='search']::-webkit-search-cancel-button {-webkit-appearance:none}
 /* input crossbrowsing- border:none 셋팅 이후 스타일 */
 
 /*common*/
-th,td,input,select,textarea,button {font-size:12px;line-height:1.5em;font-family:'돋움',dotum,sans-serif;color:#333} 
+th,td,input,select,textarea,button {font-size:12px;line-height:1.5em;font-family: 'Noto Sans KR', sans-serif;color:#333} 
 /* 디자인가이드에 맞게사용 */
 
 /* placeholder 지정할것 */

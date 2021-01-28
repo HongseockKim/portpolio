@@ -1,4 +1,10 @@
-<header class="header_top">
-    <h1 class="log">{{title}}</h1>
-    <img src="/img/test.png" alt="">
-</header>
+{{#if ifnum}}
+    <header class="header_top main">
+        <h1 class="log">{{title}}</h1>
+    </header>
+{{else}}
+    <header class="header_top">
+        <h1 class="log">{{title}}</h1>
+        <img src="/img/test.png" alt="">
+    </header>
+{{/if}}

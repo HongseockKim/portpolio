@@ -1,7 +1,15 @@
-{{>header}}
-<section>
+{{>header titlle="라이브"}}
+<section id="live">
     <div class="inner">
-        라이브
+        <div class="video_wrap">
+            <video id="video_player" class="video-js vjs-default-skin" controls></video>
+        </div>
+        <div class="btn_wrap">
+            <button type="button" class="btn">기능버튼</button>
+        </div>
+        <div class="test">
+            {{text}}
+        </div>
     </div>
 </section>
 {{>footer}}

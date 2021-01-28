@@ -1,6 +1,8 @@
 @charset "utf-8";
 $color_1 : #1E9CEF;
 $color_2 : #2D2427;
+body{font-family: 'Noto Sans KR', sans-serif;}
+
 .header_top{
     padding:100px 0;
     background:linear-gradient(to right,$color_1,#750CF2);
@@ -17,6 +19,10 @@ $color_2 : #2D2427;
         margin: 0 auto;
     }
 }
+.header_top.main{
+    background:none;
+}
+
 .login_seciton{
     .inner{
     max-width:700px;
@@ -73,8 +79,41 @@ $color_2 : #2D2427;
         padding:50px 0;
         .lnb{
             display:flex;
+            flex-direction:row;
+            justify-content:center;
+            height:100%;
             .lnb_item{
                 background:coral;
+                a{
+                    padding:50px 10px;
+                    text-align:center;line-height:50px;
+                }
+            }
+        }
+    }
+}
+#live{
+    background:url('/img/doc_bg_1.jpg')no-repeat center center;
+    background-size:cover;
+    .inner{
+        max-width:1280px;margin:0 auto;
+        padding: 50px 0;
+        display:flex;
+        flex-direction: column;
+        .video_wrap{
+            width:1280px;
+            background:#ccc;
+            height:720px;
+            #video_player{
+                width:100%;height:100%;
+            }
+        }
+        .btn_wrap{
+            margin-top:50px;
+            .btn{
+                display:inline-block;width:150px;height:50px;
+                background:$color_1;color:#fff;font-size:20px;
+                font-weight:700;
             }
         }
     }

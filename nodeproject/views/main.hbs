@@ -1,25 +1,31 @@
 {{>header title="메인"}}
 <section id="main">
-    <div class="inner">
-        <nav class="lnb">
-            <ul class="lnb_list">
-                <li class="lnb_item">
-                    <a href="/live" class="live_ib_btn">
-                        입장하기
-                    </a>
-                </li>
-                <li class="lnb_item">
-                    <a href="#">
-                        E-booth
-                    </a>
-                </li>
-                <li class="lnb_item">
-                    <a href="#">
-                        Notice
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <div>
+        <select class="select_box" id="timeselectYear">
+
+        </select>
+        <span>년</span>
+        <select class="select_box" id="timeselectMonth">
+
+        </select>
+        <span>월</span>
+        <select class="select_box" id="timeselectday">
+
+        </select>
+        <span>일</span>
+        <select class="select_box" id="timeselectour">
+
+        </select>
+        <span>시</span>
+        <select class="select_box" id="timeselectmin">
+
+        </select>
+        <span>분</span>
+    </div>
+    <div class="attendance_btn_wrap">
+        <button type="button"class="btn on" id="in_btn">출결확인</button>
+        <button type="button"class="btn" id="out_btn">퇴장확인</button>
+        <button type="button" id="all_time">결과보기</button>
     </div>
 </section>
 {{>footer}}

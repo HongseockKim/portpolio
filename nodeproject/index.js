@@ -21,6 +21,9 @@ app.use('/jquery',express.static(__dirname + '/node_modules/jquery/dist/jquery.m
 app.use('/video_css',express.static(__dirname + '/node_modules/video.js/dist/video-js.min.css'));
 app.use('/video',express.static(__dirname + '/node_modules/video.js/dist/video.min.js'));
 app.use('/moment',express.static(__dirname + '/node_modules/moment/moment.js'));
+app.use('/datepicker',express.static(__dirname + '/node_modules/@chenfengyuan/datepicker/dist/datepicker.min.js'));
+app.use('/datepicker_css',express.static(__dirname + '/node_modules/@chenfengyuan/datepicker/dist/datepicker.css'));
+app.use('/datepicker_ko',express.static(__dirname + '/node_modules/@chenfengyuan/datepicker/i18n/datepicker.ko-KR.js'));
 app.use('/login',express.static(__dirname + '/js/login.js'));
 app.use('/common',express.static(__dirname + '/js/common.js'));
 app.use('/video_js',express.static(__dirname + '/js/video_js.js'));

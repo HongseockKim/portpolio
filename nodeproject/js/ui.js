@@ -1,9 +1,70 @@
 /*live 페이지 출결확인 관련.js */
 $(document).ready(function(){
     attendanceEvnet();
-    var today = moment();
-    console.log(today.format());
+    dateEvent();
 });
+
+function dateEvent(){
+    var dateValue = undefined;
+    var today = moment();
+    var valour = undefined;
+    var valmin = undefined;
+    var optionValueour= [];
+    var optionValuemin=[];
+    console.log(today.format());
+    $('#date').datepicker({
+        controlType: 'select',
+        timeFormat: 'hh:mm ss',
+        autoPick : true,
+        language : 'ko-KR',
+        altFormat : 'yyyy-mm-dd',
+        defaultDate : +7,
+    });
+    $(document).ready(function () {
+        $('#timePicker').datetimepicker({
+            controlType: 'select',
+            timeFormat: 'hh:mm ss'
+        });
+    });
+
+    for (var i =0;i <= 23;i++){
+        if(i < 10){
+            valour = "0" + i;
+        }else{
+            valour = i;
+        }
+        optionValueour[i] = "<option value="+valour+">"+valour+"</option>";
+    }
+    for (var i =0;i <= 59;i++){
+        if(i < 10){
+            valmin = "0" + i;
+        }else{
+            valmin = i;
+        }
+        optionValuemin[i] = "<option value="+valmin+">"+valmin+"</option>";
+    }
+    $('#timeselectour').append(optionValueour);
+    $('#timeselectmin').append(optionValuemin);
+    $('.select_box').on('change',function(){
+        $('#timeselectour').attr('value',$('#timeselectour').val());
+        $('#timeselectmin').attr('value',$('#timeselectmin').val());
+    });
+
+
+
+    $('.date_save_btn').on('click',function(){
+        var our =$('#timeselectour').val();
+        var min =$('#timeselectmin').val();
+        var fomats = "YYYY-MM-DD HH:mm:ss";
+         dateValue = $('#date').datepicker('getDate',new Date());
+         var newDates = dateValue;
+         var day = moment(newDates).format(fomats);
+        console.log(day);        
+        console.log(newDates);
+    });
+}
+
+
 
 //출결 확인 이벤트
 function attendanceEvnet(){
@@ -142,5 +203,4 @@ function attendanceEvnet(){
             console.log('내가시청한시간은'+(num - all));
         });
     }
-
 

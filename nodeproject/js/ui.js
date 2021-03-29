@@ -2,7 +2,13 @@
 $(document).ready(function(){
     attendanceEvnet();
     dateEvent();
+    // image_maps();
 });
+
+function image_maps () {
+    $('img [usemap]').width('1920');
+    $ ('img [usemap]').rwdImageMaps();
+}
 
 function dateEvent(){
     var dateValue = undefined;

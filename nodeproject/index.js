@@ -24,10 +24,19 @@ app.use('/moment',express.static(__dirname + '/node_modules/moment/moment.js'));
 app.use('/datepicker',express.static(__dirname + '/node_modules/@chenfengyuan/datepicker/dist/datepicker.min.js'));
 app.use('/datepicker_css',express.static(__dirname + '/node_modules/@chenfengyuan/datepicker/dist/datepicker.css'));
 app.use('/datepicker_ko',express.static(__dirname + '/node_modules/@chenfengyuan/datepicker/i18n/datepicker.ko-KR.js'));
+
+app.use('/threemodule_js',express.static(__dirname + '/node_modules/three/build/three.module.js'));
+app.use('/three_js',express.static(__dirname + '/node_modules/three/build/three.min.js'));
+app.use('/panolens_js',express.static(__dirname + '/node_modules/panolens/build/panolens.js'));
+
+app.use('/aframe_js',express.static(__dirname + '/node_modules/aframe/dist/aframe.min.js'));
+app.use('/marzipano_js',express.static(__dirname + '/node_modules/marzipano/dist/marzipano.js'));
 app.use('/login',express.static(__dirname + '/js/login.js'));
 app.use('/common',express.static(__dirname + '/js/common.js'));
 app.use('/video_js',express.static(__dirname + '/js/video_js.js'));
 app.use('/ui_js',express.static(__dirname + '/js/ui.js'));
+app.use('/vr_js',express.static(__dirname + '/js/vr.js'));
+app.use('/image_map_js',express.static(__dirname + '/js/jquery.rwdImageMaps.min.js'));
 app.use('/img',express.static(__dirname + '/img/'));
 
 app.use(bodyParser.urlencoded({extends:false}));//바디파서
@@ -74,6 +83,7 @@ app.get("/register",function(req,res){
 });
 app.get("/main",function(req,res){
     res.status(200).render('main',{
+        main_2 : false,
         layout:'main.hbs',
         common : true,
         title : "메인페이지",
@@ -81,12 +91,25 @@ app.get("/main",function(req,res){
         Time :date1
     });
 });
-app.get("/m_main",function(req,res){
-    res.status(200).render('m_main',{
+app.get("/main_2",function(req,res){
+    res.status(200).render('main_w',{
+        image_map : true,
+        main_2 : true,
         layout:'common.hbs',
         common : true,
         title : "메인페이지",
         ifnum : true,
+        Time :date1
+    });
+});
+
+
+app.get("/m_main",function(req,res){
+    res.status(200).render('m_main',{
+        main_2 : true,
+        layout:'common.hbs',
+        common : true,
+        title : "버츄얼테스트",
     });
 });
 
@@ -99,7 +122,12 @@ app.get("/live",function(req,res){
     });
 });
 
-
+app.get('/vr',function(req,res){
+	res.status(200).render('vr',{
+        layout:'vrcommon.hbs',
+        vr : true,
+	});
+});
 
 
 

@@ -19,7 +19,15 @@ body{font-family: 'Noto Sans KR', sans-serif;}
         margin: 0 auto;
     }
 }
-
+#vr_basse{
+    #pano{
+        width:4096px;
+        height:2048px;
+        background:url('/img/image_1.jpg')no-repeat center center;
+        background-size:cover;
+    }
+    
+}
 #main{
     margin-left:100px;
     background:#F8F9FB;
@@ -102,7 +110,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
         
         
     }
-
 .header_top.main{
     background:none;
     position:absolute;
@@ -137,6 +144,29 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     }
 }
 
+#main_2{
+    overflow: hidden;
+    section{
+        width:100vw;
+        height:100vh;
+        overflow: hidden;
+        .view_image{
+            position:absolute;top:0px;left:0;
+            width:100%;
+        }
+        .btn{
+            background:red;
+        }
+        img[usemap]{
+            border: none;
+		    height: auto;
+		    max-width: 100%;
+		    width: auto;
+            opacity:0;
+        }
+        overflow: hidden;
+    }
+}
 .login_seciton{
     .inner{
     max-width:700px;

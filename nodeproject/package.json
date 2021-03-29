@@ -12,12 +12,16 @@
   "license": "ISC",
   "dependencies": {
     "@chenfengyuan/datepicker": "^1.0.10",
+    "aframe": "^1.2.0",
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.0",
+    "express-handlebars": "^5.2.1",
     "jquery": "^3.5.1",
+    "marzipano": "^0.10.1",
     "moment": "^2.29.1",
-    "mongoose": "^5.11.10",
-    "video.js": "^7.10.2"
+    "mongoose": "^5.11.18",
+    "panolens": "^0.12.1",
+    "three.js-node": "^0.72.1",
+    "video.js": "^7.11.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

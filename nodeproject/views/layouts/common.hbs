@@ -4,8 +4,14 @@
     {{>commonheader}}
 </head>
 <body>
-    <div class="wrapper">
-    {{{body}}}
-    </div>
+    {{#if main_2}}
+        <div id="main_2" class="wrapper">
+        {{{body}}}
+        </div>
+    {{else}}
+        <div class="wrapper">
+            {{{body}}}
+        </div>
+    {{/if}}
 </body>
 </html>

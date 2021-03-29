@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{>commonheader}}
+    <style>
+        html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+body {
+  background-image:url('https://s-media-cache-ak0.pinimg.com/originals/f5/e7/73/f5e773f77a32bac74c9e98d4c3512ba5.jpg');
+  background-size: cover;
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 700px;
+  height: 400px;
+}
+
+#btn_change_size {
+  position: absolute;
+  height: 30px;
+  left: 10px;
+  top: 10px;
+}
+
+    </style>
+</head>
+<body id="vr">
+    <div class="wrapper">
+    {{{body}}}
+    </div>
+</body>
+</html>

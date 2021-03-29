@@ -49,6 +49,16 @@ body{font-family: "Noto Sans";font-weight:400;line-height: 1;}
                    display: flex;
                    li{
                        flex-basis: calc(100% / 7 );
+                       .con{
+                           a{
+                               img{
+                                   width:100%;
+                               }
+                               p{
+                                   font-weight: 700;
+                               }
+                           }
+                       }
                    }
                }
            }

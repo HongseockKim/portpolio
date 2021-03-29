@@ -13,8 +13,9 @@ body{font-family: "Noto Sans";font-weight:400;line-height: 1;}
             .logo{
                 display:inline-block;
                 width:120px;
+                overflow: hidden;
                 img{
-                    width: 100%;
+                    width: 130%;
                 }
             }
             .info_wrap{

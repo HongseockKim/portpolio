@@ -1,2 +1,11 @@
 body{font-family: "Noto Sans";font-weight:400;line-height: 1;}
-.wrapper{background:#fafafa;}
+.wrapper{
+    background:#fafafa;
+    #header_top{
+        position: fixed;top:0;
+        left:0;
+        width:20vw;
+        height:100%;
+        background:#fafafa;
+    }
+}

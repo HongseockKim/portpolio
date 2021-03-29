@@ -48,6 +48,7 @@ body{font-family: "Noto Sans";font-weight:400;line-height: 1;}
            .inner{
                .skill_list{
                    display: flex;
+                   flex-wrap:wrap;
                    li{
                        flex-basis: calc(100% / 3);
                        min-height: 150px;

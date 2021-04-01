@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .scss .center_box {
   width: 90%;
 }
@@ -261,4 +262,195 @@
 .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul li:nth-child(2n) {
   background: darkslateblue;
 }
+=======
+.scss .center_box {
+  width: 90%; }
+  .scss .center_box .test_box {
+    width: 300px;
+    height: 300px;
+    background: hotpink;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 300px;
+    position: relative; }
+    .scss .center_box .test_box .childe_box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 150px;
+      height: 200px;
+      background: #979797;
+      border-radius: 20px; }
+    .scss .center_box .test_box span {
+      color: #4b4b4b;
+      font-weight: bold;
+      font-size: 24px; }
+  .scss .center_box .wrap_list {
+    margin-top: 50px;
+    width: 500px; }
+    .scss .center_box .wrap_list .test_lsit {
+      background: #fff;
+      width: 100%;
+      height: 50px; }
+      .scss .center_box .wrap_list .test_lsit:after {
+        content: "";
+        display: block;
+        clear: both; }
+      .scss .center_box .wrap_list .test_lsit .test_item {
+        float: left;
+        width: calc(100% / 6);
+        height: 100%; }
+        .scss .center_box .wrap_list .test_lsit .test_item a {
+          display: block;
+          text-align: center;
+          line-height: 50px; }
+          .scss .center_box .wrap_list .test_lsit .test_item a:hover {
+            color: red; }
+    .scss .center_box .wrap_list .wrap_con {
+      width: 100%;
+      padding-top: 150%;
+      border: 1px solid #000;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      position: relative; }
+      .scss .center_box .wrap_list .wrap_con div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: hotpink;
+        display: none; }
+        .scss .center_box .wrap_list .wrap_con div:nth-child(1) {
+          display: none; }
+          .scss .center_box .wrap_list .wrap_con div:nth-child(1) ul {
+            width: 100%;
+            margin-bottom: 20px;
+            background: coral; }
+            .scss .center_box .wrap_list .wrap_con div:nth-child(1) ul:nth-child(1) {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: reverse;
+                  -ms-flex-direction: row-reverse;
+                      flex-direction: row-reverse; }
+            .scss .center_box .wrap_list .wrap_con div:nth-child(1) ul:nth-child(2) {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+            .scss .center_box .wrap_list .wrap_con div:nth-child(1) ul:nth-child(3) {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: reverse;
+                  -ms-flex-direction: column-reverse;
+                      flex-direction: column-reverse; }
+            .scss .center_box .wrap_list .wrap_con div:nth-child(1) ul:nth-child(4) {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between; }
+            .scss .center_box .wrap_list .wrap_con div:nth-child(1) ul:nth-child(5) {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-pack: distribute;
+                  justify-content: space-around; }
+            .scss .center_box .wrap_list .wrap_con div:nth-child(1) ul:nth-child(6) {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between;
+              -webkit-box-align: start;
+                  -ms-flex-align: start;
+                      align-items: flex-start; }
+            .scss .center_box .wrap_list .wrap_con div:nth-child(1) ul:nth-child(7) {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              height: 120px;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+              -ms-flex-line-pack: distribute;
+                  align-content: space-around; }
+            .scss .center_box .wrap_list .wrap_con div:nth-child(1) ul li {
+              display: inline-block;
+              height: 50px;
+              background: yellow; }
+              .scss .center_box .wrap_list .wrap_con div:nth-child(1) ul li:nth-child(2) {
+                background: darkcyan; }
+        .scss .center_box .wrap_list .wrap_con div:nth-child(2) {
+          display: block; }
+          .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul {
+            width: 100%;
+            background: #3bafaf;
+            margin-bottom: 20px; }
+            .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul:nth-child(1) {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul:nth-child(1) li {
+                -ms-flex-preferred-size: 0;
+                    flex-basis: 0;
+                -webkit-box-flex: 1;
+                    -ms-flex-positive: 1;
+                        flex-grow: 1; }
+                .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul:nth-child(1) li:nth-child(2) {
+                  -webkit-box-flex: 2;
+                      -ms-flex-positive: 2;
+                          flex-grow: 2; }
+            .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul:nth-child(2) {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul:nth-child(2) li:nth-child(1) {
+                -webkit-box-flex: 1;
+                    -ms-flex: 1;
+                        flex: 1; }
+              .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul:nth-child(2) li:nth-child(2) {
+                -webkit-box-flex: 3;
+                    -ms-flex: 3;
+                        flex: 3; }
+              .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul:nth-child(2) li:nth-child(3) {
+                -webkit-box-flex: 1;
+                    -ms-flex: 1;
+                        flex: 1; }
+              .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul:nth-child(2) li:nth-child(4) {
+                -webkit-box-flex: 1;
+                    -ms-flex: 1;
+                        flex: 1; }
+            .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul:nth-child(3) {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul:nth-child(3) li:nth-child(1) {
+                -webkit-box-flex: 4;
+                    -ms-flex: 4;
+                        flex: 4;
+                -webkit-box-ordinal-group: 3;
+                    -ms-flex-order: 2;
+                        order: 2; }
+              .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul:nth-child(3) li:nth-child(2) {
+                -webkit-box-flex: 2;
+                    -ms-flex: 2;
+                        flex: 2;
+                -webkit-box-ordinal-group: 2;
+                    -ms-flex-order: 1;
+                        order: 1; }
+            .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul li {
+              width: 100px;
+              height: 100px;
+              background: darkgray; }
+              .scss .center_box .wrap_list .wrap_con div:nth-child(2) ul li:nth-child(2n) {
+                background: darkslateblue; }
+
+>>>>>>> Stashed changes
 /*# sourceMappingURL=style.css.map */

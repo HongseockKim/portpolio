@@ -11,6 +11,7 @@ function swiperSlide(){
         spaceBetween : 4,
         grabCursor: true,
         loop:true,
+        freeMode : true,
         autoplay :{
             delay : 3000,
             disableOnInteraction : false,

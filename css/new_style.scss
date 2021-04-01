@@ -193,8 +193,8 @@ body {
             .close_btn {
                 display: block;
                 position: relative;
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background: none;
                 border-radius: 10px;
                 background: #3577db;
@@ -213,8 +213,8 @@ body {
                     &.bar_1 {
                         width: 80%;
                         height: 2px;
-                        top: 50%;
-                        left: 10%;
+                        top: 49%;
+                        left: 12%;
                         transform: translate(-50%, -50%);
                         transform: rotate(45deg);
                     }
@@ -222,7 +222,7 @@ body {
                         width: 2px;
                         height: 80%;
                         top: 10%;
-                        left: 50%;
+                        left: 45%;
                         transform: translate(-50%, -50%);
                         transform: rotate(45deg);
                     }

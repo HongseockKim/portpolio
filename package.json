@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "imagesloaded": "^4.1.4",
-    "masonry-layout": "^4.2.2",
-    "swiper": "^6.5.3"
-  }
-}

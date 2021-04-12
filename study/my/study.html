@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nomorlize.css">
+    <style>
+        body{
+            transition:  all 0.3s;
+        }
+        button{
+            padding:10px 25px;cursor: pointer;
+        }
+        .btn_con{
+            position: fixed;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            z-index: 50;
+        }
+        .sect{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        .sect_text{
+            position: absolute;
+            top:50%;left:50%;
+            transform: translate(-50%,-50%);
+            font-size: 4vw;font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn_con">
+        <button type="button" class="prev_btn">PREV</button>
+        <button type="button" class="next_btn">NEXT</button>
+        <h2 class="view_text"></h2>
+    </div>
+    <section class="sect_1 sect">
+        <div class="inner">
+
+        </div>
+    </section>
+    <section class="sect_2 sect">
+        <div class="inner">
+
+        </div>
+    </section>
+    <section class="sect_3 sect">
+        <div class="inner">
+
+        </div>
+    </section>
+    <section class="sect_4 sect">
+        <div class="inner">
+
+        </div>
+    </section>
+    <script>
+        window.onload = function(){
+            var prevBtn = document.querySelector('.prev_btn');
+            var nextBtn = document.querySelector('.next_btn');
+            var viewText = document.querySelector('.view_text');
+            // var pageNum = pageNum = Math.random(Math.random() * (totalNum - 1));
+            var pageNum =0;
+            var totalNum  = document.querySelectorAll('.sect').length;
+            var bgColor =["#fafafa","#ccc","darkgray","#eeee"];
+            var pageNubber = null;
+            var offsetHeight = window.outerHeight - document.documentElement.clientHeight;
+            console.log(bgColor);
+            // viewText.innerHTML = pageNum + "페이지입니다";
+            bgColorEvent();
+
+            prevBtn.addEventListener('click',function(){
+                if(pageNum > 0){
+                    pageNum --;
+                }else{
+                    pageNum = totalNum - 1;
+                }
+                bgColorEvent();
+
+            });
+
+            nextBtn.addEventListener('click',function(){
+                if(pageNum < totalNum -1 ){
+                    pageNum ++;
+                }else{
+                    pageNum =0;
+                }
+                bgColorEvent();
+                
+            });
+            
+            function bgColorEvent(){
+                document.querySelectorAll('.sect').forEach(function(e){
+                    e.innerHTML = "<p class='sect_text'>"+pageNum+"페이지</p>"
+                });
+                viewText.innerHTML = pageNum + '페이지입니다.';
+                document.getElementsByTagName('body')[0].style.background = bgColor[pageNum];
+
+                // window.scrollTo({
+                //     top: document.querySelectorAll('.sect')[pageNum].offsetTop,
+                //     behavior : 'smooth',
+                // })
+            }
+            window.addEventListener('scroll',function(e ){
+                        var scrollAmt = this.scrollY;
+                        var docScrollAmt = document.documentElement.scrollTop;
+                        //documentElement = html 문서를 말하는것;
+                        // console.log(docScrollAmt);
+                        // console.log(scrollAmt);
+
+                        for(var i = 0; i < totalNum; i++){
+                            console.log(i);
+                            
+                           if(scrollAmt > document.querySelectorAll('.sect')[i].offsetTop - offsetHeight)
+                        }
+                });
+            console.log();
+        }
+    </script>
+</body>
+</html>

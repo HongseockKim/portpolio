@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nomorlize.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/js.js"></script>
+    <style>
+        body{
+            padding:100px 0;
+        }
+        .video{
+            display: block;
+            width: 700px;
+            margin: 0 auto;
+        }
+        .botting_btn_wrap{
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+            padding: 30px 20px;
+            margin: 0 auto;
+            background: #e6e6e6;
+        }
+        .botting{
+            display: inline-block;
+            text-decoration:none;
+            padding:5px 15px;
+            background: #3c82ec;
+            color: #fff;
+            font-weight: bold;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+        .botting_con{
+            text-align: center;
+        }
+        .grap_page{
+            padding:50px;
+            width: 1200px;
+            margin: 50px auto 0 auto;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            border-radius: 15px;
+        }
+        .grap{
+            position: relative;
+            margin:10px 0;
+            width: 100%;
+            height: 60px;
+            background: #e6e6e6;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            
+        }
+        .grap .bar{
+            position: absolute;
+            top:0;left:0;
+            height: 100%;
+            background: #3c82ec;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapp">
+        <video src="#" class="video" controls autoplay="false" preload="none" ></video>
+        <div class="botting_con">
+            <div class="botting_btn_wrap" id="box2">
+                <a id="btn_1" href="#" class='botting' value ="0">1번</a>
+                <a id="btn_2" href="#" class='botting' value ="0">2번</a>
+                <a id="btn_3" href="#" class='botting' value ="0">3번</a>
+                <a id="btn_4" href="#" class='botting' value ="0">4번</a>
+            </div>
+            <button type="button" id="view_btn">보기</button>
+            <div class="grap_page">
+                <h2>결과창</h2>
+                <div class="grap" id="grap_1"><span class="bar"id="bar_1"></span></div>
+                <div class="grap" id="grap_2"><span class="bar" id="bar_2"></span></div>
+                <div class="grap" id="grap_3"><span class="bar" id="bar_3"></span></div>
+                <div class="grap" id="grap_4"><span class="bar" id="bar_4"></span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@charset "utf-8";
+body{
+    font-family: 'Roboto', sans-serif;line-height: 1;font-size: 16px;
+    background: #000;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+.monitor_list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.monitor_item{
+    position: relative;
+    min-width: calc(100% /4 );
+    height: calc(100% / 2);
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding-bottom: 100px;
+}
+.monitor_item>div{
+    width: 100%;
+    height: 100%;
+}
+.monitor_item .room{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.vjs-has-started .vjs-control-bar{
+    visibility: unset!important;
+    opacity: 1!important;
+}
+.monitor_item.contrall{
+
+    background: url('../js/bg.jpg')no-repeat center center;
+    background-size: cover;
+}
+.monitor_item.contrall::before{
+    content: '';
+    position: absolute;
+    top:0;left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 24, 24,0.1);
+}
+.monitor_item.contrall .contrall_box{
+    position: absolute;
+    top:50%;left:50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: auto;
+}
+.monitor_item.contrall .contrall_box .reflash_btn{
+    padding: 12px 25px;
+    background: #2a6fd6;
+    box-shadow: 0px 0px 2px #163a70;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 700;
+}

@@ -27,7 +27,7 @@ function vrEvent(){
                 "type": "info",
                 "text": "The ANTIGEN : #COVID 19 PODCAST",
                 // "URL": "https://artbma.org/"
-                "clickHandlerFunc": openModal
+                "clickHandlerFunc": pdfBook
             },
             {
                 "pitch": 2,
@@ -59,7 +59,55 @@ function vrEvent(){
         ]
     });
 }
+function pdfBook(){
+    var flipBook;
+    var pdf="/vr_test/pdf/test.pdf";
+    var options = {
+        height: 800,
+        soundEnable : false,
+        autoEnableThumbnail: false,
+        overwritePDFOutline: false,
+        enableDownload: false,
+        text: {
 
+            toggleSound: "Turn on/off Sound",
+            toggleThumbnails: "Toggle Thumbnails",
+            toggleOutline: "Toggle Outline/Bookmark",
+            previousPage: "Previous Page",
+            nextPage: "Next Page",
+            toggleFullscreen: "Toggle Fullscreen",
+            zoomIn: "Zoom In",
+            zoomOut: "Zoom Out",
+            toggleHelp: "Toggle Help",
+      
+            singlePageMode: "Single Page Mode",
+            doublePageMode: "Double Page Mode",
+            downloadPDFFile: "Download PDF File",
+            gotoFirstPage: "Goto First Page",
+            gotoLastPage: "Goto Last Page",
+            play: "Start AutoPlay",
+            pause: "Pause AutoPlay",
+      
+            share: "Share"
+          },
+          enableDebugLog: true,
+          enableAnnotation: true,
+          pdfRenderQuality: 0.90,
+          spotLightIntensity: 0.22,
+        ambientLightColor: "#fff",
+        ambientLightIntensity: 0.8,
+        shadowOpacity: 0.15,
+        stiffness: 3,
+        pixelRatio: window.devicePixelRatio || 1,
+    };
+    $('.pdf_con').addClass('on');
+    if($('.pdf_con').hasClass('on')){
+        flipBook = $("#flipbookContainer").flipBook(pdf, options);
+    }
+     $('#flipbookContainer .close_btn').on('click',function(){
+        $('.pdf_con').removeClass('on');
+    })
+}
 function openModal(){
     console.log('열린다');
     var player = videojs("my_video", {

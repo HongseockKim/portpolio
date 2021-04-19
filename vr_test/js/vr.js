@@ -2,63 +2,111 @@ $(document).ready(function(){
     vrEvent();
 });
 function vrEvent(){
-    var vr_image = '/vr_test/img/24.jpg';
-    pannellum.viewer('vr_con', {
-        "type": "equirectangular",
-        "panorama": vr_image,
-        "autoLoad": true,
-        "showFullscreenCtrl" : false,
-        "showControls ": false,
-        "hotspotDebug": true,
-        'hotSpots':[
-            {
-                "pitch": 0.5,
-                "yaw": 4,
-                "cssClass" : "custom_hotspot",
-                "createTooltipFunc": hotspot,
-                "type": "scene",
-                // "URL": "https://artbma.org/"
-                "clickHandlerFunc": openModal
+
+    var viewers = pannellum.viewer('vr_con', {
+        "default" : {
+            "firstScene" : 'main',
+            "sceneFadeDuration": 1000,
+        },
+        "scenes": {
+            "main": {
+                "type": "equirectangular",
+                "panorama": "/vr_test/img/24.jpg",
+                "autoLoad": true,
+                "showFullscreenCtrl" : false,
+                "showControls ": false,
+                "hotspotDebug": true,
+                'hotSpots':[
+                    {
+                        "pitch": 0.5,
+                        "yaw": 4,
+                        "cssClass" : "custom_hotspot",
+                        "createTooltipFunc": hotspot,
+                        "type": "scene",
+                        // "URL": "https://artbma.org/"
+                        "clickHandlerFunc": openModal
+                    },
+                    {
+                        "pitch": -1,
+                        "yaw": 75,
+                        "cssClass" : "image_con",
+                        "type": "info",
+                        "text": "The ANTIGEN : #COVID 19 PODCAST",
+                        // "URL": "https://artbma.org/"
+                        "clickHandlerFunc": pdfBook
+                    },
+                    {
+                        "pitch": 2,
+                        "yaw": -65,
+                        "cssClass" : "image_con",
+                        "type": "info",
+                        "text": "이미지 크게보기",
+                        // "URL": "https://artbma.org/"
+                        "clickHandlerFunc": openModal
+                    },
+                    {
+                        "pitch": 2,
+                        "yaw": -90,
+                        "cssClass" : "image_con",
+                        "type": "info",
+                        "text": "이미지 크게보기",
+                        // "URL": "https://artbma.org/"
+                        "clickHandlerFunc": openModal
+                    },
+                    {
+                        "pitch": 2,
+                        "yaw": -113,
+                        "cssClass" : "image_con",
+                        "type": "info",
+                        "text": "이미지 크게보기",
+                        // "URL": "https://artbma.org/"
+                        "clickHandlerFunc": openModal
+                    },
+                    {
+                        "pitch": 1.5,
+                        "hfov": 110,
+                        "yaw": -180,
+                        "type": "scene",
+                        "cssClass" : "loaction_1",
+                        "text": "이미지 크게보기",
+                        "sceneId " : 'mains',
+                        "clickHandlerFunc": locationEvent
+                    },
+                ],
             },
-            {
-                "pitch": -1,
-                "yaw": 75,
-                "cssClass" : "image_con",
-                "type": "info",
-                "text": "The ANTIGEN : #COVID 19 PODCAST",
-                // "URL": "https://artbma.org/"
-                "clickHandlerFunc": pdfBook
+            "mains": {
+                "type": "equirectangular",
+                "panorama": "/vr_test/img/test.jpg",
+                "autoLoad": true,
+                "showFullscreenCtrl" : false,
+                "showControls ": false,
+                "hotspotDebug": true,
+                'hotSpots':[
+                    {
+                        "pitch": 1.5,
+                        "yaw": -180,
+                        "type": "equirectangular",
+                        "cssClass" : "loaction_1",
+                        "text": "이미지 크게보기",
+                        "sceneId " : 'main',
+                        "clickHandlerFunc": locationEvent
+                    },
+                ],
             },
-            {
-                "pitch": 2,
-                "yaw": -65,
-                "cssClass" : "image_con",
-                "type": "info",
-                "text": "이미지 크게보기",
-                // "URL": "https://artbma.org/"
-                "clickHandlerFunc": openModal
-            },
-            {
-                "pitch": 2,
-                "yaw": -90,
-                "cssClass" : "image_con",
-                "type": "info",
-                "text": "이미지 크게보기",
-                // "URL": "https://artbma.org/"
-                "clickHandlerFunc": openModal
-            },
-            {
-                "pitch": 2,
-                "yaw": -113,
-                "cssClass" : "image_con",
-                "type": "info",
-                "text": "이미지 크게보기",
-                // "URL": "https://artbma.org/"
-                "clickHandlerFunc": openModal
-            },
-        ]
+        },
     });
+    function locationEvent(){
+        if($(this).attr('sceneId ') === "mains"){
+            viewers.loadScene('mains');
+        }else if($(this).attr('sceneId ') === "main"){
+            viewers.loadScene('main');
+        }
+    }
 }
+
+
+
+
 function pdfBook(){
     var flipBook;
     var pdf="/vr_test/pdf/test.pdf";

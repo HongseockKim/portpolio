@@ -72,6 +72,16 @@ function vrEvent(){
                         "sceneId " : 'mains',
                         "clickHandlerFunc": locationEvent
                     },
+                    {
+                        "pitch": 1.5,
+                        "hfov": 1200,
+                        "yaw": -190,
+                        "type": "scene",
+                        "cssClass" : "loaction_2",
+                        "text": "이미지 크게보기",
+                        "sceneId " : 'main2',
+                        "clickHandlerFunc": locationEvent
+                    },
                 ],
             },
             "mains": {
@@ -100,6 +110,8 @@ function vrEvent(){
             viewers.loadScene('mains');
         }else if($(this).attr('sceneId ') === "main"){
             viewers.loadScene('main');
+        }else if($(this).attr('sceneId ') === "main2"){
+          location.href = "/vr_test/pano.html"
         }
     }
 }

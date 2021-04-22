@@ -8,7 +8,7 @@ $(document).ready(function(){
 function swiperSlide(){
     var slide = new Swiper('#swiper_slide_con',{
         slidesPerView : "auto",
-        spaceBetween : 4,
+        //spaceBetween : 3,
         grabCursor: true,
         loop:true,
         freeMode : true,

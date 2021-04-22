@@ -69,7 +69,7 @@ body {
                     .swiper-slide {
                         float: left;
                         height: 100%;
-                        width: calc(100% / 3.5);
+                        width: calc(100% / 3);
                         .con {
                             width: 100%;
                             height: 100%;
@@ -81,7 +81,7 @@ body {
                                 padding: 10px;
                                 box-sizing: border-box;
                                 img {
-                                    width: 100px;
+                                    width: 70px;
                                     margin-bottom: 50px;
                                 }
                                 p {
@@ -97,11 +97,25 @@ body {
         }
         #Portfolio_con {
             h2 {
+                position: relative;
+                right: -100%;
                 padding: 20px 0;
                 text-align: center;
-                font-size: 32px;
+                font-size: 4vw;
                 margin-top: 100px;
-                margin-bottom: 30px;
+                margin-bottom: 100px;
+                animation-name: textAni;
+                animation-duration: 1s;
+                animation-delay: 0.3s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes textAni {
+                from{
+                    right: -100%;
+                }
+                to{
+                    right: 0;
+                }
             }
             .page_con_wrap {
                 .page_con {

@@ -1,0 +1,62 @@
+@charset "utf-8";
+.wrap{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #ccc;
+    overflow: hidden;
+}
+.wrap>div:not(.content){
+    width: 100vw;height: 100vh;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+.wrap video{
+    position: fixed;
+    top:0;left:0;
+  width: 100vw;height: 100vh;
+}
+/* style.css */ /* 숨기려는 버튼을 골라서 쓰자 */ /* 전체화면 버튼 */ video::-webkit-media-controls-fullscreen-button {
+display: none;
+} /* 일시정지, 재생 버튼 */ video::-webkit-media-controls-play-button {
+    display: none;
+} /* 재생 슬라이드..? */ video::-webkit-media-controls-timeline {
+    display: none;
+} /* 현재 진행 시간 */ video::-webkit-media-controls-current-time-display{
+    display: none;
+} /* 전체 시간 */ video::-webkit-media-controls-time-remaining-display {
+    display: none;
+} /* 음소거 버튼 */ video::-webkit-media-controls-mute-button {
+    display: none;
+} /* 볼륨 조절 슬라이드 */ video::-webkit-media-controls-volume-slider {
+    display: none;
+} 
+/* 괄호에 display: none !important; 를 추가하면된다. 예 ) 전체화면 전환 버튼을 숨긴다. 다만 더블클릭으로 전체화면이 되는 기능등은 그대로고 단지 버튼만 없앤다. */ video::-webkit-media-controls-fullscreen-button { display: none !important; }
+
+.content{
+    position: absolute;
+    top:0;left:0;
+    width: 100%;height: 100%;
+    z-index: 90;
+}
+.content .inner{
+    padding:50px 0;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+.content .logo{
+    font-size: 2.5vw;
+    color: rgb(235, 157, 54);
+}
+section input,
+section label{
+    display: block;
+}
+section label{
+    margin: 30px 0;;
+    font-size: 1.5vw;
+    color: #fff;
+}
+section input{
+    width: 500px;height: 40px;
+}

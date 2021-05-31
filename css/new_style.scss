@@ -46,24 +46,24 @@ body {
                     }
                 }
             }
-        }
-    }
-    @media(max-width:1450px){
-        .info_wrap {
-            .profile {
-                img {
-                    width: 100%;
-                }
-                ul {
-                    li {
-                        font-size: 1.5vw;
+            @media(max-width:1450px){
+                .info_wrap {
+                    .profile {
+                        img {
+                            width: 100%;
+                        }
+                        ul {
+                            li {
+                                font-size: 1.5vw;
+                            }
+                        }
+                        p {
+                            font-size: 1.5vw;
+                        }
                     }
-                }
-                p {
-                    font-size: 1.5vw;
-                }
+                } 
             }
-        } 
+        }
     }
     .contnet {
         margin-left: 20vw;

@@ -287,6 +287,21 @@ body {
     }
 }
 @media(max-width:1450px){
+    .wrapper{
+        #header_top{
+            width: 27vw;
+            .inner{
+                .logo{
+                    img{
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+        .contnet{
+            margin-left: 27vw;
+        }
+    }
     .info_wrap {
         .profile {
             img {

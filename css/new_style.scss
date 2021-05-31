@@ -4,7 +4,7 @@ body {
     line-height: 1;
 }
 .wrapper {
-    background:red;
+    background:fafafa;
     overflow: hidden;
     #header_top {
         position: fixed;
@@ -45,6 +45,23 @@ body {
                         line-height: 1.5em;
                     }
                 }
+            }
+            @media(max-width:1450px){
+                .info_wrap {
+                    .profile {
+                        img {
+                            width: 100%;
+                        }
+                        ul {
+                            li {
+                                font-size: 1.5vw;
+                            }
+                        }
+                        p {
+                            font-size: 1.5vw;
+                        }
+                    }
+                } 
             }
         }
     }

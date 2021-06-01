@@ -4,8 +4,39 @@ body {
     line-height: 1;
 }
 .wrapper {
-    background:fafafa;
+    position: relative;
+    background:#fafafa;
     overflow: hidden;
+    padding-left: 20vw;
+    .nav_list_wrap{
+        .nav_list{
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+            .nav_item{
+                margin-right: 10px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                button{
+                    font-family: "Noto Sans";
+                    padding:10px 80px;
+                    background: #f7f7f7;
+                    border: none;
+                    font-weight: 500;
+                    font-size: 1vw;
+                    border-radius: 6px;
+                    box-shadow: 0px 0px 2px 2px #dfdfdf inset;
+                    cursor: pointer;
+                    &:hover{
+                        background: #4d85ec;
+                        color: #fafafa;
+                    }
+                }
+            }
+        }
+    }
+}
     #header_top {
         position: fixed;
         top: 0;
@@ -14,6 +45,7 @@ body {
         height: 100%;
         background: #fafafa;
         box-shadow: 0px 0px 10px #e9e9e9;
+        z-index: 99;
         .inner {
             width: 100%;
             text-align: center;
@@ -49,20 +81,40 @@ body {
             
         }
     }
+   
     .contnet {
-        margin-left: 20vw;
         background: #fafafa;
+       
         #skill_con {
             height: 250px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
             .inner {
                 height: 100%;
                 position: relative;
+                text-align: center;
                 & > h3 {
+                    display: inline-block;
+                    position: relative;
                     text-align: center;
                     padding: 30px 0;
                     font-size: 3vw;
                     margin-bottom: 30px;
+                    .icon{
+                        position: absolute;
+                        top:16%;transform: translateY(-50%);
+                        left:-29%;
+                        width: 2vw;
+                        height: 4vw;
+                        background: url('../img/pan_icon.png')no-repeat center center;
+                        background-size: contain;
+                        transform: rotate(45deg);
+                        
+                    }
+                    @media(max-width:950px){
+                        .icon{
+                            top:31%;
+                        }
+                    }
                 }
                 .swiper-container {
                     width: 100%;
@@ -97,7 +149,9 @@ body {
             }
         }
         #Portfolio_con {
+            text-align: center;
             h2 {
+                display: inline-block;
                 position: relative;
                 right: -100%;
                 padding: 20px 0;
@@ -109,6 +163,16 @@ body {
                 animation-duration: 1s;
                 animation-delay: 0.3s;
                 animation-fill-mode: forwards;
+                .icon{
+                    position: absolute;
+                    top: 50%;
+                    left: -24%;
+                    transform: translateY(-50%);
+                    width: 3.3vw;
+                    height: 4vw;
+                    background: url(/img/programing_icon.png) no-repeat center center;
+                    background-size: cover;
+                }
             }
             @keyframes textAni {
                 from{
@@ -285,9 +349,7 @@ body {
             }
         }
     }
-}
 @media(max-width:1450px){
-    .wrapper{
         #header_top{
             width: 27vw;
             .inner{
@@ -298,10 +360,9 @@ body {
                 }
             }
         }
-        .contnet{
-            margin-left: 27vw;
+        .wrapper{
+            padding-left: 27vw;
         }
-    }
     .info_wrap {
         .profile {
             img {

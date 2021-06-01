@@ -2,9 +2,9 @@
 $(document).ready(function(){
     $('.wrapper .contnet #Portfolio_con .page_con_wrap .page_con .spage_list .grid-item a').attr('target','_blank');
     swiperSlide();
-    
     portfolio_list_data();
     portfolio_content_data();
+    navEvent();
 });
 function swiperSlide(){
     var slide = new Swiper('#swiper_slide_con',{
@@ -129,5 +129,23 @@ function portfolio_content_data(){
             imageHoverEvent();
         }
 
+    })
+}
+function navEvent(){
+    $(' .nav_list_wrap .nav_list .nav_item button').on('click',function(){
+        var idx = $(this).parent('li').index();
+        var pagenames = "";
+        console.log(idx);
+        $('#con_wrtap').children().remove();
+        if(idx === 0){
+            location.href="index.html"
+        }else{
+            pagenames = $(this).attr('id');
+        }
+        $('#con_wrtap').load(""+pagenames+".html",function(r,s,x){
+            if(s = "success"){
+                console.log('성공');
+            }
+        });
     })
 }

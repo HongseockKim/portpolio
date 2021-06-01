@@ -1,7 +1,11 @@
 {
   "dependencies": {
     "basicscroll": "^3.0.4",
+    "datepicker": "*",
+    "datetimepicker": "^0.1.39",
     "dflip": "^1.0.0",
+    "docslider": "^3.0.1",
+    "fullpage.js": "^3.1.1",
     "jquery-simplyscroll": "^2.1.1",
     "pannellum": "^2.5.6",
     "pano": "^1.1.1",
@@ -12,6 +16,7 @@
     "scrollmagic": "^2.0.8",
     "swiper": "^6.5.7",
     "three": "^0.127.0",
+    "timepicker": "^1.13.18",
     "video.js": "^7.11.8",
     "videojs": "^1.0.0"
   }

@@ -42,6 +42,11 @@ function imageHoverEvent(){
        console.log(imagewrapHeight);
        $(".contentviewr").eq(idx).find('.text_con').css({'height':imagewrapHeight});
        $(".contentviewr").eq(idx).addClass('open');
+       $(window).on('resize',function(){
+        var imagsizes =  $('.contentviewr').eq(idx).find('.img_wrap').height() ;
+        console.log(imagsizes)
+        $(".contentviewr").eq(idx).find('.text_con').css({'height':imagsizes});
+       });
     });
 
     $(".wrapper .contentviewr .clost_btn_wrap .close_btn").on('click',function(){
@@ -135,17 +140,35 @@ function navEvent(){
     $(' .nav_list_wrap .nav_list .nav_item button').on('click',function(){
         var idx = $(this).parent('li').index();
         var pagenames = "";
-        console.log(idx);
+        $('.nav_list_wrap .nav_list .nav_item button').removeClass('on');
+        $(this).addClass('on');
         $('#con_wrtap').children().remove();
         if(idx === 0){
-            location.href="index.html"
+            location.reload();
         }else{
             pagenames = $(this).attr('id');
         }
         $('#con_wrtap').load(""+pagenames+".html",function(r,s,x){
             if(s = "success"){
                 console.log('성공');
+                uiEvent()
             }
         });
     })
+}
+function uiEvent(){
+    $('.contnet.ui .ui_con .btn_list .btn_item .sylte_2').on('mouseenter',function(){
+        $(this).children('.text').css({'transition':'all 0.3s','width':100 + "%",'opacity':1});
+    });
+    $('.contnet.ui .ui_con .btn_list .btn_item .sylte_2').on('mouseleave',function(){
+        $(this).addClass('on2');
+        $(this).children('.text').css({'left':100 + "%"});
+        transitionendEvent();
+    })
+    function transitionendEvent(){
+        $('.contnet.ui .ui_con .btn_list .btn_item .sylte_2 .text').one(' transitionend',function(){
+            console.log('끝')
+            $(this).css({'transition':'none',"opacity": 0,"left":0+"%","width":0+'%'});
+        })
+    }
 }

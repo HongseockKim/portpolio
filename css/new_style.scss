@@ -13,6 +13,7 @@ body {
             display: flex;
             justify-content: start;
             align-items: flex-start;
+            padding:20px 0;
             .nav_item{
                 margin-right: 10px;
                 &:last-child{
@@ -29,6 +30,10 @@ body {
                     box-shadow: 0px 0px 2px 2px #dfdfdf inset;
                     cursor: pointer;
                     &:hover{
+                        background: #4d85ec;
+                        color: #fafafa;
+                    }
+                    &.on{
                         background: #4d85ec;
                         color: #fafafa;
                     }
@@ -84,7 +89,92 @@ body {
    
     .contnet {
         background: #fafafa;
-       
+       &.vr{
+           background: #4b4b4b;
+           height: 800px;
+           .vr_test_1{
+               width: 100%;height: 100%;
+           }
+       }
+       &.ui{
+           padding-left: 20px;
+           .ui_con{
+            .title{
+                padding-bottom: 10px;
+                border-bottom: 1px solid #3577db;
+            }
+            .btn_list{
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                .btn_item{
+                    padding:20px 0;
+                    flex-basis: 50%;
+                    text-align: center;
+                    button{
+                        font-family: "Noto Sans";
+                        font-weight: bold;
+                        color: #fff;
+                        border: none;
+                        text-transform: capitalize;
+                        cursor: pointer;
+                    }
+                    .common{
+                        padding:10px 50px;
+                        background: #7196e7;
+                        border-radius: 6px;
+                    }
+                    .default{
+                        box-shadow: 0px 0px 2px 2px #a6b1c9 inset;
+                        transition: all 0.3s;
+                        &:hover{
+                            background: #7196e7;
+                        border-radius: 8px;
+                        box-shadow: 0px 0px 10px 2px #4765a5 inset;
+                        }
+                    }
+                    .sylte_1{
+                        position: relative;
+                        overflow: hidden;
+                        transition: all 0.3s;
+                        &:after{
+                            content: 'Button';
+                            position: absolute;
+                            top:0;left:0;
+                            width: 0%;height: 100%;
+                            padding:10px 0px;
+                            background: #3577db;
+                            overflow: hidden;
+                            transition: all 0.2s;
+                        }
+                        &:hover{
+                            &::after{
+                                width: 100%;
+                            }
+                            box-shadow:  0px 0px 2px 2px #7196e7;
+                        }
+                    }
+                    .sylte_2{
+                        position: relative;
+                        overflow: hidden;
+                        transition: all 0.3s;
+                        text-align: center;
+                        .text{
+                            position: absolute;
+                            top:0;left:0;
+                            width: 0%;
+                            height: 100%;
+                            background: #3577db;
+                            line-height: 34px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+           }
+           
+       }
         #skill_con {
             height: 250px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -322,7 +412,7 @@ body {
             .text_con {
                 float: right;
                 width: 30%;
-                padding-top: 100px;
+                
                 text-align: center;
                 h3 {
                     display: inline-block;

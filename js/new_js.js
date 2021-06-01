@@ -2,8 +2,7 @@
 $(document).ready(function(){
     $('.wrapper .contnet #Portfolio_con .page_con_wrap .page_con .spage_list .grid-item a').attr('target','_blank');
     swiperSlide();
-    pageGridlayoutEvent();
-    imageHoverEvent();
+    dataPasin();
 });
 function swiperSlide(){
     var slide = new Swiper('#swiper_slide_con',{
@@ -47,4 +46,47 @@ function imageHoverEvent(){
         $('.contentviewr').removeClass('open');
         $('.contentviewr').find('.text_con').css({'height':'auto'});
     });
+}
+function dataPasin(){
+    $.ajax({
+        url : "../data/data.json",
+        dataType : "json",
+        success : function(data){
+            var obj  = "";
+            $(data).each(function(v,i){
+                $(i.imagesrc).each(function(e,r){
+                    console.log(r.linkif)
+                    console.log(r.sitename)
+                    if(r.linkif === "true" && r.subif === "true"){
+                        obj += "<li class='grid-item'>",
+                        obj += "<img src="+r.mainimage+" alt=''>",
+                        obj += "<div class='view'>",
+                        obj += "<a href='"+r.link_1+"' target='_blank'>메인메뉴",
+                        obj += "</a>",
+                        obj += "<a href='"+r.link_2+"' target='_blank'>서브메뉴",
+                        obj += "</a>",
+                        obj += "</div>",
+                        obj += "</li>"
+                    }else if(r.linkif === "true" && r.subif === "false"){
+                        obj += "<li class='grid-item'>",
+                        obj += "<img src="+r.mainimage+" alt=''>",
+                        obj += "<div class='view'>",
+                        obj += "<a href='"+r.link_1+"' target='_blank'>메인메뉴",
+                        obj += "</a>",
+                        obj += "</div>",
+                        obj += "</li>"
+                    }else{
+                        obj += "<li class='grid-item'>",
+                        obj += "<img src="+r.mainimage+" alt=''>",
+                        obj += "</li>"
+                    }
+                    
+                })
+                $('#portfolio_list li').remove();
+                $('#portfolio_list').append(obj);
+                pageGridlayoutEvent();
+                imageHoverEvent();
+            })
+        }
+    })
 }

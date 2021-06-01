@@ -1,0 +1,93 @@
+{
+    "imagesrc" : [
+        {
+            "subif" : "true",
+            "linkif" : "true",
+            "sitename" : "smeg",
+            "mainimage" :"img/smeg2.png",
+            "image_1": "/img/portpolit_img/image1_0.jpg",
+            "link_1" : "page/01/index.html",
+            "link_2" : "page/01/page/all.html"
+        }
+        ,{
+            "subif" : "true",
+            "linkif" : "true",
+            "sitename" : "DAELIM coperration",
+            "mainimage" :"img/dalim2.png",
+            "image_1": "/img/portpolit_img/image1_1.jpg",
+            "link_1" : "page/02/index.html",
+            "link_2" : "page/02/page/compay_info_overview.html"
+        }
+        ,{
+            "subif" : "true",
+            "linkif" : "true",
+            "sitename" : "육아정책연구소",
+            "mainimage" :"img/kicce2.png",
+            "image_1": "/img/portpolit_img/image1_2.jpg",
+            "link_1" : "page/03/index.html",
+            "link_2" : "page/03/page/site.html"
+        }
+        ,{
+            "subif" : "false",
+            "linkif" : "true",
+            "sitename" : "코로나 바이러스-19",
+            "mainimage" :"img/covid2.png",
+            "image_1": "/img/portpolit_img/image1_3.jpg",
+            "link_1" : "page/04/index.html",
+            "link_2" : "page/03/page/site.html"
+        }
+        ,{
+            "subif" : "true",
+            "linkif" : "true",
+            "sitename" : "어글리스토브",
+            "mainimage" :"img/uglu2.png",
+            "image_1": "/img/portpolit_img/image1_4.jpg",
+            "link_1" : "page/05/index.html",
+            "link_2" : "page/05/page/beverage.html"
+        }
+        ,{
+            "linkif" : "false",
+            "sitename" : "Virtual 웹심포지움",
+            "mainimage" :"img/ksnr.jpg",
+            "image_1": "/img/portpolit_img/image1_5.jpg",
+            "image_2": "/img/portpolit_img/image1_5_1.jpg",
+            "image_3": "/img/portpolit_img/image1_5_2.jpg"
+        }
+        ,{
+            "linkif" : "false",
+            "sitename" : "XOSPATA",
+            "mainimage" :"img/image1_6.jpg",
+            "image_1": "../img/portpolit_img/image1_6.jpg"
+        }
+        ,{
+            "linkif" : "false",
+            "sitename" : "ABX Webinar",
+            "mainimage" :"img/abx.png",
+            "image_1": "../img/portpolit_img/image1_7.jpg"
+        }
+        ,{
+            "linkif" : "false",
+            "sitename" : "Chungnam Global R&D",
+            "mainimage" :"img/chunam.png",
+            "image_1": "../img/portpolit_img/image1_8.jpg",
+            "image_2": "../img/portpolit_img/image1_8_1.jpg",
+            "image_3": "../img/portpolit_img/image1_8_2.jpg"
+        }
+        ,{
+            "linkif" : "false",
+            "sitename" : "KSNR 대한연하장애학회",
+            "mainimage" :"img/ksnr.png",
+            "image_1": "../img/portpolit_img/image1_9.jpg",
+            "image_2": "../img/portpolit_img/image1_9_1.jpg",
+            "image_3": "../img/portpolit_img/image1_9_2.jpg"
+        }
+        ,{
+            "linkif" : "false",
+            "sitename" : "KDYS 대한연하장애학회",
+            "mainimage" :"img/kdys.png",
+            "image_1": "../img/portpolit_img/image1_11.jpg",
+            "image_2": "../img/portpolit_img/image1_11_1.jpg",
+            "image_3": "../img/portpolit_img/image1_11_2.jpg"
+        }
+    ]
+}

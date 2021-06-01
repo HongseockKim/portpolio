@@ -108,6 +108,8 @@ function portfolio_content_data(){
                     sobj += "<div class='content clearfix'>",
                     sobj += "<div class='img_wrap'>",
                     sobj += "<img src='"+sv.image_1+"' alt=''>",
+                    sobj += "<img src='"+sv.image_2+"' alt=''>",
+                    sobj += "<img src='"+sv.image_3+"' alt=''>",
                     sobj += "</div>",
                     sobj += "<div class='text_con'>",
                     sobj += "<h3>"+sv.sitename+"</h3>",
@@ -121,6 +123,9 @@ function portfolio_content_data(){
             });
             $('#modal_wrap div.contentviewr').remove();
             $('#modal_wrap').append(sobj);
+            $('#modal_wrap div.contentviewr .img_wrap img').each(function(){
+                $('img[src = undefined]').remove();
+            })
             imageHoverEvent();
         }
 

@@ -2,7 +2,9 @@
 $(document).ready(function(){
     $('.wrapper .contnet #Portfolio_con .page_con_wrap .page_con .spage_list .grid-item a').attr('target','_blank');
     swiperSlide();
-    dataPasin();
+    
+    portfolio_list_data();
+    portfolio_content_data();
 });
 function swiperSlide(){
     var slide = new Swiper('#swiper_slide_con',{
@@ -47,7 +49,7 @@ function imageHoverEvent(){
         $('.contentviewr').find('.text_con').css({'height':'auto'});
     });
 }
-function dataPasin(){
+function portfolio_list_data(){
     $.ajax({
         url : "../data/data.json",
         dataType : "json",
@@ -55,8 +57,6 @@ function dataPasin(){
             var obj  = "";
             $(data).each(function(v,i){
                 $(i.imagesrc).each(function(e,r){
-                    console.log(r.linkif)
-                    console.log(r.sitename)
                     if(r.linkif === "true" && r.subif === "true"){
                         obj += "<li class='grid-item'>",
                         obj += "<img src="+r.mainimage+" alt=''>",
@@ -85,8 +85,44 @@ function dataPasin(){
                 $('#portfolio_list li').remove();
                 $('#portfolio_list').append(obj);
                 pageGridlayoutEvent();
-                imageHoverEvent();
             })
         }
+    })
+}
+function portfolio_content_data(){
+    $.ajax({
+        url : "../data/data.json",
+        dataType: "json",
+        success : function(data){
+            var sobj = "";
+            $(data).each(function(i,v){
+                $(v.imagesrc).each(function(si,sv){
+                    console.log(sv);
+                    sobj += "<div class='contentviewr'>",
+                    sobj += "<div class='clost_btn_wrap'>",
+                    sobj += "<button type='button' class='close_btn'>",
+                    sobj += "<span class='bar bar_1'></span>",
+                    sobj += "<span class='bar bar_2'></span>",
+                    sobj += "</button>",
+                    sobj += "</div>",
+                    sobj += "<div class='content clearfix'>",
+                    sobj += "<div class='img_wrap'>",
+                    sobj += "<img src='"+sv.image_1+"' alt=''>",
+                    sobj += "</div>",
+                    sobj += "<div class='text_con'>",
+                    sobj += "<h3>"+sv.sitename+"</h3>",
+                    sobj += "<div class='scroll_bar'>",
+                    sobj += "<span class='bar'></span>",
+                    sobj += "</div>",
+                    sobj += "</div>",
+                    sobj += "</div>",
+                    sobj += "</div>"
+                })
+            });
+            $('#modal_wrap div.contentviewr').remove();
+            $('#modal_wrap').append(sobj);
+            imageHoverEvent();
+        }
+
     })
 }

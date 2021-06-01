@@ -324,7 +324,7 @@ body {
         top: 0;
         right: -80%;
         padding-top: 100px;
-        width: 80%;
+        width: calc(100% - 20vw);
         height: 100%;
         background: #fff;
         z-index: 99;
@@ -449,6 +449,9 @@ body {
                     }
                 }
             }
+        }
+        .contentviewr{
+            width: calc(100% - 27vw);
         }
         .wrapper{
             padding-left: 27vw;

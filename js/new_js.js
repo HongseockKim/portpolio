@@ -7,17 +7,38 @@ $(document).ready(function(){
     navEvent();
 });
 function swiperSlide(){
-    var slide = new Swiper('#swiper_slide_con',{
-        slidesPerView : "auto",
-        //spaceBetween : 3,
-        grabCursor: true,
-        loop:true,
-        freeMode : true,
-        autoplay :{
-            delay : 3000,
-            disableOnInteraction : false,
+    
+
+    $.ajax({
+        url:"/data/skill.json",
+        dataType :"json",
+        success : function(data){
+            var obj = "";
+            $(data).each(function(i,v){
+                $(v.skill).each(function(si,iv){
+                    console.log(iv);
+                    obj += "<li class='swiper-slide'>"
+                    obj += "<div class='con'>"
+                    obj += "<img src='"+iv.link+"' alt=''>"
+                    obj += "</div>"
+                    obj += "</li>"
+                })
+            })
+            $('#skill_list li').remove();
+            $('#skill_list').append(obj);
+            var slide = new Swiper('#swiper_slide_con',{
+                slidesPerView : "auto",
+                //spaceBetween : 3,
+                grabCursor: true,
+                loop:true,
+                freeMode : true,
+                autoplay :{
+                    delay : 3000,
+                    disableOnInteraction : false,
+                }
+            });
         }
-    });
+    })
 }
 function pageGridlayoutEvent(){
     var gridItem = $('.grid');
@@ -63,7 +84,7 @@ function portfolio_list_data(){
             $(data).each(function(v,i){
                 $(i.imagesrc).each(function(e,r){
                     if(r.linkif === "true" && r.subif === "true"){
-                        obj += "<li class='grid-item'>",
+                        obj += "<div class='grid-item'>",
                         obj += "<img src="+r.mainimage+" alt=''>",
                         obj += "<div class='view'>",
                         obj += "<a href='"+r.link_1+"' target='_blank'>메인메뉴",
@@ -71,7 +92,7 @@ function portfolio_list_data(){
                         obj += "<a href='"+r.link_2+"' target='_blank'>서브메뉴",
                         obj += "</a>",
                         obj += "</div>",
-                        obj += "</li>"
+                        obj += "</div>"
                     }else if(r.linkif === "true" && r.subif === "false"){
                         obj += "<li class='grid-item'>",
                         obj += "<img src="+r.mainimage+" alt=''>",
@@ -102,7 +123,6 @@ function portfolio_content_data(){
             var sobj = "";
             $(data).each(function(i,v){
                 $(v.imagesrc).each(function(si,sv){
-                    console.log(sv);
                     sobj += "<div class='contentviewr'>",
                     sobj += "<div class='clost_btn_wrap'>",
                     sobj += "<button type='button' class='close_btn'>",

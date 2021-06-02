@@ -242,22 +242,9 @@ body {
                         .con {
                             width: 100%;
                             height: 100%;
-                            a {
-                                display: block;
-                                width: 100%;
-                                height: 100%;
-                                text-align: center;
-                                padding: 10px;
-                                box-sizing: border-box;
-                                img {
-                                    width: 70px;
-                                    margin-bottom: 50px;
-                                }
-                                p {
-                                    line-height: 1.5em;
-                                    color: #4b4b4b;
-                                    font-weight: 600;
-                                }
+                            img {
+                                width: 70px;
+                                margin-bottom: 50px;
                             }
                         }
                     }

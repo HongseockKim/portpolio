@@ -88,6 +88,19 @@
             "image_1": "../img/portpolit_img/image1_11.jpg",
             "image_2": "../img/portpolit_img/image1_11_1.jpg",
             "image_3": "../img/portpolit_img/image1_11_2.jpg"
+        },
+        {
+            "linkif" : "false",
+            "sitename" : "ABSOLUTE ONLINE SYMPOSIUM",
+            "mainimage" :"img/absolute.jpg",
+            "image_1": "../img/portpolit_img/image_12_1.png"
+        },
+        {
+            "linkif" : "false",
+            "sitename" : "2020 제약산업 윤리경영 ACADEMY",
+            "mainimage" :"img/acadamy.jpg",
+            "image_1": "../img/portpolit_img/image_13_1.png",
+            "image_2": "../img/portpolit_img/image_13_2.png"
         }
     ]
 }

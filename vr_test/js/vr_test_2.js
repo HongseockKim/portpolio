@@ -14,11 +14,11 @@ function vrEvent(){
                 "title" :"테스트 vr sect 1번",
                 "author" : "Hongseockim",
                 "panorama": "/vr_test/img/25.png",
-                "preview":"/vr_test/img/poster.png",/*미리보기 이미지*/
+                "preview":"/vr_test/img/posters.jpg",/*미리보기 이미지*/
                 "previewTitle":"테스트 입니다!!",
                 //"autoRotate" :'3',처음 로드후 회전함
                 "friction" : 0.1,/*회전시마찰계수*/
-                "autoLoad": true,
+                "autoLoad": false,
                 "yaw":0,/*시작시 수평 각도*/
                 "pitch":0,/*시작시 수직 각도*/
                 "hfov":200,/*정면 시야*/

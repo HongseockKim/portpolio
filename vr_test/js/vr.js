@@ -11,11 +11,29 @@ function vrEvent(){
         "scenes": {
             "main": {
                 "type": "equirectangular",
+                "title" :"테스트 vr sect 1번",
+                "author" : "Hongseockim",
                 "panorama": "/vr_test/img/24.jpg",
-                "autoLoad": true,
+                "preview":"/vr_test/img/poster.png",/*미리보기 이미지*/
+                "previewTitle":"테스트 입니다!!",
+                //"autoRotate" :'3',처음 로드후 회전함
+                "friction" : 0.1,/*회전시마찰계수*/
+                "autoLoad": false,
+                "yaw":100,/*시작시 수평 각도*/
+                "pitch":0,/*시작시 수직 각도*/
+                "hfov":200,/*정면 시야*/
+                "minYaw":-180,/*유저가 볼수 있는 각도 제어*/
+                "maxYaw":180,/*유저가 볼수 있는 각도 제어*/
+                "minPitch":-90,
+                "maxPitch":90,
+                "multiResMinHfov":true,
                 "showFullscreenCtrl" : false,
                 "showControls ": false,
                 "hotspotDebug": true,
+                "sceneFadeDuration":300,//장면간 전환시 밀리세컨
+                "haov":70,
+                "backgroundColor":([255,255,255]),
+                "vaov":40,
                 'hotSpots':[
                     {
                         "pitch": 0.5,

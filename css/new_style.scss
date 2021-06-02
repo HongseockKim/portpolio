@@ -300,7 +300,24 @@ body {
                             box-shadow: 3px 3px 4px #d6d6d6;
                             box-sizing: border-box;
                             overflow: hidden;
-                            img {
+                            .skill_image_con{
+                                position: absolute;
+                                left: 0;
+                                width: 100%;
+                                height: 40px;
+                                text-align: right;
+                                img{
+                                    width: 40px;
+                                    height: 100%;
+                                }
+                                &.mid{
+                                    bottom: 70px;
+                                }
+                                &.bot{
+                                    bottom: 20px;
+                                }
+                            }
+                            &>img {
                                 width: 100%;
                                 display: block;
                                 transition: all 0.3s;
@@ -321,7 +338,7 @@ body {
                                 }
                             }
                             &:hover {
-                                img {
+                                &>img {
                                     transform: scale(1.1);
                                     cursor: pointer;
                                 }

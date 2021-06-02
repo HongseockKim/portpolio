@@ -89,6 +89,13 @@ function portfolio_list_data(){
                         obj += "<a href='"+r.link_2+"' target='_blank'>서브메뉴",
                         obj += "</a>",
                         obj += "</div>",
+                        obj += "<div class='skill_image_con mid'>",
+                        obj += "<img src='"+r.skilllink+"' alt=''>",
+                        obj += "<img src='"+r.skilllink_2+"' alt=''>",
+                        obj += "<img src='"+r.skilllink_3+"' alt=''>",
+                        obj += "<img src='"+r.skilllink_4+"' alt=''>",
+                        obj += "<img src='"+r.skilllink_5+"' alt=''>",
+                        obj += "</div>",
                         obj += "</div>"
                     }else if(r.linkif === "true" && r.subif === "false"){
                         obj += "<li class='grid-item'>",
@@ -97,16 +104,33 @@ function portfolio_list_data(){
                         obj += "<a href='"+r.link_1+"' target='_blank'>메인메뉴",
                         obj += "</a>",
                         obj += "</div>",
+                        obj += "<div class='skill_image_con mid'>",
+                        obj += "<img src='"+r.skilllink+"' alt=''>",
+                        obj += "<img src='"+r.skilllink_2+"' alt=''>",
+                        obj += "<img src='"+r.skilllink_3+"' alt=''>",
+                        obj += "<img src='"+r.skilllink_4+"' alt=''>",
+                        obj += "<img src='"+r.skilllink_5+"' alt=''>",
+                        obj += "</div>",
                         obj += "</li>"
                     }else{
                         obj += "<li class='grid-item'>",
                         obj += "<img src="+r.mainimage+" alt=''>",
+                        obj += "<div class='skill_image_con bot'>",
+                        obj += "<img src='"+r.skilllink+"' alt=''>",
+                        obj += "<img src='"+r.skilllink_2+"' alt=''>",
+                        obj += "<img src='"+r.skilllink_3+"' alt=''>",
+                        obj += "<img src='"+r.skilllink_4+"' alt=''>",
+                        obj += "<img src='"+r.skilllink_5+"' alt=''>",
+                        obj += "</div>",
                         obj += "</li>"
                     }
                     
                 })
                 $('#portfolio_list li').remove();
                 $('#portfolio_list').append(obj);
+                $('.contnet #Portfolio_con .page_con_wrap .page_con .spage_list .grid-item .skill_image_con img').each(function(){
+                    $('img[src = null]').remove();
+                });
                 portfolio_content_data();
                 pageGridlayoutEvent();
             })

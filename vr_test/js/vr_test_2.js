@@ -13,13 +13,13 @@ function vrEvent(){
                 "type": "equirectangular",
                 "title" :"테스트 vr sect 1번",
                 "author" : "Hongseockim",
-                "panorama": "/vr_test/img/24.jpg",
+                "panorama": "/vr_test/img/25.png",
                 "preview":"/vr_test/img/poster.png",/*미리보기 이미지*/
                 "previewTitle":"테스트 입니다!!",
                 //"autoRotate" :'3',처음 로드후 회전함
                 "friction" : 0.1,/*회전시마찰계수*/
-                "autoLoad": false,
-                "yaw":100,/*시작시 수평 각도*/
+                "autoLoad": true,
+                "yaw":0,/*시작시 수평 각도*/
                 "pitch":0,/*시작시 수직 각도*/
                 "hfov":200,/*정면 시야*/
                 "minYaw":-180,/*유저가 볼수 있는 각도 제어*/
@@ -34,92 +34,9 @@ function vrEvent(){
                 //"haov":70,
                 "backgroundColor":([255,255,255]),
                 //"vaov":40,
-                'hotSpots':[
-                    {
-                        "pitch": 0.5,
-                        "yaw": 4,
-                        "cssClass" : "custom_hotspot",
-                        "createTooltipFunc": hotspot,
-                        "type": "scene",
-                        // "URL": "https://artbma.org/"
-                        "clickHandlerFunc": openModal
-                    },
-                    {
-                        "pitch": -1,
-                        "yaw": 75,
-                        "cssClass" : "image_con",
-                        "type": "info",
-                        "text": "The ANTIGEN : #COVID 19 PODCAST",
-                        // "URL": "https://artbma.org/"
-                        "clickHandlerFunc": pdfBook
-                    },
-                    {
-                        "pitch": 2,
-                        "yaw": -65,
-                        "cssClass" : "image_con",
-                        "type": "info",
-                        "text": "이미지 크게보기",
-                        // "URL": "https://artbma.org/"
-                        "clickHandlerFunc": openModal
-                    },
-                    {
-                        "pitch": 2,
-                        "yaw": -90,
-                        "cssClass" : "image_con",
-                        "type": "info",
-                        "text": "이미지 크게보기",
-                        // "URL": "https://artbma.org/"
-                        "clickHandlerFunc": openModal
-                    },
-                    {
-                        "pitch": 2,
-                        "yaw": -113,
-                        "cssClass" : "image_con",
-                        "type": "info",
-                        "text": "이미지 크게보기",
-                        // "URL": "https://artbma.org/"
-                        "clickHandlerFunc": openModal
-                    },
-                    {
-                        "pitch": 1.5,
-                        "hfov": 110,
-                        "yaw": -180,
-                        "type": "scene",
-                        "cssClass" : "loaction_1",
-                        "text": "이미지 크게보기",
-                        "sceneId " : 'mains',
-                        "clickHandlerFunc": locationEvent
-                    },
-                    {
-                        "pitch": 1.5,
-                        "hfov": 1200,
-                        "yaw": -190,
-                        "type": "scene",
-                        "cssClass" : "loaction_2",
-                        "text": "이미지 크게보기",
-                        "sceneId " : 'main2',
-                        "clickHandlerFunc": locationEvent
-                    },
-                ],
-            },
-            "mains": {
-                "type": "equirectangular",
-                "panorama": "/vr_test/img/25.png",
-                "autoLoad": true,
-                "showFullscreenCtrl" : false,
-                "showControls ": false,
-                "hotspotDebug": true,
-                'hotSpots':[
-                    {
-                        "pitch": 1.5,
-                        "yaw": -180,
-                        "type": "equirectangular",
-                        "cssClass" : "loaction_1",
-                        "text": "이동하기",
-                        "sceneId " : 'main',
-                        "clickHandlerFunc": locationEvent
-                    },
-                ],
+                "haov": 90,
+                "vaov": 40,
+                "vOffset": 1.17
             },
         },
     });

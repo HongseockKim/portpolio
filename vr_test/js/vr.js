@@ -86,7 +86,7 @@ function vrEvent(){
             },
             "mains": {
                 "type": "equirectangular",
-                "panorama": "/vr_test/img/test.jpg",
+                "panorama": "/vr_test/img/25.png",
                 "autoLoad": true,
                 "showFullscreenCtrl" : false,
                 "showControls ": false,
@@ -97,7 +97,7 @@ function vrEvent(){
                         "yaw": -180,
                         "type": "equirectangular",
                         "cssClass" : "loaction_1",
-                        "text": "이미지 크게보기",
+                        "text": "이동하기",
                         "sceneId " : 'main',
                         "clickHandlerFunc": locationEvent
                     },

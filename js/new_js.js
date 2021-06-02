@@ -7,7 +7,6 @@ $(document).ready(function(){
     navEvent();
 });
 function swiperSlide(){
-    
 
     $.ajax({
         url:"/data/skill.json",
@@ -16,7 +15,6 @@ function swiperSlide(){
             var obj = "";
             $(data).each(function(i,v){
                 $(v.skill).each(function(si,iv){
-                    console.log(iv);
                     obj += "<li class='swiper-slide'>"
                     obj += "<div class='con'>"
                     obj += "<img src='"+iv.link+"' alt=''>"
@@ -27,7 +25,7 @@ function swiperSlide(){
             $('#skill_list li').remove();
             $('#skill_list').append(obj);
             var slide = new Swiper('#swiper_slide_con',{
-                slidesPerView : "auto",
+                slidesPerView : "4",
                 //spaceBetween : 3,
                 grabCursor: true,
                 loop:true,

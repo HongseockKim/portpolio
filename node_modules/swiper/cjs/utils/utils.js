@@ -10,6 +10,7 @@ exports.extend = extend;
 exports.bindModuleMethods = bindModuleMethods;
 exports.getComputedStyle = getComputedStyle;
 exports.classesToSelector = classesToSelector;
+exports.createElementIfNotDefined = createElementIfNotDefined;
 
 var _ssrWindow = require("ssr-window");
 
@@ -171,4 +172,21 @@ function classesToSelector(classes) {
 
   return "." + classes.trim().replace(/([\.:\/])/g, '\\$1') // eslint-disable-line
   .replace(/ /g, '.');
+}
+
+function createElementIfNotDefined($container, params, createElements, checkProps) {
+  var document = (0, _ssrWindow.getDocument)();
+
+  if (createElements) {
+    Object.keys(checkProps).forEach(function (key) {
+      if (!params[key] && params.auto === true) {
+        var element = document.createElement('div');
+        element.className = checkProps[key];
+        $container.append(element);
+        params[key] = element;
+      }
+    });
+  }
+
+  return params;
 }

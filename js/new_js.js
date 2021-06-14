@@ -182,11 +182,14 @@ function navEvent(){
     $(' .nav_list_wrap .nav_list .nav_item button').on('click',function(){
         var idx = $(this).parent('li').index();
         var pagenames = "";
+        console.log(idx);
         $('.nav_list_wrap .nav_list .nav_item button').removeClass('on');
         $(this).addClass('on');
         $('#con_wrtap').children().remove();
         if(idx === 0){
             location.reload();
+        }else if(idx === 3){
+            pagenames = "threejs/index";
         }else{
             pagenames = $(this).attr('id');
         }

@@ -35,7 +35,6 @@ export default function slidePrev(speed, runCallbacks, internal) {
   var normalizedSnapGrid = snapGrid.map(function (val) {
     return normalize(val);
   });
-  var currentSnap = snapGrid[normalizedSnapGrid.indexOf(normalizedTranslate)];
   var prevSnap = snapGrid[normalizedSnapGrid.indexOf(normalizedTranslate) - 1];
 
   if (typeof prevSnap === 'undefined' && params.cssMode) {

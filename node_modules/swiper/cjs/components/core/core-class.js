@@ -235,7 +235,7 @@ var Swiper = /*#__PURE__*/function () {
         startTranslate: undefined,
         allowThresholdMove: undefined,
         // Form elements to match
-        formElements: 'input, select, option, textarea, button, video, label',
+        focusableElements: swiper.params.focusableElements,
         // Last click time
         lastClickTime: (0, _utils.now)(),
         clickTimeout: undefined,
@@ -474,9 +474,13 @@ var Swiper = /*#__PURE__*/function () {
 
     el.swiper = swiper;
 
+    var getWrapperSelector = function getWrapperSelector() {
+      return "." + (swiper.params.wrapperClass || '').trim().split(' ').join('.');
+    };
+
     var getWrapper = function getWrapper() {
       if (el && el.shadowRoot && el.shadowRoot.querySelector) {
-        var res = (0, _dom.default)(el.shadowRoot.querySelector("." + swiper.params.wrapperClass)); // Children needs to return slot items
+        var res = (0, _dom.default)(el.shadowRoot.querySelector(getWrapperSelector())); // Children needs to return slot items
 
         res.children = function (options) {
           return $el.children(options);
@@ -485,7 +489,7 @@ var Swiper = /*#__PURE__*/function () {
         return res;
       }
 
-      return $el.children("." + swiper.params.wrapperClass);
+      return $el.children(getWrapperSelector());
     }; // Find Wrapper
 
 

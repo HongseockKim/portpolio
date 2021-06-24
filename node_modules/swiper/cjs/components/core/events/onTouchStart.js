@@ -86,9 +86,9 @@ function onTouchStart(event) {
 
   if (e.type !== 'touchstart') {
     var preventDefault = true;
-    if ($targetEl.is(data.formElements)) preventDefault = false;
+    if ($targetEl.is(data.focusableElements)) preventDefault = false;
 
-    if (document.activeElement && (0, _dom.default)(document.activeElement).is(data.formElements) && document.activeElement !== $targetEl[0]) {
+    if (document.activeElement && (0, _dom.default)(document.activeElement).is(data.focusableElements) && document.activeElement !== $targetEl[0]) {
       document.activeElement.blur();
     }
 

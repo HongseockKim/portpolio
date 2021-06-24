@@ -1,3 +1,5 @@
+var _excluded = ["className", "tag", "wrapperTag", "children", "onSwiper"];
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
@@ -21,7 +23,7 @@ var Swiper = /*#__PURE__*/forwardRef(function (_temp, externalElRef) {
       WrapperTag = _ref$wrapperTag === void 0 ? 'div' : _ref$wrapperTag,
       children = _ref.children,
       onSwiper = _ref.onSwiper,
-      rest = _objectWithoutPropertiesLoose(_ref, ["className", "tag", "wrapperTag", "children", "onSwiper"]);
+      rest = _objectWithoutPropertiesLoose(_ref, _excluded);
 
   var eventsAssigned = false;
 
@@ -155,7 +157,16 @@ var Swiper = /*#__PURE__*/forwardRef(function (_temp, externalElRef) {
     oldSlides.current = slides;
 
     if (changedParams.length && swiperRef.current && !swiperRef.current.destroyed) {
-      updateSwiper(swiperRef.current, slides, passedParams, changedParams);
+      updateSwiper({
+        swiper: swiperRef.current,
+        slides: slides,
+        passedParams: passedParams,
+        changedParams: changedParams,
+        nextEl: nextElRef.current,
+        prevEl: prevElRef.current,
+        scrollbarEl: scrollbarElRef.current,
+        paginationEl: paginationElRef.current
+      });
     }
 
     return function () {

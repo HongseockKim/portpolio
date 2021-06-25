@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@silvermine/videojs-quality-selector": "^1.2.5",
     "basicscroll": "^3.0.4",
     "datepicker": "*",
     "datetimepicker": "^0.1.39",

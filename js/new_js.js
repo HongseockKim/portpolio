@@ -190,6 +190,8 @@ function navEvent(){
             location.reload();
         }else if(idx === 3){
             pagenames = "threejs/index";
+        }else if(idx === 4){
+                window('_blank').location.href="http://gusduswk11.dothome.co.kr/index.php";
         }else{
             pagenames = $(this).attr('id');
         }

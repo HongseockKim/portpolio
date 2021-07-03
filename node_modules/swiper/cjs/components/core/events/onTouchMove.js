@@ -73,7 +73,7 @@ function onTouchMove(event) {
   }
 
   if (data.isTouchEvent && document.activeElement) {
-    if (e.target === document.activeElement && (0, _dom.default)(e.target).is(data.formElements)) {
+    if (e.target === document.activeElement && (0, _dom.default)(e.target).is(data.focusableElements)) {
       data.isMoved = true;
       swiper.allowClick = false;
       return;

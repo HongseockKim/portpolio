@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@silvermine/videojs-quality-selector": "^1.2.5",
     "basicscroll": "^3.0.4",
     "datepicker": "*",
     "datetimepicker": "^0.1.39",
@@ -14,7 +15,7 @@
     "parallax-js": "^3.1.0",
     "prefixfree": "^1.0.0",
     "scrollmagic": "^2.0.8",
-    "swiper": "^6.7.0",
+    "swiper": "^6.7.1",
     "three": "^0.127.0",
     "timepicker": "^1.13.18",
     "video.js": "^7.11.8",

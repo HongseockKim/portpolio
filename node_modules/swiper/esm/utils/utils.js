@@ -97,12 +97,14 @@ function isObject(o) {
 
 function extend() {
   var to = Object(arguments.length <= 0 ? undefined : arguments[0]);
-  var noExtend = ['__proto__', 'constructor', 'prototype'];
+  var noExtend = ['__proto__', 'constructor', 'prototype']; // eslint-disable-next-line
+
+  var HTMLElement = typeof window !== 'undefined' ? window.HTMLElement : undefined;
 
   for (var i = 1; i < arguments.length; i += 1) {
     var nextSource = i < 0 || arguments.length <= i ? undefined : arguments[i];
 
-    if (nextSource !== undefined && nextSource !== null) {
+    if (nextSource !== undefined && nextSource !== null && !(HTMLElement && nextSource instanceof HTMLElement)) {
       var keysArray = Object.keys(Object(nextSource)).filter(function (key) {
         return noExtend.indexOf(key) < 0;
       });

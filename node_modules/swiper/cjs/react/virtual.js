@@ -17,6 +17,10 @@ function updateOnVirtualData(swiper) {
   if (swiper.lazy && swiper.params.lazy.enabled) {
     swiper.lazy.load();
   }
+
+  if (swiper.parallax && swiper.params.parallax && swiper.params.parallax.enabled) {
+    swiper.parallax.setTranslate();
+  }
 }
 
 function renderVirtual(swiper, slides, virtualData) {

@@ -2,6 +2,7 @@
   "dependencies": {
     "@mladenilic/threesixty.js": "^1.2.3",
     "@silvermine/videojs-quality-selector": "^1.2.5",
+    "annotorious": "^0.6.4",
     "basicscroll": "^3.0.4",
     "chart.js": "^2.9.4",
     "chartjs-plugin-crosshair": "^1.1.6",

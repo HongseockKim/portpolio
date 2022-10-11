@@ -188,7 +188,7 @@ function navEvent(){
         $('#con_wrtap').children().remove();
         if(idx === 0){
             location.reload();
-        }else if(idx === 3){
+        }else if(idx === 1){
             pagenames = "threejs/index";
         }else if(idx === 4){
                 window.open('_blank').location.href="http://gusduswk11.dothome.co.kr/index.php";

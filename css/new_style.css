@@ -258,9 +258,11 @@ body {
 }
 .contnet #projcet_con .inner {
   max-width: 1200px;
+}
+.contnet #projcet_con .inner .contents {
   padding: 30px 0;
 }
-.contnet #projcet_con .inner .sub_title {
+.contnet #projcet_con .inner .contents .sub_title {
   font-size: 28px;
   text-align: center;
 }

@@ -66,6 +66,10 @@ body {
             .info_wrap {
                 width: 100%;
                 text-align: center;
+                .spec_list{
+                    padding-left:100px;margin-bottom:15px;
+                    text-align: left;
+                }
                 .profile {
                     img {
                         width: 120px;
@@ -212,7 +216,7 @@ body {
                     display: inline-block;
                     position: relative;
                     text-align: center;
-                    padding: 30px 0;
+                    padding: 30px 0 30px 20px;
                     font-size: 3vw;
                     margin-bottom: 30px;
                     .icon{
@@ -254,13 +258,27 @@ body {
         }
         #projcet_con{
             padding:40px 0;
-            .title{font-size:32px;text-align: center;}
+            .title{
+                font-size:3vw;text-align: center;margin-bottom:50px;position:relative;
+                .icon{
+                    position: absolute;
+                    top:55%;transform: translateY(-50%);
+                    left:39%;
+                    width: 71px;
+                    height: 71px;
+                    background: url('../img/project_icon.png')no-repeat center center;
+                    background-size: contain;
+                }
+            }
             .inner{
-                max-width: 1200px;
+                max-width: 1200px;text-align: center;margin: 0 auto;
                 .contents{
                     padding:30px 0;
                     .sub_title{
-                        font-size:28px;text-align: center;
+                        font-size:2vw;margin-bottom:20px;
+                    }
+                    .m_text{
+                        font-size:1.2vw;
                     }
                 }
             }
@@ -290,6 +308,9 @@ body {
                     background: url(/img/programing_icon.png) no-repeat center center;
                     background-size: cover;
                 }
+            }
+            #footer_area{
+                text-align:center;padding:40px 0;
             }
             @keyframes textAni {
                 from{
@@ -422,7 +443,6 @@ body {
                     top: 0;
                     left: 0;
                     background: #fff;
-
                     &.bar_1 {
                         width: 80%;
                         height: 2px;
@@ -514,6 +534,7 @@ body {
             p {
                 font-size: 1.5vw;
             }
+
         }
     } 
 }

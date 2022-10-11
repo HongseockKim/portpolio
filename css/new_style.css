@@ -69,6 +69,11 @@ body {
   width: 100%;
   text-align: center;
 }
+#header_top .inner .info_wrap .spec_list {
+  padding-left: 100px;
+  margin-bottom: 15px;
+  text-align: left;
+}
 #header_top .inner .info_wrap .profile img {
   width: 120px;
   border-radius: 6px;
@@ -211,7 +216,7 @@ body {
   display: inline-block;
   position: relative;
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 0 30px 20px;
   font-size: 3vw;
   margin-bottom: 30px;
 }
@@ -253,18 +258,35 @@ body {
   padding: 40px 0;
 }
 .contnet #projcet_con .title {
-  font-size: 32px;
+  font-size: 3vw;
   text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+.contnet #projcet_con .title .icon {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  left: 39%;
+  width: 71px;
+  height: 71px;
+  background: url("../img/project_icon.png") no-repeat center center;
+  background-size: contain;
 }
 .contnet #projcet_con .inner {
   max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
 }
 .contnet #projcet_con .inner .contents {
   padding: 30px 0;
 }
 .contnet #projcet_con .inner .contents .sub_title {
-  font-size: 28px;
-  text-align: center;
+  font-size: 2vw;
+  margin-bottom: 20px;
+}
+.contnet #projcet_con .inner .contents .m_text {
+  font-size: 1.2vw;
 }
 .contnet #Portfolio_con {
   text-align: center;
@@ -292,6 +314,10 @@ body {
   height: 6vw;
   background: url(/img/programing_icon.png) no-repeat center center;
   background-size: cover;
+}
+.contnet #Portfolio_con #footer_area {
+  text-align: center;
+  padding: 40px 0;
 }
 @keyframes textAni {
   from {

@@ -5,13 +5,13 @@ $(document).ready(function(){
     portfolio_list_data();
     navEvent();
 });
-function swiperSlide(){
 
+function swiperSlide(){
     $.ajax({
         url:"/data/skill.json",
         dataType :"json",
         success : function(data){
-            var obj = "";
+            let obj = "";
             $(data).each(function(i,v){
                 $(v.skill).each(function(si,iv){
                     obj += "<li class='swiper-slide'>"
@@ -23,7 +23,7 @@ function swiperSlide(){
             })
             $('#skill_list li').remove();
             $('#skill_list').append(obj);
-            var slide = new Swiper('#swiper_slide_con',{
+            let slide = new Swiper('#swiper_slide_con',{
                 slidesPerView : "4",
                 //spaceBetween : 3,
                 grabCursor: true,
@@ -38,7 +38,7 @@ function swiperSlide(){
     })
 }
 function pageGridlayoutEvent(){
-    var gridItem = $('.grid');
+    let gridItem = $('.grid');
     gridItem.imagesLoaded(function(){
         gridItem.masonry({
             itemSelector : '.grid-item',
@@ -51,17 +51,17 @@ function pageGridlayoutEvent(){
     });
 }
 function imageHoverEvent(){
-    var src = null;
+    let src = null;
     $('.contnet #Portfolio_con .page_con_wrap .page_con .spage_list .grid-item img').on('click',function(){
         // $('.contentviewr').addClass('open');
-       var idx = $(this).parent().index();
-       var imagewrapHeight = $('.contentviewr').eq(idx).find('.img_wrap').height() - $('.contentviewr').eq(idx).find('.text_con').height();
+       let idx = $(this).parent().index();
+       let imagewrapHeight = $('.contentviewr').eq(idx).find('.img_wrap').height() - $('.contentviewr').eq(idx).find('.text_con').height();
        console.log(idx);
        console.log(imagewrapHeight);
        $(".contentviewr").eq(idx).find('.text_con').css({'height':imagewrapHeight});
        $(".contentviewr").eq(idx).addClass('open');
        $(window).on('resize',function(){
-        var imagsizes =  $('.contentviewr').eq(idx).find('.img_wrap').height() ;
+        let imagsizes =  $('.contentviewr').eq(idx).find('.img_wrap').height() ;
         console.log(imagsizes)
         $(".contentviewr").eq(idx).find('.text_con').css({'height':imagsizes});
        });
@@ -77,7 +77,7 @@ function portfolio_list_data(){
         url : "../data/data.json",
         dataType : "json",
         success : function(data){
-            var obj  = "";
+            let obj  = "";
             $(data).each(function(v,i){
                 $(i.imagesrc).each(function(e,r){
                     if(r.linkif === "true" && r.subif === "true"){
@@ -142,7 +142,7 @@ function portfolio_content_data(){
         url : "../data/data.json",
         dataType: "json",
         success : function(data){
-            var sobj = "";
+            let sobj = "";
             $(data).each(function(i,v){
                 $(v.imagesrc).each(function(si,sv){
                     sobj += "<div class='contentviewr'>",
@@ -180,8 +180,8 @@ function portfolio_content_data(){
 }
 function navEvent(){
     $(' .nav_list_wrap .nav_list .nav_item button').on('click',function(){
-        var idx = $(this).parent('li').index();
-        var pagenames = "";
+        let idx = $(this).parent('li').index();
+        let pagenames = "";
         console.log(idx);
         $('.nav_list_wrap .nav_list .nav_item button').removeClass('on');
         $(this).addClass('on');

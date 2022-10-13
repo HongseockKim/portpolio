@@ -13,8 +13,6 @@ function swiperSlide(){
         success : function(data){
             let obj = "";
             $(data).each(function(i,v){
-                console.log(i)
-                console.log(v)
                 $(v.skill).each(function(si,iv){
                     obj += "<li class='swiper-slide'>"
                     obj += "<div class='con'>"

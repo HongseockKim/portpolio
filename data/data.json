@@ -2,7 +2,7 @@
     "imagesrc" : [
         {
             "subif" : "true",
-            "linkif" : "true",
+            "linkif" : "false",
             "sitename" : "smeg",
             "mainimage" :"img/smeg2.png",
             "image_1": "/img/portpolit_img/image1_0.jpg",
@@ -14,9 +14,9 @@
             "skilllink_4" : "/img/mine_icon/Css3.png",
             "skilllink_5" : "/img/mine_icon/Html5.png"
         }
-        ,{
+    ,{
             "subif" : "true",
-            "linkif" : "true",
+            "linkif" : "false",
             "sitename" : "DAELIM coperration",
             "mainimage" :"img/dalim2.png",
             "image_1": "/img/portpolit_img/image1_1.jpg",
@@ -28,9 +28,9 @@
             "skilllink_4" : "/img/mine_icon/Css3.png",
             "skilllink_5" : "/img/mine_icon/Html5.png"
         }
-        ,{
+    ,{
             "subif" : "true",
-            "linkif" : "true",
+            "linkif" : "false",
             "sitename" : "육아정책연구소",
             "mainimage" :"img/kicce2.png",
             "image_1": "/img/portpolit_img/image1_2.jpg",
@@ -42,9 +42,9 @@
             "skilllink_4" : "/img/mine_icon/Css3.png",
             "skilllink_5" : "/img/mine_icon/Html5.png"
         }
-        ,{
+    ,{
             "subif" : "false",
-            "linkif" : "true",
+            "linkif" : "false",
             "sitename" : "코로나 바이러스-19",
             "mainimage" :"img/covid2.png",
             "image_1": "/img/portpolit_img/image1_3.jpg",
@@ -56,9 +56,9 @@
             "skilllink_4" : "/img/mine_icon/Css3.png",
             "skilllink_5" : "/img/mine_icon/Html5.png"
         }
-        ,{
+    ,{
             "subif" : "true",
-            "linkif" : "true",
+            "linkif" : "false",
             "sitename" : "어글리스토브",
             "mainimage" :"img/uglu2.png",
             "image_1": "/img/portpolit_img/image1_4.jpg",
@@ -70,7 +70,7 @@
             "skilllink_4" : "/img/mine_icon/Css3.png",
             "skilllink_5" : "/img/mine_icon/Html5.png"
         }
-        ,{
+    ,{
             "linkif" : "false",
             "sitename" : "Virtual 웹심포지움",
             "mainimage" :"img/ksnr.jpg",
@@ -82,7 +82,7 @@
             "skilllink_4" : "/img/mine_icon/Css3.png",
             "skilllink_5" : "/img/mine_icon/Html5.png"
         }
-        ,{
+    ,{
             "linkif" : "false",
             "sitename" : "XOSPATA",
             "mainimage" :"img/image1_6.jpg",
@@ -93,7 +93,7 @@
             "skilllink_4" : "/img/mine_icon/Css3.png",
             "skilllink_5" : "/img/mine_icon/Html5.png"
         }
-        ,{
+    ,{
             "linkif" : "false",
             "sitename" : "ABX Webinar",
             "mainimage" :"img/abx.png",
@@ -104,7 +104,7 @@
             "skilllink_4" : "/img/mine_icon/Css3.png",
             "skilllink_5" : "/img/mine_icon/Html5.png"
         }
-        ,{
+    ,{
             "linkif" : "false",
             "sitename" : "Chungnam Global R&D",
             "mainimage" :"img/chunam.png",
@@ -117,7 +117,7 @@
             "skilllink_4" : "/img/mine_icon/Css3.png",
             "skilllink_5" : "/img/mine_icon/Html5.png"
         }
-        ,{
+    ,{
             "linkif" : "false",
             "sitename" : "KSNR 대한연하장애학회",
             "mainimage" :"img/ksnr.png",
@@ -130,7 +130,7 @@
             "skilllink_4" : "/img/mine_icon/Css3.png",
             "skilllink_5" : "/img/mine_icon/Html5.png"
         }
-        ,{
+    ,{
             "linkif" : "false",
             "sitename" : "KDYS 대한연하장애학회",
             "mainimage" :"img/kdys.png",

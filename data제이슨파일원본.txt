@@ -1,0 +1,170 @@
+{
+    "imagesrc" : [
+        {
+            "subif" : "true",
+            "linkif" : "true",
+            "sitename" : "smeg",
+            "mainimage" :"img/smeg2.png",
+            "image_1": "/img/portpolit_img/image1_0.jpg",
+            "link_1" : "page/01/index.html",
+            "link_2" : "page/01/page/all.html",
+            "skilllink" : "null",
+            "skilllink_2" : "null",
+            "skilllink_3" : "/img/mine_icon/javascript.png",
+            "skilllink_4" : "/img/mine_icon/Css3.png",
+            "skilllink_5" : "/img/mine_icon/Html5.png"
+        }
+        ,{
+            "subif" : "true",
+            "linkif" : "true",
+            "sitename" : "DAELIM coperration",
+            "mainimage" :"img/dalim2.png",
+            "image_1": "/img/portpolit_img/image1_1.jpg",
+            "link_1" : "page/02/index.html",
+            "link_2" : "page/02/page/compay_info_overview.html",
+            "skilllink" : "null",
+            "skilllink_2" : "null",
+            "skilllink_3" : "/img/mine_icon/javascript.png",
+            "skilllink_4" : "/img/mine_icon/Css3.png",
+            "skilllink_5" : "/img/mine_icon/Html5.png"
+        }
+        ,{
+            "subif" : "true",
+            "linkif" : "true",
+            "sitename" : "육아정책연구소",
+            "mainimage" :"img/kicce2.png",
+            "image_1": "/img/portpolit_img/image1_2.jpg",
+            "link_1" : "page/03/index.html",
+            "link_2" : "page/03/page/site.html",
+            "skilllink" : "null",
+            "skilllink_2" : "null",
+            "skilllink_3" : "/img/mine_icon/javascript.png",
+            "skilllink_4" : "/img/mine_icon/Css3.png",
+            "skilllink_5" : "/img/mine_icon/Html5.png"
+        }
+        ,{
+            "subif" : "false",
+            "linkif" : "true",
+            "sitename" : "코로나 바이러스-19",
+            "mainimage" :"img/covid2.png",
+            "image_1": "/img/portpolit_img/image1_3.jpg",
+            "link_1" : "page/04/index.html",
+            "link_2" : "page/03/page/site.html",
+            "skilllink" : "null",
+            "skilllink_2" : "null",
+            "skilllink_3" : "/img/mine_icon/javascript.png",
+            "skilllink_4" : "/img/mine_icon/Css3.png",
+            "skilllink_5" : "/img/mine_icon/Html5.png"
+        }
+        ,{
+            "subif" : "true",
+            "linkif" : "true",
+            "sitename" : "어글리스토브",
+            "mainimage" :"img/uglu2.png",
+            "image_1": "/img/portpolit_img/image1_4.jpg",
+            "link_1" : "page/05/index.html",
+            "link_2" : "page/05/page/beverage.html",
+            "skilllink" : "null",
+            "skilllink_2" : "null",
+            "skilllink_3" : "/img/mine_icon/javascript.png",
+            "skilllink_4" : "/img/mine_icon/Css3.png",
+            "skilllink_5" : "/img/mine_icon/Html5.png"
+        }
+        ,{
+            "linkif" : "false",
+            "sitename" : "Virtual 웹심포지움",
+            "mainimage" :"img/ksnr.jpg",
+            "image_1": "/img/portpolit_img/image1_5.jpg",
+            "image_2": "/img/portpolit_img/image1_5_1.jpg",
+            "image_3": "/img/portpolit_img/image1_5_2.jpg",
+            "skilllink_2" : "/img/mine_icon/node.png",
+            "skilllink_3" : "/img/mine_icon/javascript.png",
+            "skilllink_4" : "/img/mine_icon/Css3.png",
+            "skilllink_5" : "/img/mine_icon/Html5.png"
+        }
+        ,{
+            "linkif" : "false",
+            "sitename" : "XOSPATA",
+            "mainimage" :"img/image1_6.jpg",
+            "image_1": "../img/portpolit_img/image1_6.jpg",
+            "skilllink" : "/img/mine_icon/php.png",
+            "skilllink_2" : "/img/mine_icon/node.png",
+            "skilllink_3" : "/img/mine_icon/javascript.png",
+            "skilllink_4" : "/img/mine_icon/Css3.png",
+            "skilllink_5" : "/img/mine_icon/Html5.png"
+        }
+        ,{
+            "linkif" : "false",
+            "sitename" : "ABX Webinar",
+            "mainimage" :"img/abx.png",
+            "image_1": "../img/portpolit_img/image1_7.jpg",
+            "skilllink" : "null",
+            "skilllink_2" : "/img/mine_icon/asp.png",
+            "skilllink_3" : "/img/mine_icon/javascript.png",
+            "skilllink_4" : "/img/mine_icon/Css3.png",
+            "skilllink_5" : "/img/mine_icon/Html5.png"
+        }
+        ,{
+            "linkif" : "false",
+            "sitename" : "Chungnam Global R&D",
+            "mainimage" :"img/chunam.png",
+            "image_1": "../img/portpolit_img/image1_8.jpg",
+            "image_2": "../img/portpolit_img/image1_8_1.jpg",
+            "image_3": "../img/portpolit_img/image1_8_2.jpg",
+            "skilllink" : "null",
+            "skilllink_2" : "/img/mine_icon/asp.png",
+            "skilllink_3" : "/img/mine_icon/javascript.png",
+            "skilllink_4" : "/img/mine_icon/Css3.png",
+            "skilllink_5" : "/img/mine_icon/Html5.png"
+        }
+        ,{
+            "linkif" : "false",
+            "sitename" : "KSNR 대한연하장애학회",
+            "mainimage" :"img/ksnr.png",
+            "image_1": "../img/portpolit_img/image1_9.jpg",
+            "image_2": "../img/portpolit_img/image1_9_1.jpg",
+            "image_3": "../img/portpolit_img/image1_9_2.jpg",
+            "skilllink" : "null",
+            "skilllink_2" : "/img/mine_icon/asp.png",
+            "skilllink_3" : "/img/mine_icon/javascript.png",
+            "skilllink_4" : "/img/mine_icon/Css3.png",
+            "skilllink_5" : "/img/mine_icon/Html5.png"
+        }
+        ,{
+            "linkif" : "false",
+            "sitename" : "KDYS 대한연하장애학회",
+            "mainimage" :"img/kdys.png",
+            "image_1": "../img/portpolit_img/image1_11.jpg",
+            "image_2": "../img/portpolit_img/image1_11_1.jpg",
+            "image_3": "../img/portpolit_img/image1_11_2.jpg",
+            "skilllink" : "null",
+            "skilllink_2" : "/img/mine_icon/asp.png",
+            "skilllink_3" : "/img/mine_icon/javascript.png",
+            "skilllink_4" : "/img/mine_icon/Css3.png",
+            "skilllink_5" : "/img/mine_icon/Html5.png"
+        },
+        {
+            "linkif" : "false",
+            "sitename" : "ABSOLUTE ONLINE SYMPOSIUM",
+            "mainimage" :"img/absolute.jpg",
+            "image_1": "../img/portpolit_img/image_12_1.png",
+            "skilllink" : "null",
+            "skilllink_2" : "/img/mine_icon/asp.png",
+            "skilllink_3" : "/img/mine_icon/javascript.png",
+            "skilllink_4" : "/img/mine_icon/Css3.png",
+            "skilllink_5" : "/img/mine_icon/Html5.png"
+        },
+        {
+            "linkif" : "false",
+            "sitename" : "2020 제약산업 윤리경영 ACADEMY",
+            "mainimage" :"img/acadamy.jpg",
+            "image_1": "../img/portpolit_img/image_13_1.png",
+            "image_2": "../img/portpolit_img/image_13_2.png",
+            "skilllink" : "null",
+            "skilllink_2" : "/img/mine_icon/asp.png",
+            "skilllink_3" : "/img/mine_icon/javascript.png",
+            "skilllink_4" : "/img/mine_icon/Css3.png",
+            "skilllink_5" : "/img/mine_icon/Html5.png"
+        }
+    ]
+}

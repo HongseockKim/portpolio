@@ -13,6 +13,8 @@ function swiperSlide(){
         success : function(data){
             let obj = "";
             $(data).each(function(i,v){
+                console.log(i)
+                console.log(v)
                 $(v.skill).each(function(si,iv){
                     obj += "<li class='swiper-slide'>"
                     obj += "<div class='con'>"
@@ -80,6 +82,8 @@ function portfolio_list_data(){
             let obj  = "";
             $(data).each(function(v,i){
                 $(i.imagesrc).each(function(e,r){
+                    console.log("imagesrc :",e)
+                    console.log("imagesrc :",r)
                     if(r.linkif === "true" && r.subif === "true"){
                         obj += "<div class='grid-item'>";
                         obj += "<img src="+r.mainimage+" alt='image'>";

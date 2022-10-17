@@ -54,16 +54,16 @@ function pageGridlayoutEvent(){
 
 function imageHoverEvent(){
     $('.contnet #Portfolio_con .page_con_wrap .page_con .spage_list .grid-item img').on('click',function(){
-       let idx = $(this).parent().index();
-       let imagewrapHeight = $('.contentviewr').eq(idx).find('.img_wrap').height() - $('.contentviewr').eq(idx).find('.text_con').height();
+        let idx = $(this).parent().index();
+        let imagewrapHeight = $('.contentviewr').eq(idx).find('.img_wrap').height() - $('.contentviewr').eq(idx).find('.text_con').height();
 
-       $(".contentviewr").eq(idx).find('.text_con').css({'height':imagewrapHeight});
-       $(".contentviewr").eq(idx).addClass('open');
-       $(window).on('resize',function(){
-        let imagsizes =  $('.contentviewr').eq(idx).find('.img_wrap').height() ;
-        console.log(imagsizes)
-        $(".contentviewr").eq(idx).find('.text_con').css({'height':imagsizes});
-       });
+        $(".contentviewr").eq(idx).find('.text_con').css({'height':imagewrapHeight});
+        $(".contentviewr").eq(idx).addClass('open');
+        $(window).on('resize',function(){
+            let imagsizes =  $('.contentviewr').eq(idx).find('.img_wrap').height() ;
+            console.log(imagsizes)
+            $(".contentviewr").eq(idx).find('.text_con').css({'height':imagsizes});
+        });
     });
 
     $(".wrapper .contentviewr .clost_btn_wrap .close_btn").on('click',function(){
@@ -191,10 +191,12 @@ function navEvent(){
 
         if(idx === 0){
             location.reload();
-        }else if(idx === 1){
+        }else if(idx === 2){
             pagenames = "threejs/index";
+        }else if(idx === 1){
+            pagenames = "vr";
         }else if(idx === 4){
-                window.open('_blank').location.href="http://gusduswk11.dothome.co.kr/index.php";
+            window.open('_blank').location.href="http://gusduswk11.dothome.co.kr/index.php";
         }else{
             pagenames = $(this).attr('id');
         }

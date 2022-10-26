@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     $('.wrapper .contnet #Portfolio_con .page_con_wrap .page_con .spage_list .grid-item a').attr('target','_blank');
-    swiperSlide();
+    //swiperSlide();
     portfolio_list_data();
     navEvent();
 });
@@ -80,8 +80,6 @@ function portfolio_list_data(){
             let obj  = "";
             $(data).each(function(v,i){
                 $(i.imagesrc).each(function(e,r){
-                    console.log("imagesrc :",e)
-                    console.log("imagesrc :",r)
                     if(r.linkif === "true" && r.subif === "true"){
                         obj += "<div class='grid-item'>";
                         obj += "<img src="+r.mainimage+" alt='image'>";

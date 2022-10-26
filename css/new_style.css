@@ -1,7 +1,8 @@
 body {
   font-family: "Noto Sans";
   font-weight: 400;
-  line-height: 1; }
+  line-height: 1;
+  min-width: 550px; }
 
 .wrapper {
   position: relative;
@@ -204,6 +205,47 @@ body {
             .contnet #skill_con .inner .swiper-container .swiper-slide .con img {
               width: 70px;
               margin-bottom: 50px; }
+  .contnet #n_skil_con .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center; }
+    .contnet #n_skil_con .inner .title {
+      position: relative;
+      font-size: 2.5vw;
+      display: inline-block; }
+      .contnet #n_skil_con .inner .title .icon {
+        position: absolute;
+        top: -20%;
+        transform: translateY(-50%);
+        left: -3vw;
+        width: 2vw;
+        height: 4vw;
+        background: url("../img/pan_icon.png") no-repeat center center;
+        background-size: contain;
+        transform: rotate(45deg); }
+    .contnet #n_skil_con .inner .skill_list {
+      padding: 20px 0;
+      overflow: hidden; }
+      .contnet #n_skil_con .inner .skill_list li {
+        float: left;
+        width: calc((100% / 4) - 20px);
+        margin-right: 20px;
+        padding-bottom: 10%;
+        margin-bottom: 30px;
+        position: relative; }
+        .contnet #n_skil_con .inner .skill_list li .image_con {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
+          .contnet #n_skil_con .inner .skill_list li .image_con img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75px; }
   .contnet #projcet_con {
     padding: 40px 0; }
     .contnet #projcet_con .title {
@@ -230,7 +272,9 @@ body {
           font-size: 2vw;
           margin-bottom: 20px; }
         .contnet #projcet_con .inner .contents .m_text {
-          font-size: 1.2vw; }
+          font-size: 1vw;
+          margin-bottom: 20px;
+          font-weight: bold; }
   .contnet #Portfolio_con {
     text-align: center; }
     .contnet #Portfolio_con h2 {
